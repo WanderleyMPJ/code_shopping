@@ -17,7 +17,6 @@ class ProductController extends Controller
 
     public function store(ProductRequest $request)
     {
-        
         $Product = Product::create($request->all());
         $Product->refresh();
 
