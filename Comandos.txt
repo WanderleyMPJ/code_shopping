@@ -1,0 +1,19 @@
+*** sql
+
+mysql -uroot -pEfficax@00
+
+use code_shopping;
+
+comandos
+
+*** tinker
+
+php artisan tinker
+
+- \CodeShopping\Models\Category::all();
+
+** configurar para a biblioteca slud atualize com o comando update
+- php artisan vendor:publish --provider="Cviebrock\EloquentSluggable\ServiceProvider"
+    e mudar no arquivo criado em config/sluggable.php esta linha:
+
+    'onUpdate'           => true
