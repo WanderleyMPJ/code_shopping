@@ -36,21 +36,5 @@ class ProductInputController extends Controller
         return new ProductInputResource($ProductInput);
     }
 
-    public function update(ProductInputRequest $request, ProductInput $ProductInput)
-    {
-        $ProductInput->fill($request->all());
-        $ProductInput->save();
 
-        return new ProductInputResource($ProductInput);
-
-        //  return response([], 204);
-
-    }
-
-    public function destroy(ProductInput $ProductInput)
-    {
-        $ProductInput->delete();
-
-        return response([], 204);
-    }
 }
