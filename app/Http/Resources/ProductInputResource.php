@@ -10,7 +10,9 @@ class ProductInputResource extends JsonResource
     {
         return[
             'id' => $this->id,
-            'amount' => (int)$this->amount,
+            'amount' => $this->amount,
+            'created_at' => $this->created_at,
+            'updated_at' => $this->updated_at,
 
             'product' => new ProductResource($this->product)
         ];

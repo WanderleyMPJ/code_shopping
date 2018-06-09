@@ -13,28 +13,21 @@ class ProductInputController extends Controller
 {
     public function index()
     {
-        $inputs = ProductInput::paginate(10);
+        $inputs = ProductInput::With('product')->paginate();
         return ProductInputResource::collection($inputs);
     }
 
-    public function store(ProductInputRequest $request, Product $product)
+    public function store(ProductInputRequest $request)
     {
-        $ProductInput = ProductInput::create($request->all());
+        $input = ProductInput::create($request->all());
 
-        $product = Product::find($ProductInput->product_id);
 
-        $product->stock += $ProductInput->amount;
-
-        $product->save();
-        $ProductInput->refresh();
-
-        return new ProductInputResource($ProductInput);
+        return new ProductInputResource($input);
     }
 
-    public function show(ProductInput $ProductInput)
+    public function show(ProductInput $Input)
     {
-        return new ProductInputResource($ProductInput);
+        return new ProductInputResource($Input);
     }
-
 
 }
