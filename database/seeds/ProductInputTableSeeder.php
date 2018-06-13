@@ -7,7 +7,7 @@ class ProductInputTableSeeder extends Seeder
   public function run()
     {
         $products = \CodeShopping\Models\Product::all();
-        factory(\CodeShopping\Models\ProductInput::class, 150)
+        factory(\CodeShopping\Models\ProductInput::class, 200)
             ->make()
             ->each( function ($input) use ($products)
                     {
