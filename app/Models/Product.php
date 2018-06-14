@@ -24,4 +24,8 @@ class Product extends Model
         return $this->belongsToMany(Category::class);
     }
 
+    public function photos(){
+        return $this->hasMany(ProductPhoto::class);
+    }
+
 }

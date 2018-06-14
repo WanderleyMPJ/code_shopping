@@ -12,7 +12,7 @@ class ProductOutputsTableSeeder extends Seeder
     public function run()
     {
         $products = \CodeShopping\Models\Product::all();
-        factory(\CodeShopping\Models\ProductOutput::class, 150)
+        factory(\CodeShopping\Models\ProductOutput::class, 50)
             ->make()
             ->each( function ($output) use ($products)
             {
