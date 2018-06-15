@@ -17,3 +17,6 @@ php artisan tinker
     e mudar no arquivo criado em config/sluggable.php esta linha:
 
     'onUpdate'           => true
+
+** link storage para a pasta public web
+php artisan storage:link

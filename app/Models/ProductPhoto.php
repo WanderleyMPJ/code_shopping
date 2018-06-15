@@ -1,7 +1,9 @@
 <?php
+declare(strict_types=1); //php 7
 
 namespace CodeShopping\Models;
 
+use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Eloquent\Model;
 use Symfony\Component\HttpFoundation\File\UploadedFile;
 
@@ -19,23 +21,64 @@ class ProductPhoto extends Model
         return storage_path("{$path}/{$productid}");
     }
 
-    public static function uploadFiles($productid, array $files){
+    public static function createWithPhotosFiles(int $productid,array $files ): Collection{
+        try{
+            \DB::beginTransaction();
+            self::uploadFiles($productid, $files);
+            $photos = self::createPhotosModels($productid, $files);
+            \DB::commit();
+            return new Collection($photos);
+        }catch (\Exception $e){
+            \DB::rollBack();
+            self::deleteFiles($productid, $files);
+            throw $e;
+        }
+    }
+
+    private static function deleteFiles($productid, array $files)
+    {
         /** @var UploadedFile $file */
-        $dir = self::photosDir($productid);
+        foreach ($files as $file) {
+            $path = self::photosPath($productid);
+            $photospath = "{$path}/{$file->hashName()}";
+            if (file_exists($photospath)){
+                \File::delete($photospath);
+            }
+        }
+    }
+
+    public static function uploadFiles($productId, array $files)
+    {
+        $dir = self::photosDir($productId);
+        //* @var UploadedFile $file */
+        foreach ($files as $file) {
+            $file->store($dir,['disk' => 'public']);
+        }
+    }
+
+    private static function createPhotosModels(int $productid, array $files): array{
+        $photos = [];
+        /** @var UploadedFile $file */
         foreach ($files as $file){
-           $file->store($dir ,['disk' => 'public']);
-       }
+            $photos[] = self::create([
+               'file_name' => $file->hashName(),
+               'product_id' => $productid
+            ]);
+        }
+        return $photos;
     }
 
     public function getPhotoUrlAttribute(){
         $path = self::photosDir($this->product_id);
-        return asset("algumacoisa/{$path}/{$this->file_name}");
+        return asset("storage/{$path}/{$this->file_name}");
     }
 
     public static function photosDir($productid){
         $dir = self::DIR_PRODUCTS;
         return "{$dir}/{$productid}";
     }
+
+
 
     public function product(){
         return $this->belongsTo(Product::class);

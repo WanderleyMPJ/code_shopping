@@ -1,4 +1,5 @@
 <?php
+declare(strict_types=1);
 
 use CodeShopping\Models\ProductPhoto;
 use Illuminate\Database\Seeder;
@@ -7,16 +8,15 @@ use Illuminate\Support\Collection;
 
 class ProductPhotosTableSeeder extends Seeder
 {
+
+    /**
+     * @var Collection
+     */
     private $allFakerPhotos;
     private $fakerPhotosPath = 'app/faker/product_photos';
-    /**
-     * Run the database seeds.
-     *
-     * @return void
-     */
+
     public function run()
     {
-
         $this->allFakerPhotos = $this->getFakerPhotos();
 
         /** @var \Illuminate\Database\Eloquent\Collection $products */
@@ -69,11 +69,14 @@ class ProductPhotosTableSeeder extends Seeder
     private function uploadPhoto($productid): string {
         /** @var SplFileInfo $photofile */
         $photofile = $this->allFakerPhotos->random();
-        $uploadfile = new \Illuminate\http\UploadedFile(
-            $photofile->getRealPath(), str_random(16) . '.' . $photofile->getExtension()
+        $uploadFile = new \Illuminate\http\UploadedFile(
+            $photofile->getRealPath(),
+            str_random(16) . '.' . $photofile->getExtension()
         );
-   //     ProductPhoto::uploadFiles($productid, [$photofile]);
-        return $uploadfile->hashName();
+        //ProductPhoto::uploadFiles($productid, [$photofile]);
+        //ProductPhoto::createWithPhotosFiles($productid, [$photofile]);
+        ProductPhoto::uploadFiles($productid, [$uploadFile]);
+        return $uploadFile->hashName();
     }
 
 }
