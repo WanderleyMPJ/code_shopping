@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2fce652a-17a1-4a5e-893a-795643fd0e1d" name="Default" comment="aula capturando dados com with">
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/ProductPhotoController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/ProductPhotoController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Requests/ProductPhotoRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/ProductPhotoRequest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/ProductPhoto.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/ProductPhoto.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -18,26 +16,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ProductPhoto.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/Models/ProductPhoto.php">
+      <file leaf-file-name="ProductPhotoController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/ProductPhotoController.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="482">
-              <caret line="56" column="29" selection-start-line="56" selection-start-column="29" selection-end-line="56" selection-end-column="29" />
+              <caret line="48" column="45" selection-start-line="48" selection-start-column="45" selection-end-line="48" selection-end-column="45" />
               <folding>
-                <element signature="e#72#116#0#PHP" expanded="true" />
+                <element signature="e#53#104#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ProductPhotoController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/ProductPhotoController.php">
+      <file leaf-file-name="2018_06_19_150937_add_soft_deletes_products_table.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/database/migrations/2018_06_19_150937_add_soft_deletes_products_table.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="533">
-              <caret line="51" selection-start-line="51" selection-end-line="51" />
-              <folding>
-                <element signature="e#53#104#0#PHP" expanded="true" />
-              </folding>
+            <state relative-caret-position="442">
+              <caret line="28" column="38" selection-start-line="28" selection-start-column="38" selection-end-line="28" selection-end-column="38" />
             </state>
           </provider>
         </entry>
@@ -111,8 +106,9 @@
         <option value="$PROJECT_DIR$/Comandos.txt" />
         <option value="$PROJECT_DIR$/database/seeds/ProductPhotosTableSeeder.php" />
         <option value="$PROJECT_DIR$/app/Http/Requests/ProductPhotoRequest.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/Api/ProductPhotoController.php" />
         <option value="$PROJECT_DIR$/app/Models/ProductPhoto.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Api/ProductPhotoController.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2018_06_19_150937_add_soft_deletes_products_table.php" />
       </list>
     </option>
   </component>
@@ -252,35 +248,13 @@
             <path>
               <item name="code_shopping" type="b2602c69:ProjectViewProjectNode" />
               <item name="code_shopping" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Http" type="462c0819:PsiDirectoryNode" />
-              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
+              <item name="database" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="code_shopping" type="b2602c69:ProjectViewProjectNode" />
               <item name="code_shopping" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Http" type="462c0819:PsiDirectoryNode" />
-              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
-              <item name="Api" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="code_shopping" type="b2602c69:ProjectViewProjectNode" />
-              <item name="code_shopping" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Http" type="462c0819:PsiDirectoryNode" />
-              <item name="Requests" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="code_shopping" type="b2602c69:ProjectViewProjectNode" />
-              <item name="code_shopping" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Models" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="code_shopping" type="b2602c69:ProjectViewProjectNode" />
-              <item name="code_shopping" type="462c0819:PsiDirectoryNode" />
-              <item name="routes" type="462c0819:PsiDirectoryNode" />
+              <item name="database" type="462c0819:PsiDirectoryNode" />
+              <item name="migrations" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="code_shopping" type="b2602c69:ProjectViewProjectNode" />
@@ -354,12 +328,12 @@
       <workItem from="1528229682593" duration="23155000" />
       <workItem from="1528496498840" duration="3160000" />
       <workItem from="1528722223413" duration="16678000" />
-      <workItem from="1528978757963" duration="27037000" />
+      <workItem from="1528978757963" duration="29061000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="94344000" />
+    <option name="totallyTimeSpent" value="96368000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -372,7 +346,7 @@
       <window_info anchor="bottom" id="Run" order="2" weight="0.1984252" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.284041" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22547585" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -410,13 +384,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/database/seeds/CategoriesTableSeeder.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" selection-start-line="3" selection-end-line="3" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/database/seeds/ProductInputsTableSeeder.php" />
     <entry file="file://$PROJECT_DIR$/database/factories/ProductFactory.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -704,23 +671,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/Models/ProductPhoto.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="55" column="9" selection-start-line="55" selection-start-column="9" selection-end-line="55" selection-end-column="9" />
+          <folding>
+            <element signature="e#72#116#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/ProductPhotoController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="533">
-          <caret line="51" selection-start-line="51" selection-end-line="51" />
+        <state relative-caret-position="482">
+          <caret line="48" column="45" selection-start-line="48" selection-start-column="45" selection-end-line="48" selection-end-column="45" />
           <folding>
             <element signature="e#53#104#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Models/ProductPhoto.php">
+    <entry file="file://$PROJECT_DIR$/database/migrations/2018_06_19_150937_add_soft_deletes_products_table.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="482">
-          <caret line="56" column="29" selection-start-line="56" selection-start-column="29" selection-end-line="56" selection-end-column="29" />
-          <folding>
-            <element signature="e#72#116#0#PHP" expanded="true" />
-          </folding>
+        <state relative-caret-position="442">
+          <caret line="28" column="38" selection-start-line="28" selection-start-column="38" selection-end-line="28" selection-end-column="38" />
         </state>
       </provider>
     </entry>
