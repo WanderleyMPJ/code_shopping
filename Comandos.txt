@@ -20,3 +20,11 @@ php artisan tinker
 
 ** link storage para a pasta public web
 php artisan storage:link
+
+** consultar um produto que seja deletado
+   - Product::withTrashed()->find(3);
+   Product::withTrashed()->get();
+   Product::withTrashed()->onlyTrashed(); // só o q esta excluido
+   $product->forcedelete(); apagar definitivamente
+   - $prouct->resotore();
+   - return $this->belongsTo(Product::Class)->withTrashed(); //pega os produtos excluidos do relacionamento também
