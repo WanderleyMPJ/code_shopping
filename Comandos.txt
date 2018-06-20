@@ -34,3 +34,9 @@ php artisan storage:link
 
  ** alterar email padrao reset password
     - php artisan vendor:publish --tag=laravel-notifications
+
+ ** jwt
+    - instalar:
+        - composer require tymon/jwt-auth:dev-develop
+    - gerar a chave
+        - php artisan jwt:secret
