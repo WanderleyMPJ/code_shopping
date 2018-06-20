@@ -2,6 +2,7 @@
 
 namespace CodeShopping\Http\Controllers\Api;
 
+use CodeShopping\Http\Requests\UserRequest;
 use CodeShopping\Http\Resources\UserResource;
 use CodeShopping\Models\User;
 use Illuminate\Http\Request;
@@ -15,9 +16,13 @@ class UserController extends Controller
         return UserResource::collection($users);
     }
 
-    public function store(Request $request)
+    public function store(UserRequest $request)
     {
-        //
+        $user = User::create($request->all());
+        $user->password = bcrypt($user->password);
+        $user->refresh();
+
+        return new UserResource($user);
     }
 
     public function show(User $user)
@@ -25,13 +30,18 @@ class UserController extends Controller
         return new UserResource($user);
     }
 
-    public function update(Request $request, $id)
+    public function update(UserRequest $request, User $user)
     {
-        //
+        $user->fill($request->all());
+        $user->password = bcrypt($user->password);
+        $user->save();
+
+        return new UserResource($user);
     }
 
-    public function destroy($id)
+    public function destroy(User $user)
     {
-        //
+        $user->delete();
+        return response([], 204);
     }
 }
