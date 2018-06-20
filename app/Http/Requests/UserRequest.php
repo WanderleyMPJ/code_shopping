@@ -13,24 +13,10 @@ class UserRequest extends FormRequest
 
     public function rules()
     {
-        return !$this->route('user') ? $this->rulesCreate() : $this->rulesUpdate();
-    }
-
-    private function rulesCreate()
-    {
         return [
             'name' => 'required|max:255',
-            'email' => 'required|unique:users',
-            'password'=> 'required'
-        ];
-    }
-
-    private function rulesUpdate()
-    {
-        return [
-            'name' => 'required|max:255',
-            'email' => 'required',
-            'password'=> 'required'
+            'email' => 'required|max:255|email|unique:users,email',
+            'password'=> 'required|min:4|max:16'
         ];
     }
 }

@@ -28,3 +28,9 @@ php artisan storage:link
    $product->forcedelete(); apagar definitivamente
    - $prouct->resotore();
    - return $this->belongsTo(Product::Class)->withTrashed(); //pega os produtos excluidos do relacionamento também
+
+ ** inserir metodos phpstorm
+    - alt + insert
+
+ ** alterar email padrao reset password
+    - php artisan vendor:publish --tag=laravel-notifications
