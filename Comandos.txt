@@ -34,3 +34,16 @@ php artisan storage:link
 
  ** alterar email padrao reset password
     - php artisan vendor:publish --tag=laravel-notifications
+
+** comandos postman
+    -- enviar o token
+        -- header -> Authorization => Bearer $token
+
+ ** COMANDO PHP STORM
+    - Add funcções
+        -- ALT ENTER em cima da classe
+
+  ** jwt
+    - habilitar autorefresh
+        -- alterar em kernel  protected $routeMiddleware e add a linha:
+           --- 'jwt.autorefresh'
