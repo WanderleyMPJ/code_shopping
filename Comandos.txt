@@ -47,3 +47,13 @@ php artisan storage:link
     - habilitar autorefresh
         -- alterar em kernel  protected $routeMiddleware e add a linha:
            --- 'jwt.autorefresh'
+
+** ANGULAR
+    * INSTALAR BOOTSTRAP
+        - npm install bootstrap --save
+    * INSTALAR jquery e popper.js
+        - npm install jquery opper.js --save
+    - add em angular.json o caminho do boostrap
+        -- node_modules/bootstrap/dist/css/bootstrap.min.css
+    - add em anuglar.json o caminho do java
+        -- node_modules/bootstrap/dist/js/bootstrap.min.js

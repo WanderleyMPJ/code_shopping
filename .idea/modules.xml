@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://D:/angular-app/.idea/angular-app.iml" filepath="D:/angular-app/.idea/angular-app.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/code_shopping.iml" filepath="$PROJECT_DIR$/.idea/code_shopping.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../erpEfficax/.idea/erpEfficax.iml" filepath="$PROJECT_DIR$/../erpEfficax/.idea/erpEfficax.iml" />
       <module fileurl="file://$PROJECT_DIR$/../erpSGE/.idea/erpSGE.iml" filepath="$PROJECT_DIR$/../erpSGE/.idea/erpSGE.iml" />
     </modules>
   </component>

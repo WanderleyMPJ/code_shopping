@@ -94,5 +94,7 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="erpSGE" />
+    <orderEntry type="module" module-name="erpEfficax" />
+    <orderEntry type="module" module-name="angular-app" />
   </component>
 </module>
