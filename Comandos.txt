@@ -1,6 +1,10 @@
 ***** HTML
     <TD*5 + TAB
 
+
+
+
+
 *** sql
 
 mysql -uroot -pEfficax@00
@@ -60,3 +64,9 @@ php artisan storage:link
         -- node_modules/bootstrap/dist/css/bootstrap.min.css
     - add em anuglar.json o caminho do java
         -- node_modules/bootstrap/dist/js/bootstrap.min.js
+
+        *** icones
+            -  npm install @fortawesome/fontawesome-free-webfonts --save
+            - add em angular.json em css
+                        "node_modules/@fortawesome/fontawesome-free-webfonts/css/fa-solid.css",
+                        "node_modules/@fortawesome/fontawesome-free-webfonts/css/fontawesome.css",
