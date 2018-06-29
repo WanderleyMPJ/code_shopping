@@ -16,6 +16,11 @@ const routes: Routes = [
     },
     {
       path: 'categories/list', component: CategoryListComponent
+    },
+    { // definindo o login como padrão se estiver vasio
+      path: '',
+        redirectTo: '/login',
+        pathMatch: 'full'
     }
 ]
 
