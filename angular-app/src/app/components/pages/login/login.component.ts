@@ -26,8 +26,10 @@ export class LoginComponent implements OnInit {
       //generics - Java
       this.http.post<any>('http://localhost:8000/api/login', this.credentials)
           .subscribe((data) => {
-              this.router.navigate(['categories/list']);
               const token = data.token;
+              window.localStorage.setItem('token', token);
+              this.router.navigate(['categories/list']);
+
           });
     return false;
   }

@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a9db8628-734b-49d9-bbb8-372ea7d6dce9" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/angular-app/src/app/components/pages/category/category-list/category-list.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/angular-app/src/app/components/pages/category/category-list/category-list.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular-app/src/app/components/pages/login/login.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/angular-app/src/app/components/pages/login/login.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../erpSGE/app/Http/Controllers/FormapgController.php" beforeDir="false" afterPath="$PROJECT_DIR$/../erpSGE/app/Http/Controllers/Cad/FormapgController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../erpSGE/app/Http/Controllers/FormapgParcelaController.php" beforeDir="false" afterPath="$PROJECT_DIR$/../erpSGE/app/Http/Controllers/Cad/FormapgParcelaController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../erpSGE/app/Http/Controllers/FormapgTipoController.php" beforeDir="false" afterPath="$PROJECT_DIR$/../erpSGE/app/Http/Controllers/Cad/FormapgTipoController.php" afterDir="false" />
@@ -29,7 +27,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="login.component.ts" pinned="false" current-in-tab="false">
+      <file leaf-file-name="login.component.ts" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/angular-app/src/app/components/pages/login/login.component.ts">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="172">
@@ -41,7 +39,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="category-list.component.ts" pinned="false" current-in-tab="true">
+      <file leaf-file-name="category-list.component.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/angular-app/src/app/components/pages/category/category-list/category-list.component.ts">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="306">
@@ -3128,12 +3126,12 @@
       <option name="presentableId" value="Default" />
       <updated>1530173964015</updated>
       <workItem from="1530174014337" duration="21000" />
-      <workItem from="1530174313777" duration="39722000" />
+      <workItem from="1530174313777" duration="39747000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="39743000" />
+    <option name="totallyTimeSpent" value="39768000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -3513,20 +3511,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/angular-app/src/app/components/pages/login/login.component.ts">
+    <entry file="file://$PROJECT_DIR$/angular-app/src/app/components/pages/category/category-list/category-list.component.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
-          <caret line="16" column="38" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="38" />
+        <state relative-caret-position="306">
+          <caret line="18" column="29" lean-forward="true" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
           <folding>
             <element signature="e#0#50#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/angular-app/src/app/components/pages/category/category-list/category-list.component.ts">
+    <entry file="file://$PROJECT_DIR$/angular-app/src/app/components/pages/login/login.component.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="29" lean-forward="true" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
+        <state relative-caret-position="172">
+          <caret line="16" column="38" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="38" />
           <folding>
             <element signature="e#0#50#0" expanded="true" />
           </folding>
