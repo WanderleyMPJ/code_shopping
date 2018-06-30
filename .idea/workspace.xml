@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a9db8628-734b-49d9-bbb8-372ea7d6dce9" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/Comandos.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Comandos.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular-app/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/angular-app/angular.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular-app/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/angular-app/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular-app/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/angular-app/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular-app/src/app/components/pages/category/category-list/category-list.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/angular-app/src/app/components/pages/category/category-list/category-list.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-app/src/app/components/pages/login/login.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/angular-app/src/app/components/pages/login/login.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-app/src/app/components/pages/login/login.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/angular-app/src/app/components/pages/login/login.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../erpSGE/app/Http/Controllers/FormapgController.php" beforeDir="false" afterPath="$PROJECT_DIR$/../erpSGE/app/Http/Controllers/Cad/FormapgController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../erpSGE/app/Http/Controllers/FormapgParcelaController.php" beforeDir="false" afterPath="$PROJECT_DIR$/../erpSGE/app/Http/Controllers/Cad/FormapgParcelaController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../erpSGE/app/Http/Controllers/FormapgTipoController.php" beforeDir="false" afterPath="$PROJECT_DIR$/../erpSGE/app/Http/Controllers/Cad/FormapgTipoController.php" afterDir="false" />
@@ -31,63 +28,7 @@
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="category-list.component.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/angular-app/src/app/components/pages/category/category-list/category-list.component.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="15" selection-start-line="11" selection-start-column="15" selection-end-line="11" selection-end-column="15" />
-              <folding>
-                <element signature="e#0#50#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="login.component.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/angular-app/src/app/components/pages/login/login.component.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="24" lean-forward="true" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="category-list.component.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/angular-app/src/app/components/pages/category/category-list/category-list.component.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="23" column="97" lean-forward="true" selection-start-line="23" selection-start-column="97" selection-end-line="23" selection-end-column="97" />
-              <folding>
-                <element signature="n#style#0;n#th#0;n#tr#1;n#thead#0;n#table#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#th#1;n#tr#1;n#thead#0;n#table#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#th#2;n#tr#1;n#thead#0;n#table#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#th#3;n#tr#1;n#thead#0;n#table#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#th#4;n#tr#1;n#thead#0;n#table#0;n#div#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Comandos.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Comandos.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="573">
-              <caret line="71" column="24" selection-start-line="71" selection-start-column="24" selection-end-line="71" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="angular.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/angular-app/angular.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="27" column="88" lean-forward="true" selection-start-line="26" selection-start-column="14" selection-end-line="27" selection-end-column="88" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -132,7 +73,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/../erpSGE/app/Http/Controllers/Cad/PessoaPessoaGrupoController.php" />
         <option value="$PROJECT_DIR$/../erpSGE/app/Http/Resources/Cad/MovNatOperacaoResource.php" />
         <option value="$PROJECT_DIR$/../erpSGE/app/Http/Controllers/Cad/MovNatOperacaoController.php" />
         <option value="$PROJECT_DIR$/../erpSGE/database/migrations/mov/2018_06_28_113727_create_movs_table.php" />
@@ -176,13 +116,14 @@
         <option value="$PROJECT_DIR$/../erpSGE/app/Http/Controllers/Cad/FormapgFormapgParcelaController.php" />
         <option value="$PROJECT_DIR$/app/Http/Middleware/CorsMiddleware.php" />
         <option value="$PROJECT_DIR$/angular-app/src/app/app.module.ts" />
-        <option value="$PROJECT_DIR$/angular-app/src/app/components/pages/login/login.component.ts" />
         <option value="$PROJECT_DIR$/routes/api.php" />
         <option value="$PROJECT_DIR$/angular-app/src/app/app.component.html" />
         <option value="$PROJECT_DIR$/angular-app/src/app/components/pages/category/category-list/category-list.component.ts" />
         <option value="$PROJECT_DIR$/angular-app/angular.json" />
         <option value="$PROJECT_DIR$/Comandos.txt" />
         <option value="$PROJECT_DIR$/angular-app/src/app/components/pages/category/category-list/category-list.component.html" />
+        <option value="$PROJECT_DIR$/angular-app/src/app/components/pages/login/login.component.ts" />
+        <option value="$PROJECT_DIR$/angular-app/src/app/components/pages/login/login.component.html" />
       </list>
     </option>
   </component>
@@ -2989,71 +2930,7 @@
           <expand>
             <path>
               <item name="code_shopping" type="b2602c69:ProjectViewProjectNode" />
-              <item name="code_shopping" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="code_shopping" type="b2602c69:ProjectViewProjectNode" />
-              <item name="code_shopping" type="462c0819:PsiDirectoryNode" />
-              <item name="angular-app" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="code_shopping" type="b2602c69:ProjectViewProjectNode" />
-              <item name="code_shopping" type="462c0819:PsiDirectoryNode" />
-              <item name="angular-app" type="462c0819:PsiDirectoryNode" />
-              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="code_shopping" type="b2602c69:ProjectViewProjectNode" />
-              <item name="code_shopping" type="462c0819:PsiDirectoryNode" />
-              <item name="angular-app" type="462c0819:PsiDirectoryNode" />
-              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
-              <item name="@fortawesome" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="code_shopping" type="b2602c69:ProjectViewProjectNode" />
-              <item name="code_shopping" type="462c0819:PsiDirectoryNode" />
-              <item name="angular-app" type="462c0819:PsiDirectoryNode" />
-              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
-              <item name="@fortawesome" type="462c0819:PsiDirectoryNode" />
-              <item name="fontawesome-free-webfonts" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="code_shopping" type="b2602c69:ProjectViewProjectNode" />
-              <item name="code_shopping" type="462c0819:PsiDirectoryNode" />
-              <item name="angular-app" type="462c0819:PsiDirectoryNode" />
-              <item name="node_modules" type="462c0819:PsiDirectoryNode" />
-              <item name="@fortawesome" type="462c0819:PsiDirectoryNode" />
-              <item name="fontawesome-free-webfonts" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="code_shopping" type="b2602c69:ProjectViewProjectNode" />
-              <item name="code_shopping" type="462c0819:PsiDirectoryNode" />
-              <item name="angular-app" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="code_shopping" type="b2602c69:ProjectViewProjectNode" />
-              <item name="code_shopping" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="code_shopping" type="b2602c69:ProjectViewProjectNode" />
-              <item name="code_shopping" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Http" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="code_shopping" type="b2602c69:ProjectViewProjectNode" />
-              <item name="code_shopping" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Http" type="462c0819:PsiDirectoryNode" />
-              <item name="Middleware" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="code_shopping" type="b2602c69:ProjectViewProjectNode" />
-              <item name="code_shopping" type="462c0819:PsiDirectoryNode" />
-              <item name="routes" type="462c0819:PsiDirectoryNode" />
+              <item name="erpSGE" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -3098,16 +2975,15 @@
       <option name="presentableId" value="Default" />
       <updated>1530173964015</updated>
       <workItem from="1530174014337" duration="21000" />
-      <workItem from="1530174313777" duration="44417000" />
+      <workItem from="1530174313777" duration="45494000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="44438000" />
+    <option name="totallyTimeSpent" value="45515000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" weight="0.32913387" />
@@ -3116,7 +2992,7 @@
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info anchor="bottom" id="TypeScript" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26573938" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2408492" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3511811" />
@@ -3425,16 +3301,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/angular-app/src/app/components/pages/login/login.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="410">
-          <caret line="30" column="53" selection-start-line="30" selection-start-column="53" selection-end-line="30" selection-end-column="53" />
-          <folding>
-            <element signature="e#0#50#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/angular-app/src/app/app.module.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="448">
@@ -3466,23 +3332,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/angular-app/src/app/components/pages/category/category-list/category-list.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="15" selection-start-line="11" selection-start-column="15" selection-end-line="11" selection-end-column="15" />
-          <folding>
-            <element signature="e#0#50#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/angular-app/src/app/components/pages/login/login.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="24" lean-forward="true" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/angular-app/angular.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="459">
@@ -3499,14 +3348,41 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/angular-app/src/app/components/pages/category/category-list/category-list.component.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="97" lean-forward="true" selection-start-line="23" selection-start-column="97" selection-end-line="23" selection-end-column="97" />
+        <state relative-caret-position="408">
+          <caret line="24" column="17" lean-forward="true" selection-start-line="24" selection-start-column="17" selection-end-line="24" selection-end-column="17" />
           <folding>
             <element signature="n#style#0;n#th#0;n#tr#1;n#thead#0;n#table#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#th#1;n#tr#1;n#thead#0;n#table#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#th#2;n#tr#1;n#thead#0;n#table#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#th#3;n#tr#1;n#thead#0;n#table#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#th#4;n#tr#1;n#thead#0;n#table#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angular-app/src/app/components/pages/login/login.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="427">
+          <caret line="31" selection-start-line="31" selection-end-line="31" />
+          <folding>
+            <element signature="e#0#50#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angular-app/src/app/components/pages/login/login.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="90" selection-start-column="90" selection-end-column="90" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angular-app/src/app/components/pages/category/category-list/category-list.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="15" selection-start-line="11" selection-start-column="15" selection-end-line="11" selection-end-column="15" />
+          <folding>
+            <element signature="e#0#50#0" expanded="true" />
           </folding>
         </state>
       </provider>
