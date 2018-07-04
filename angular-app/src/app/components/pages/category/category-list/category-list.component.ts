@@ -1,7 +1,12 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
+<<<<<<< HEAD
 import {HttpClient, HttpErrorResponse} from "@angular/common/http";
 import {CategoryNewModalComponent} from "../category-new-modal/category-new-modal.component";
 import {Router} from "@angular/router";
+=======
+import {HttpClient} from "@angular/common/http";
+import {CategoryNewModalComponent} from "../category-new-modal/category-new-modal.component";
+>>>>>>> c1e6900706a07923a88a7961e2838fdabf045487
 
 
 declare let $;
@@ -26,6 +31,7 @@ export class CategoryListComponent implements OnInit {
   }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
   submit(){
       const token = window.localStorage.getItem('token');
@@ -42,6 +48,8 @@ export class CategoryListComponent implements OnInit {
   }
 
 >>>>>>> parent of ad8a8e7... Usando novo modal no cadastro de categorias
+=======
+>>>>>>> c1e6900706a07923a88a7961e2838fdabf045487
   getCategories(){
       const token = window.localStorage.getItem('token');
       // this.http.get<{data: Array<any>}>('http://localhost:8000/api/categories', { *****exemplo
@@ -58,6 +66,7 @@ export class CategoryListComponent implements OnInit {
       this.categoryNewModal.showModal();
   }
 
+<<<<<<< HEAD
     onInsertSucess($event: any) {
         this.getCategories();
     }
@@ -65,4 +74,6 @@ export class CategoryListComponent implements OnInit {
     onInsertError($event: HttpErrorResponse) {
         console.log($event);
     }
+=======
+>>>>>>> c1e6900706a07923a88a7961e2838fdabf045487
 }

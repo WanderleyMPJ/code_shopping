@@ -5,7 +5,10 @@
       <change beforePath="$PROJECT_DIR$/angular-app/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/angular-app/src/app/app.module.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/angular-app/src/app/components/pages/category/category-list/category-list.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/angular-app/src/app/components/pages/category/category-list/category-list.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/angular-app/src/app/components/pages/category/category-list/category-list.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/angular-app/src/app/components/pages/category/category-list/category-list.component.ts" afterDir="false" />
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/angular-app/src/app/components/pages/category/category-new-modal/category-new-modal.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/angular-app/src/app/components/pages/category/category-new-modal/category-new-modal.component.ts" afterDir="false" />
+=======
+>>>>>>> c1e6900706a07923a88a7961e2838fdabf045487
       <change beforePath="$PROJECT_DIR$/../erpSGE/app/Http/Controllers/Mov/MovController.php" beforeDir="false" afterPath="$PROJECT_DIR$/../erpSGE/app/Http/Controllers/Mov/MovController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../erpSGE/app/Http/Requests/Mov/MovRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/../erpSGE/app/Http/Requests/Mov/MovRequest.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../erpSGE/app/Models/Mov/Mov.php" beforeDir="false" afterPath="$PROJECT_DIR$/../erpSGE/app/Models/Mov/Mov.php" afterDir="false" />
@@ -22,6 +25,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+<<<<<<< HEAD
       <file leaf-file-name="app.module.ts" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/angular-app/src/app/app.module.ts">
           <provider selected="true" editor-type-id="text-editor">
@@ -31,6 +35,34 @@
                 <element signature="e#0#58#0" expanded="true" />
                 <element signature="e#334#427#0" expanded="true" />
               </folding>
+=======
+      <file leaf-file-name="category-new-modal.component.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/angular-app/src/app/components/pages/category/category-new-modal/category-new-modal.component.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="48" lean-forward="true" selection-start-line="2" selection-start-column="48" selection-end-line="2" selection-end-column="48" />
+              <folding>
+                <element signature="e#0#59#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="category-list.component.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/angular-app/src/app/components/pages/category/category-list/category-list.component.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="482">
+              <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="category-new-modal.component.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/angular-app/src/app/components/pages/category/category-new-modal/category-new-modal.component.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="271">
+              <caret line="16" selection-start-line="16" selection-end-line="16" />
+>>>>>>> c1e6900706a07923a88a7961e2838fdabf045487
             </state>
           </provider>
         </entry>
@@ -97,6 +129,10 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+<<<<<<< HEAD
+=======
+        <option value="$PROJECT_DIR$/../erpSGE/app/Http/Resources/Cad/PlanocontaResource.php" />
+>>>>>>> c1e6900706a07923a88a7961e2838fdabf045487
         <option value="$PROJECT_DIR$/../erpSGE/app/Http/Requests/Cad/PlanocontaRequest.php" />
         <option value="$PROJECT_DIR$/../erpSGE/app/Http/Controllers/Cad/PlanocontaController.php" />
         <option value="$PROJECT_DIR$/../erpSGE/database/factories/CaixabancoTipoFactory.php" />
@@ -142,12 +178,20 @@
         <option value="$PROJECT_DIR$/angular-app/src/app/components/bootstrap/alert-error/alert-error.component.ts" />
         <option value="$PROJECT_DIR$/angular-app/src/app/components/bootstrap/modal/modal.component.html" />
         <option value="$PROJECT_DIR$/angular-app/src/app/components/pages/category/category-new-modal/category-new-modal.component.html" />
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/angular-app/src/app/components/bootstrap/modal/modal.component.ts" />
         <option value="$PROJECT_DIR$/angular-app/src/app/components/pages/category/category-new-modal/category-new-modal.component.ts" />
         <option value="$PROJECT_DIR$/angular-app/src/app/components/pages/category/category-list/category-list.component.html" />
         <option value="$PROJECT_DIR$/angular-app/src/app/components/pages/category/category-list/category-list.component.ts" />
         <option value="$PROJECT_DIR$/angular-app/src/app/app.module.ts" />
         <option value="$PROJECT_DIR$/angular-app/src/app/components/pages/login/login.component.ts" />
+=======
+        <option value="$PROJECT_DIR$/angular-app/src/app/components/pages/category/category-list/category-list.component.html" />
+        <option value="$PROJECT_DIR$/angular-app/src/app/app.module.ts" />
+        <option value="$PROJECT_DIR$/angular-app/src/app/components/bootstrap/modal/modal.component.ts" />
+        <option value="$PROJECT_DIR$/angular-app/src/app/components/pages/category/category-list/category-list.component.ts" />
+        <option value="$PROJECT_DIR$/angular-app/src/app/components/pages/category/category-new-modal/category-new-modal.component.ts" />
+>>>>>>> c1e6900706a07923a88a7961e2838fdabf045487
       </list>
     </option>
   </component>
@@ -262,7 +306,11 @@
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="701" />
     <option name="width" value="642" />
+<<<<<<< HEAD
     <option name="height" value="464" />
+=======
+    <option name="height" value="505" />
+>>>>>>> c1e6900706a07923a88a7961e2838fdabf045487
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -419,12 +467,20 @@
       <updated>1530173964015</updated>
       <workItem from="1530174014337" duration="21000" />
       <workItem from="1530174313777" duration="47868000" />
+<<<<<<< HEAD
       <workItem from="1530357309516" duration="50351000" />
+=======
+      <workItem from="1530357309516" duration="47299000" />
+>>>>>>> c1e6900706a07923a88a7961e2838fdabf045487
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="98240000" />
+=======
+    <option name="totallyTimeSpent" value="95188000" />
+>>>>>>> c1e6900706a07923a88a7961e2838fdabf045487
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -437,7 +493,11 @@
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info anchor="bottom" id="TypeScript" order="8" />
+<<<<<<< HEAD
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28916544" />
+=======
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26207906" />
+>>>>>>> c1e6900706a07923a88a7961e2838fdabf045487
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -486,6 +546,19 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
+<<<<<<< HEAD
+=======
+    <entry file="file://$PROJECT_DIR$/../erpSGE/database/seeds/Cad/EmpresaTableSeeder.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../erpSGE/database/seeds/Cad/CcTipoTableSeeder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="38" selection-start-line="12" selection-start-column="38" selection-end-line="12" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+>>>>>>> c1e6900706a07923a88a7961e2838fdabf045487
     <entry file="file://$PROJECT_DIR$/../erpSGE/app/Models/Cad/Empresa.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
@@ -764,6 +837,7 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/angular-app/src/app/components/bootstrap/alert-error/alert-error.component.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -772,6 +846,9 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/angular-app/src/app/components/bootstrap/modal/modal.component.ts">
+=======
+    <entry file="file://$PROJECT_DIR$/angular-app/src/app/components/pages/login/login.component.ts">
+>>>>>>> c1e6900706a07923a88a7961e2838fdabf045487
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="11" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="11" />
@@ -792,10 +869,34 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/angular-app/src/app/components/pages/login/login.component.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="1" column="24" selection-start-line="1" selection-start-column="24" selection-end-line="1" selection-end-column="24" />
+=======
+    <entry file="file://$PROJECT_DIR$/angular-app/src/app/components/pages/category/category-new-modal/category-new-modal.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="271">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angular-app/src/app/app.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="431">
+          <caret line="36" column="31" lean-forward="true" selection-start-line="36" selection-start-column="31" selection-end-line="36" selection-end-column="31" />
+          <folding>
+            <element signature="e#0#58#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angular-app/src/app/components/bootstrap/modal/modal.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="11" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="11" />
+>>>>>>> c1e6900706a07923a88a7961e2838fdabf045487
         </state>
       </provider>
     </entry>
@@ -804,16 +905,35 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/angular-app/src/app/components/pages/category/category-list/category-list.component.ts">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="136">
           <caret line="9" column="26" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#61#0" expanded="true" />
+          </folding>
+=======
+        <state relative-caret-position="142">
+          <caret line="15" column="38" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="38" />
           <folding>
             <element signature="e#0#61#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/angular-app/src/app/components/pages/category/category-new-modal/category-new-modal.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="48" lean-forward="true" selection-start-line="2" selection-start-column="48" selection-end-line="2" selection-end-column="48" />
+          <folding>
+            <element signature="e#0#59#0" expanded="true" />
+          </folding>
+>>>>>>> c1e6900706a07923a88a7961e2838fdabf045487
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/angular-app/src/app/components/pages/category/category-list/category-list.component.html">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="544">
           <caret line="32" column="60" lean-forward="true" selection-start-line="32" selection-start-column="60" selection-end-line="32" selection-end-column="60" />
         </state>
@@ -847,6 +967,10 @@
             <element signature="e#0#58#0" expanded="true" />
             <element signature="e#334#427#0" expanded="true" />
           </folding>
+=======
+        <state relative-caret-position="482">
+          <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
+>>>>>>> c1e6900706a07923a88a7961e2838fdabf045487
         </state>
       </provider>
     </entry>

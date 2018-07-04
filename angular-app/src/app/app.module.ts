@@ -10,7 +10,10 @@ import {RouterModule, Routes} from '@angular/router';
 import {HttpClientModule} from "@angular/common/http";
 import { ModalComponent } from './components/bootstrap/modal/modal.component';
 import { CategoryNewModalComponent } from './components/pages/category/category-new-modal/category-new-modal.component';
+<<<<<<< HEAD
 import {CategoryListComponent} from "./components/pages/category/category-list/category-list.component";
+=======
+>>>>>>> c1e6900706a07923a88a7961e2838fdabf045487
 
 
 
@@ -33,9 +36,15 @@ const routes: Routes = [
     AppComponent,
     LoginComponent,
     CategoryListComponent,
+<<<<<<< HEAD
     AlertErrorComponent,
     ModalComponent,
     CategoryNewModalComponent
+=======
+      AlertErrorComponent,
+      ModalComponent,
+      CategoryNewModalComponent
+>>>>>>> c1e6900706a07923a88a7961e2838fdabf045487
   ],
   imports: [
     BrowserModule,
