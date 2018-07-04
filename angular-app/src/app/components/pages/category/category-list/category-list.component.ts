@@ -1,7 +1,7 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
-import {Router} from "@angular/router";
 import {HttpClient} from "@angular/common/http";
-import {ModalComponent} from "../../../bootstrap/modal/modal.component";
+import {CategoryNewModalComponent} from "../category-new-modal/category-new-modal.component";
+
 
 declare let $;
 
@@ -12,37 +12,16 @@ declare let $;
 })
 export class CategoryListComponent implements OnInit {
 
-
-
   categories : Array<{id: number, name: string, active: boolean, created_at: {date: string}}> = [];
 
-  category = {
-      name: ''
-  }
-
-  @ViewChild(ModalComponent)
-  modal: ModalComponent;
+  @ViewChild(CategoryNewModalComponent)
+  categoryNewModal: CategoryNewModalComponent;
 
   constructor(private http: HttpClient) {
-
   }
 
   ngOnInit() {
     this.getCategories();
-  }
-
-  submit(){
-      const token = window.localStorage.getItem('token');
-    this.http.post('http://localhost:8000/api/categories', this.category, {
-        headers:{
-          'Authorization': `Bearer ${token}`
-        }
-      })
-        .subscribe((category) => {
-            console.log(category);
-            this.modal.hide();
-            this.getCategories();
-        });
   }
 
   getCategories(){
@@ -57,12 +36,8 @@ export class CategoryListComponent implements OnInit {
           .subscribe(response => this.categories = response.data);
   }
 
-  showModal(){
-      this.modal.show();
+  showModalinsert(){
+      this.categoryNewModal.showModal();
   }
 
-    hideModal($event: Event){
-      // fazer algo quando o model foi fechado
-      console.log($event);
-    }
 }
