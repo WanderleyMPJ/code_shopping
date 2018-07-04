@@ -25,6 +25,23 @@ export class CategoryListComponent implements OnInit {
     this.getCategories();
   }
 
+<<<<<<< HEAD
+=======
+  submit(){
+      const token = window.localStorage.getItem('token');
+    this.http.post('http://localhost:8000/api/categories', this.category, {
+        headers:{
+          'Authorization': `Bearer ${token}`
+        }
+      })
+        .subscribe((category) => {
+            console.log(category);
+            this.getCategories();
+            $('#exampleModal').modal('hide')
+        });
+  }
+
+>>>>>>> parent of ad8a8e7... Usando novo modal no cadastro de categorias
   getCategories(){
       const token = window.localStorage.getItem('token');
       // this.http.get<{data: Array<any>}>('http://localhost:8000/api/categories', { *****exemplo

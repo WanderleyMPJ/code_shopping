@@ -4,7 +4,11 @@
     <thead>
       <tr>
         <td colspan="5">
+<<<<<<< HEAD
           <button class="btn btn-primary" (click)="showModalinsert()" >Nova Categoria</button>
+=======
+          <button class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Nova Categoria</button>
+>>>>>>> parent of ad8a8e7... Usando novo modal no cadastro de categorias
         </td>
       </tr>
       <tr>
@@ -29,5 +33,23 @@
       </tbody>
   </table>
 </div>
+<<<<<<< HEAD
 <category-new-modal
     (onSucess)="onInsertSucess($event)" (onError)="onInsertError($event)" )></category-new-modal>
+=======
+<modal (onHide)="hideModal($event)">
+    <h1 modal-title>
+        Titulo
+    </h1>
+    <div modal-body>
+        body
+    </div>
+    <div modal-footer>
+        footer
+    </div>
+</modal>
+<form (submit)="submit()">
+
+</form>
+     
+>>>>>>> parent of ad8a8e7... Usando novo modal no cadastro de categorias
