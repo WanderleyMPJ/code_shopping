@@ -29,6 +29,7 @@
       </tbody>
   </table>
 </div>
+<form (submit)="submit()">
 <div class="modal" tabindex="-1" role="dialog" id="exampleModal">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
@@ -39,12 +40,13 @@
                 </button>
             </div>
             <div class="modal-body">
-                <form>
+
                     <div class="form-group">
                         <label for="name">Nome</label>
-                        <input type="text" class="form-control" id="name" name="name" required>
+                        <input type="text" class="form-control" id="name" name="name" required
+                            [(ngModel)]="category.name">
                     </div>
-                </form>
+
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
@@ -53,4 +55,5 @@
         </div>
     </div>
 </div>
+</form>
      
