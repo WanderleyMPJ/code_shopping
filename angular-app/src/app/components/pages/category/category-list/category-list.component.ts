@@ -1,6 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import {Router} from "@angular/router";
 import {HttpClient} from "@angular/common/http";
+import {ModalComponent} from "../../../bootstrap/modal/modal.component";
 
 declare let $;
 
@@ -18,6 +19,9 @@ export class CategoryListComponent implements OnInit {
   category = {
       name: ''
   }
+
+  @ViewChild(ModalComponent)
+  modal: ModalComponent;
 
   constructor(private http: HttpClient) {
 
@@ -51,5 +55,9 @@ export class CategoryListComponent implements OnInit {
           }
       })
           .subscribe(response => this.categories = response.data);
+  }
+
+  showModal(){
+      this.modal.show();
   }
 }
