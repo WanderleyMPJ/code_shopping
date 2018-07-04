@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a9db8628-734b-49d9-bbb8-372ea7d6dce9" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/angular-app/src/app/components/bootstrap/modal/modal.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/angular-app/src/app/components/bootstrap/modal/modal.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular-app/src/app/components/bootstrap/modal/modal.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/angular-app/src/app/components/bootstrap/modal/modal.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/angular-app/src/app/components/pages/category/category-list/category-list.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/angular-app/src/app/components/pages/category/category-list/category-list.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular-app/src/app/components/pages/category/category-list/category-list.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/angular-app/src/app/components/pages/category/category-list/category-list.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../erpSGE/app/Http/Controllers/Mov/MovController.php" beforeDir="false" afterPath="$PROJECT_DIR$/../erpSGE/app/Http/Controllers/Mov/MovController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../erpSGE/app/Http/Requests/Mov/MovRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/../erpSGE/app/Http/Requests/Mov/MovRequest.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../erpSGE/app/Models/Mov/Mov.php" beforeDir="false" afterPath="$PROJECT_DIR$/../erpSGE/app/Models/Mov/Mov.php" afterDir="false" />
@@ -22,20 +19,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="modal.component.ts" pinned="false" current-in-tab="true">
+      <file leaf-file-name="modal.component.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/angular-app/src/app/components/bootstrap/modal/modal.component.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
+            <state relative-caret-position="193">
               <caret line="26" column="26" selection-start-line="26" selection-start-column="26" selection-end-line="26" selection-end-column="26" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="category-list.component.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="category-list.component.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/angular-app/src/app/components/pages/category/category-list/category-list.component.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="32" column="20" lean-forward="true" selection-start-line="32" selection-start-column="20" selection-end-line="32" selection-end-column="20" />
+            <state relative-caret-position="102">
+              <caret line="6" column="62" lean-forward="true" selection-start-line="6" selection-start-column="62" selection-end-line="6" selection-end-column="62" />
             </state>
           </provider>
         </entry>
@@ -43,8 +40,8 @@
       <file leaf-file-name="category-list.component.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/angular-app/src/app/components/pages/category/category-list/category-list.component.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="237">
-              <caret line="62" lean-forward="true" selection-start-line="62" selection-end-line="62" />
+            <state relative-caret-position="414">
+              <caret line="64" column="46" selection-start-line="64" selection-start-column="46" selection-end-line="64" selection-end-column="46" />
             </state>
           </provider>
         </entry>
@@ -159,9 +156,9 @@
         <option value="$PROJECT_DIR$/angular-app/src/app/components/bootstrap/alert-error/alert-error.component.ts" />
         <option value="$PROJECT_DIR$/angular-app/src/app/app.module.ts" />
         <option value="$PROJECT_DIR$/angular-app/src/app/components/bootstrap/modal/modal.component.html" />
-        <option value="$PROJECT_DIR$/angular-app/src/app/components/pages/category/category-list/category-list.component.html" />
-        <option value="$PROJECT_DIR$/angular-app/src/app/components/pages/category/category-list/category-list.component.ts" />
         <option value="$PROJECT_DIR$/angular-app/src/app/components/bootstrap/modal/modal.component.ts" />
+        <option value="$PROJECT_DIR$/angular-app/src/app/components/pages/category/category-list/category-list.component.ts" />
+        <option value="$PROJECT_DIR$/angular-app/src/app/components/pages/category/category-list/category-list.component.html" />
       </list>
     </option>
   </component>
@@ -421,12 +418,12 @@
       <updated>1530173964015</updated>
       <workItem from="1530174014337" duration="21000" />
       <workItem from="1530174313777" duration="47868000" />
-      <workItem from="1530357309516" duration="45647000" />
+      <workItem from="1530357309516" duration="46221000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="93536000" />
+    <option name="totallyTimeSpent" value="94110000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="701" y="0" width="642" height="465" extended-state="0" />
@@ -815,24 +812,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/angular-app/src/app/components/pages/category/category-list/category-list.component.html">
+    <entry file="file://$PROJECT_DIR$/angular-app/src/app/components/bootstrap/modal/modal.component.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="32" column="20" lean-forward="true" selection-start-line="32" selection-start-column="20" selection-end-line="32" selection-end-column="20" />
+        <state relative-caret-position="193">
+          <caret line="26" column="26" selection-start-line="26" selection-start-column="26" selection-end-line="26" selection-end-column="26" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/angular-app/src/app/components/pages/category/category-list/category-list.component.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="237">
-          <caret line="62" lean-forward="true" selection-start-line="62" selection-end-line="62" />
+        <state relative-caret-position="414">
+          <caret line="64" column="46" selection-start-line="64" selection-start-column="46" selection-end-line="64" selection-end-column="46" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/angular-app/src/app/components/bootstrap/modal/modal.component.ts">
+    <entry file="file://$PROJECT_DIR$/angular-app/src/app/components/pages/category/category-list/category-list.component.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="26" column="26" selection-start-line="26" selection-start-column="26" selection-end-line="26" selection-end-column="26" />
+        <state relative-caret-position="102">
+          <caret line="6" column="62" lean-forward="true" selection-start-line="6" selection-start-column="62" selection-end-line="6" selection-end-column="62" />
         </state>
       </provider>
     </entry>
