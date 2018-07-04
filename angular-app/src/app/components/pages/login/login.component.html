@@ -1,5 +1,5 @@
 <div class="col col-md-4 offset-4"*ngIf="showMessageError">
-    <alert-error [show]="showMessageError">Credenciais Invalidas</alert-error>
+    <alert-error [(show)]="showMessageError">Credenciais Invalidas</alert-error>
 </div>
 
 <form class="form-signin" (submit)="submit()">
