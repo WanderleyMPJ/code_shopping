@@ -1,48 +1,28 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
+import {HttpClient, HttpErrorResponse} from "@angular/common/http";
+import {CategoryNewModalComponent} from "../category-new-modal/category-new-modal.component";
 import {Router} from "@angular/router";
-import {HttpClient} from "@angular/common/http";
-import {ModalComponent} from "../../../bootstrap/modal/modal.component";
+
 
 declare let $;
 
 @Component({
-  selector: 'app-category-list',
+  selector: 'category-list',
   templateUrl: './category-list.component.html',
   styleUrls: ['./category-list.component.css']
 })
 export class CategoryListComponent implements OnInit {
 
-
-
   categories : Array<{id: number, name: string, active: boolean, created_at: {date: string}}> = [];
 
-  category = {
-      name: ''
-  }
-
-  @ViewChild(ModalComponent)
-  modal: ModalComponent;
+  @ViewChild(CategoryNewModalComponent)
+  categoryNewModal: CategoryNewModalComponent;
 
   constructor(private http: HttpClient) {
-
   }
 
   ngOnInit() {
     this.getCategories();
-  }
-
-  submit(){
-      const token = window.localStorage.getItem('token');
-    this.http.post('http://localhost:8000/api/categories', this.category, {
-        headers:{
-          'Authorization': `Bearer ${token}`
-        }
-      })
-        .subscribe((category) => {
-            console.log(category);
-            this.modal.hide();
-            this.getCategories();
-        });
   }
 
   getCategories(){
@@ -57,12 +37,15 @@ export class CategoryListComponent implements OnInit {
           .subscribe(response => this.categories = response.data);
   }
 
-  showModal(){
-      this.modal.show();
+  showModalinsert(){
+      this.categoryNewModal.showModal();
   }
 
-    hideModal($event: Event){
-      // fazer algo quando o model foi fechado
-      console.log($event);
+    onInsertSucess($event: any) {
+        this.getCategories();
+    }
+
+    onInsertError($event: HttpErrorResponse) {
+        console.log($event);
     }
 }
