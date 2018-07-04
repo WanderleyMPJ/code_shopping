@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a9db8628-734b-49d9-bbb8-372ea7d6dce9" name="Default" comment="">
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/angular-app/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/angular-app/src/app/app.module.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/angular-app/src/app/components/pages/category/category-list/category-list.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/angular-app/src/app/components/pages/category/category-list/category-list.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/angular-app/src/app/components/pages/category/category-list/category-list.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/angular-app/src/app/components/pages/category/category-list/category-list.component.ts" afterDir="false" />
@@ -9,6 +10,12 @@
       <change beforePath="$PROJECT_DIR$/angular-app/src/app/components/pages/category/category-new-modal/category-new-modal.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/angular-app/src/app/components/pages/category/category-new-modal/category-new-modal.component.ts" afterDir="false" />
 =======
 >>>>>>> c1e6900706a07923a88a7961e2838fdabf045487
+=======
+      <change beforePath="$PROJECT_DIR$/angular-app/src/app/components/bootstrap/modal/modal.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/angular-app/src/app/components/bootstrap/modal/modal.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-app/src/app/components/bootstrap/modal/modal.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/angular-app/src/app/components/bootstrap/modal/modal.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-app/src/app/components/pages/category/category-list/category-list.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/angular-app/src/app/components/pages/category/category-list/category-list.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-app/src/app/components/pages/category/category-list/category-list.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/angular-app/src/app/components/pages/category/category-list/category-list.component.ts" afterDir="false" />
+>>>>>>> parent of ad8a8e7... Usando novo modal no cadastro de categorias
       <change beforePath="$PROJECT_DIR$/../erpSGE/app/Http/Controllers/Mov/MovController.php" beforeDir="false" afterPath="$PROJECT_DIR$/../erpSGE/app/Http/Controllers/Mov/MovController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../erpSGE/app/Http/Requests/Mov/MovRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/../erpSGE/app/Http/Requests/Mov/MovRequest.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../erpSGE/app/Models/Mov/Mov.php" beforeDir="false" afterPath="$PROJECT_DIR$/../erpSGE/app/Models/Mov/Mov.php" afterDir="false" />
@@ -25,6 +32,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+<<<<<<< HEAD
 <<<<<<< HEAD
       <file leaf-file-name="app.module.ts" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/angular-app/src/app/app.module.ts">
@@ -44,15 +52,27 @@
               <folding>
                 <element signature="e#0#59#0" expanded="true" />
               </folding>
+=======
+      <file leaf-file-name="modal.component.ts" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/angular-app/src/app/components/bootstrap/modal/modal.component.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="26" column="26" selection-start-line="26" selection-start-column="26" selection-end-line="26" selection-end-column="26" />
+>>>>>>> parent of ad8a8e7... Usando novo modal no cadastro de categorias
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="category-list.component.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="category-list.component.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/angular-app/src/app/components/pages/category/category-list/category-list.component.html">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="482">
               <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
+=======
+            <state relative-caret-position="34">
+              <caret line="32" column="20" lean-forward="true" selection-start-line="32" selection-start-column="20" selection-end-line="32" selection-end-column="20" />
+>>>>>>> parent of ad8a8e7... Usando novo modal no cadastro de categorias
             </state>
           </provider>
         </entry>
@@ -60,9 +80,14 @@
       <file leaf-file-name="category-new-modal.component.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/angular-app/src/app/components/pages/category/category-new-modal/category-new-modal.component.html">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="271">
               <caret line="16" selection-start-line="16" selection-end-line="16" />
 >>>>>>> c1e6900706a07923a88a7961e2838fdabf045487
+=======
+            <state relative-caret-position="237">
+              <caret line="62" lean-forward="true" selection-start-line="62" selection-end-line="62" />
+>>>>>>> parent of ad8a8e7... Usando novo modal no cadastro de categorias
             </state>
           </provider>
         </entry>
@@ -177,6 +202,7 @@
         <option value="$PROJECT_DIR$/angular-app/src/app/components/pages/login/login.component.html" />
         <option value="$PROJECT_DIR$/angular-app/src/app/components/bootstrap/alert-error/alert-error.component.ts" />
         <option value="$PROJECT_DIR$/angular-app/src/app/components/bootstrap/modal/modal.component.html" />
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/angular-app/src/app/components/pages/category/category-new-modal/category-new-modal.component.html" />
 <<<<<<< HEAD
         <option value="$PROJECT_DIR$/angular-app/src/app/components/bootstrap/modal/modal.component.ts" />
@@ -192,6 +218,11 @@
         <option value="$PROJECT_DIR$/angular-app/src/app/components/pages/category/category-list/category-list.component.ts" />
         <option value="$PROJECT_DIR$/angular-app/src/app/components/pages/category/category-new-modal/category-new-modal.component.ts" />
 >>>>>>> c1e6900706a07923a88a7961e2838fdabf045487
+=======
+        <option value="$PROJECT_DIR$/angular-app/src/app/components/pages/category/category-list/category-list.component.html" />
+        <option value="$PROJECT_DIR$/angular-app/src/app/components/pages/category/category-list/category-list.component.ts" />
+        <option value="$PROJECT_DIR$/angular-app/src/app/components/bootstrap/modal/modal.component.ts" />
+>>>>>>> parent of ad8a8e7... Usando novo modal no cadastro de categorias
       </list>
     </option>
   </component>
@@ -468,19 +499,27 @@
       <workItem from="1530174014337" duration="21000" />
       <workItem from="1530174313777" duration="47868000" />
 <<<<<<< HEAD
+<<<<<<< HEAD
       <workItem from="1530357309516" duration="50351000" />
 =======
       <workItem from="1530357309516" duration="47299000" />
 >>>>>>> c1e6900706a07923a88a7961e2838fdabf045487
+=======
+      <workItem from="1530357309516" duration="45647000" />
+>>>>>>> parent of ad8a8e7... Usando novo modal no cadastro de categorias
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
 <<<<<<< HEAD
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="98240000" />
 =======
     <option name="totallyTimeSpent" value="95188000" />
 >>>>>>> c1e6900706a07923a88a7961e2838fdabf045487
+=======
+    <option name="totallyTimeSpent" value="93536000" />
+>>>>>>> parent of ad8a8e7... Usando novo modal no cadastro de categorias
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -939,6 +978,7 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/angular-app/src/app/components/pages/login/login.component.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="550">
@@ -946,11 +986,18 @@
           <folding>
             <element signature="e#0#50#0" expanded="true" />
           </folding>
+=======
+    <entry file="file://$PROJECT_DIR$/angular-app/src/app/components/pages/category/category-list/category-list.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="32" column="20" lean-forward="true" selection-start-line="32" selection-start-column="20" selection-end-line="32" selection-end-column="20" />
+>>>>>>> parent of ad8a8e7... Usando novo modal no cadastro de categorias
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/angular-app/src/app/components/pages/category/category-new-modal/category-new-modal.component.ts">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="612">
           <caret line="36" column="50" selection-start-line="36" selection-start-column="50" selection-end-line="36" selection-end-column="50" />
           <folding>
@@ -971,6 +1018,17 @@
         <state relative-caret-position="482">
           <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
 >>>>>>> c1e6900706a07923a88a7961e2838fdabf045487
+=======
+        <state relative-caret-position="237">
+          <caret line="62" lean-forward="true" selection-start-line="62" selection-end-line="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angular-app/src/app/components/bootstrap/modal/modal.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="26" column="26" selection-start-line="26" selection-start-column="26" selection-end-line="26" selection-end-column="26" />
+>>>>>>> parent of ad8a8e7... Usando novo modal no cadastro de categorias
         </state>
       </provider>
     </entry>
