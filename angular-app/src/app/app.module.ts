@@ -8,6 +8,7 @@ import {AlertErrorComponent} from "./components/bootstrap/alert-error/alert-erro
 import {FormsModule} from "@angular/forms";
 import {RouterModule, Routes} from '@angular/router';
 import {HttpClientModule} from "@angular/common/http";
+import { ModalComponent } from './components/bootstrap/modal/modal.component';
 
 
 
@@ -30,7 +31,8 @@ const routes: Routes = [
     AppComponent,
     LoginComponent,
     CategoryListComponent,
-      AlertErrorComponent
+      AlertErrorComponent,
+      ModalComponent
   ],
   imports: [
     BrowserModule,
