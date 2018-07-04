@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a9db8628-734b-49d9-bbb8-372ea7d6dce9" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/angular-app/src/app/components/bootstrap/alert-error/alert-error.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/angular-app/src/app/components/bootstrap/alert-error/alert-error.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-app/src/app/components/pages/category/category-list/category-list.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/angular-app/src/app/components/pages/category/category-list/category-list.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../erpSGE/app/Http/Controllers/Mov/MovController.php" beforeDir="false" afterPath="$PROJECT_DIR$/../erpSGE/app/Http/Controllers/Mov/MovController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../erpSGE/app/Http/Requests/Mov/MovRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/../erpSGE/app/Http/Requests/Mov/MovRequest.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../erpSGE/app/Models/Mov/Mov.php" beforeDir="false" afterPath="$PROJECT_DIR$/../erpSGE/app/Models/Mov/Mov.php" afterDir="false" />
@@ -19,11 +20,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="alert-error.component.ts" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/angular-app/src/app/components/bootstrap/alert-error/alert-error.component.ts">
+      <file leaf-file-name="category-list.component.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/angular-app/src/app/components/pages/category/category-list/category-list.component.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="25" column="22" lean-forward="true" selection-start-line="25" selection-start-column="22" selection-end-line="25" selection-end-column="22" />
+            <state relative-caret-position="467">
+              <caret line="47" column="18" lean-forward="true" selection-start-line="47" selection-start-column="18" selection-end-line="47" selection-end-column="18" />
+              <folding>
+                <element signature="e#1255#1262#1" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -90,7 +94,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/../erpSGE/app/Http/Resources/Cad/PessoaEnderecoResource.php" />
         <option value="$PROJECT_DIR$/../erpSGE/app/Http/Requests/Cad/PessoaEnderecoRequest.php" />
         <option value="$PROJECT_DIR$/../erpSGE/app/Http/Controllers/Cad/PessoaPessoaEnderecoController.php" />
         <option value="$PROJECT_DIR$/../erpSGE/database/migrations/2018_05_08_211123_create_plano_contas_table.php" />
@@ -105,8 +108,6 @@
         <option value="$PROJECT_DIR$/../erpSGE/database/seeds/Cad/CaixabancoTableSeeder.php" />
         <option value="$PROJECT_DIR$/../erpSGE/database/migrations/2018_07_02_133146_create_caixabancos_table.php" />
         <option value="$PROJECT_DIR$/angular-app/src/app/app.module.ts" />
-        <option value="$PROJECT_DIR$/angular-app/src/app/components/pages/login/login.component.html" />
-        <option value="$PROJECT_DIR$/angular-app/src/app/components/bootstrap/alert-error/alert-error.component.html" />
         <option value="$PROJECT_DIR$/../erpSGE/database/migrations/2018_07_02_134628_create_cc_tipos_table.php" />
         <option value="$PROJECT_DIR$/../erpSGE/app/Models/Cad/CcTipo.php" />
         <option value="$PROJECT_DIR$/../erpSGE/app/Http/Controllers/Cad/CcTipoController.php" />
@@ -140,7 +141,10 @@
         <option value="$PROJECT_DIR$/../erpSGE/app/Http/Requests/Mov/MovRequest.php" />
         <option value="$PROJECT_DIR$/../erpSGE/app/Http/Controllers/Mov/MovController.php" />
         <option value="$PROJECT_DIR$/../erpSGE/app/Models/Mov/Mov.php" />
+        <option value="$PROJECT_DIR$/angular-app/src/app/components/bootstrap/alert-error/alert-error.component.html" />
+        <option value="$PROJECT_DIR$/angular-app/src/app/components/pages/login/login.component.html" />
         <option value="$PROJECT_DIR$/angular-app/src/app/components/bootstrap/alert-error/alert-error.component.ts" />
+        <option value="$PROJECT_DIR$/angular-app/src/app/components/pages/category/category-list/category-list.component.html" />
       </list>
     </option>
   </component>
@@ -253,8 +257,8 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="709" />
-    <option name="y" value="68" />
+    <option name="x" value="753" />
+    <option name="y" value="87" />
     <option name="width" value="971" />
     <option name="height" value="695" />
   </component>
@@ -317,6 +321,46 @@
               <item name="bootstrap" type="462c0819:PsiDirectoryNode" />
               <item name="alert-error" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="code_shopping" type="b2602c69:ProjectViewProjectNode" />
+              <item name="code_shopping" type="462c0819:PsiDirectoryNode" />
+              <item name="angular-app" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="code_shopping" type="b2602c69:ProjectViewProjectNode" />
+              <item name="code_shopping" type="462c0819:PsiDirectoryNode" />
+              <item name="angular-app" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+              <item name="category" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="code_shopping" type="b2602c69:ProjectViewProjectNode" />
+              <item name="code_shopping" type="462c0819:PsiDirectoryNode" />
+              <item name="angular-app" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+              <item name="category" type="462c0819:PsiDirectoryNode" />
+              <item name="category-list" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="code_shopping" type="b2602c69:ProjectViewProjectNode" />
+              <item name="code_shopping" type="462c0819:PsiDirectoryNode" />
+              <item name="angular-app" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+              <item name="login" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -361,15 +405,15 @@
       <updated>1530173964015</updated>
       <workItem from="1530174014337" duration="21000" />
       <workItem from="1530174313777" duration="47868000" />
-      <workItem from="1530357309516" duration="37284000" />
+      <workItem from="1530357309516" duration="38969000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="85173000" />
+    <option name="totallyTimeSpent" value="86858000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="709" y="68" width="971" height="695" extended-state="0" />
+    <frame x="753" y="87" width="971" height="695" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -379,7 +423,7 @@
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info anchor="bottom" id="TypeScript" order="8" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19267015" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.0565445" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -428,33 +472,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/angular-app/src/app/components/pages/login/login.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="41" selection-start-line="1" selection-start-column="41" selection-end-line="1" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/angular-app/src/app/components/pages/login/login.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-11">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-          <folding>
-            <element signature="e#0#50#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/angular-app/src/app/components/bootstrap/alert-error/alert-error.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="6" lean-forward="true" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
-          <folding>
-            <element signature="e#182#189#1" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../erpSGE/database/migrations/2018_07_02_134628_create_cc_tipos_table.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
@@ -770,7 +787,31 @@
     <entry file="file://$PROJECT_DIR$/angular-app/src/app/components/bootstrap/alert-error/alert-error.component.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
-          <caret line="25" column="22" lean-forward="true" selection-start-line="25" selection-start-column="22" selection-end-line="25" selection-end-column="22" />
+          <caret line="25" column="24" selection-start-line="25" selection-start-column="24" selection-end-line="25" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angular-app/src/app/components/bootstrap/alert-error/alert-error.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="11" lean-forward="true" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angular-app/src/app/components/pages/login/login.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="24" selection-start-line="1" selection-start-column="24" selection-end-line="1" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angular-app/src/app/components/pages/category/category-list/category-list.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="467">
+          <caret line="47" column="18" lean-forward="true" selection-start-line="47" selection-start-column="18" selection-end-line="47" selection-end-column="18" />
+          <folding>
+            <element signature="e#1255#1262#1" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
