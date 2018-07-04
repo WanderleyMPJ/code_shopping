@@ -1,15 +1,8 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
-<<<<<<< HEAD
 import {HttpClient, HttpErrorResponse} from "@angular/common/http";
 import {CategoryNewModalComponent} from "../category-new-modal/category-new-modal.component";
-import {Router} from "@angular/router";
-=======
 import {HttpClient} from "@angular/common/http";
 import {CategoryNewModalComponent} from "../category-new-modal/category-new-modal.component";
->>>>>>> c1e6900706a07923a88a7961e2838fdabf045487
-
-
-declare let $;
 
 @Component({
   selector: 'category-list',
@@ -30,9 +23,6 @@ export class CategoryListComponent implements OnInit {
     this.getCategories();
   }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
   submit(){
       const token = window.localStorage.getItem('token');
     this.http.post('http://localhost:8000/api/categories', this.category, {
