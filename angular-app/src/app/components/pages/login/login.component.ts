@@ -14,6 +14,8 @@ export class LoginComponent implements OnInit {
         password: 'secret'
   }
 
+  showMessageError = false;
+
   constructor(private http: HttpClient, private router: Router) {
 
   }
@@ -28,7 +30,7 @@ export class LoginComponent implements OnInit {
                 const token = data.token;
                 window.localStorage.setItem('token', token);
                 this.router.navigate(['categories/list']);
-            });
+            }, () => this.showMessageError = true);
         return false;
     }
 }
