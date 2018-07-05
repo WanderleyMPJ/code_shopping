@@ -1,4 +1,4 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 
 @Component({
   selector: 'alert-error',
@@ -7,11 +7,17 @@ import {Component, Input, OnInit} from '@angular/core';
 })
 export class AlertErrorComponent implements OnInit {
 
- @Input() show = false;
+  @Output() showChange: EventEmitter<boolean> = new EventEmitter<boolean>();
+  _show = false;
 
   constructor() { }
 
   ngOnInit() {
+  }
+
+  @Input() set show(value){
+      this._show = value;
+      this.showChange.emit(value);
   }
 
   hide(){
