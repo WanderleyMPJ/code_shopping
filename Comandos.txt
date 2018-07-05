@@ -59,7 +59,7 @@ php artisan storage:link
     * INSTALAR BOOTSTRAP
         - npm install bootstrap --save
     * INSTALAR jquery e popper.js
-        - npm install jquery opper.js --save
+        - npm install jquery popper.js --save
     - add em angular.json o caminho do boostrap
         -- node_modules/bootstrap/dist/css/bootstrap.min.css
     - add em anuglar.json o caminho do java
