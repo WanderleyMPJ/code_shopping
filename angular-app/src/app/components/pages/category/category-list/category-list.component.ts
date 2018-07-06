@@ -56,4 +56,9 @@ export class CategoryListComponent implements OnInit {
     showModal(){
         this.modal.show();
     }
+
+    hideModal($event: Event){
+        // fazer algo quando o model foi fechado
+        console.log($event);
+    }
 }
