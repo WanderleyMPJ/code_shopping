@@ -1,3 +1,10 @@
+***** HTML
+    <TD*5 + TAB
+
+
+
+
+
 *** sql
 
 mysql -uroot -pEfficax@00
@@ -28,3 +35,38 @@ php artisan storage:link
    $product->forcedelete(); apagar definitivamente
    - $prouct->resotore();
    - return $this->belongsTo(Product::Class)->withTrashed(); //pega os produtos excluidos do relacionamento também
+
+ ** inserir metodos phpstorm
+    - alt + insert
+
+ ** alterar email padrao reset password
+    - php artisan vendor:publish --tag=laravel-notifications
+
+** comandos postman
+    -- enviar o token
+        -- header -> Authorization => Bearer $token
+
+ ** COMANDO PHP STORM
+    - Add funcções
+        -- ALT ENTER em cima da classe
+
+  ** jwt
+    - habilitar autorefresh
+        -- alterar em kernel  protected $routeMiddleware e add a linha:
+           --- 'jwt.autorefresh'
+
+** ANGULAR
+    * INSTALAR BOOTSTRAP
+        - npm install bootstrap --save
+    * INSTALAR jquery e popper.js
+        - npm install jquery popper.js --save
+    - add em angular.json o caminho do boostrap
+        -- node_modules/bootstrap/dist/css/bootstrap.min.css
+    - add em anuglar.json o caminho do java
+        -- node_modules/bootstrap/dist/js/bootstrap.min.js
+
+        *** icones
+            -  npm install @fortawesome/fontawesome-free-webfonts --save
+            - add em angular.json em css
+                        "node_modules/@fortawesome/fontawesome-free-webfonts/css/fa-solid.css",
+                        "node_modules/@fortawesome/fontawesome-free-webfonts/css/fontawesome.css",

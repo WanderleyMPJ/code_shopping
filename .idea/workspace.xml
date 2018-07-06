@@ -1,10 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2fce652a-17a1-4a5e-893a-795643fd0e1d" name="Default" comment="aula capturando dados com with">
-      <change beforePath="$PROJECT_DIR$/Comandos.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Comandos.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/ProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/ProductController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" afterDir="false" />
+    <list default="true" id="a9db8628-734b-49d9-bbb8-372ea7d6dce9" name="Default" comment="">
+<<<<<<< HEAD
+      <change beforePath="$PROJECT_DIR$/angular-app/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/angular-app/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-app/src/app/components/pages/category/category-list/category-list.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/angular-app/src/app/components/pages/category/category-list/category-list.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-app/src/app/components/pages/category/category-list/category-list.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/angular-app/src/app/components/pages/category/category-list/category-list.component.ts" afterDir="false" />
+<<<<<<< HEAD
+      <change beforePath="$PROJECT_DIR$/angular-app/src/app/components/pages/category/category-new-modal/category-new-modal.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/angular-app/src/app/components/pages/category/category-new-modal/category-new-modal.component.ts" afterDir="false" />
+=======
+>>>>>>> c1e6900706a07923a88a7961e2838fdabf045487
+=======
+      <change beforePath="$PROJECT_DIR$/angular-app/src/app/components/bootstrap/modal/modal.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/angular-app/src/app/components/bootstrap/modal/modal.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-app/src/app/components/bootstrap/modal/modal.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/angular-app/src/app/components/bootstrap/modal/modal.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-app/src/app/components/pages/category/category-list/category-list.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/angular-app/src/app/components/pages/category/category-list/category-list.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-app/src/app/components/pages/category/category-list/category-list.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/angular-app/src/app/components/pages/category/category-list/category-list.component.ts" afterDir="false" />
+>>>>>>> parent of ad8a8e7... Usando novo modal no cadastro de categorias
+      <change beforePath="$PROJECT_DIR$/../erpSGE/app/Http/Controllers/Mov/MovController.php" beforeDir="false" afterPath="$PROJECT_DIR$/../erpSGE/app/Http/Controllers/Mov/MovController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../erpSGE/app/Http/Requests/Mov/MovRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/../erpSGE/app/Http/Requests/Mov/MovRequest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../erpSGE/app/Models/Mov/Mov.php" beforeDir="false" afterPath="$PROJECT_DIR$/../erpSGE/app/Models/Mov/Mov.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -13,37 +27,67 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ProductController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/ProductController.php">
+<<<<<<< HEAD
+<<<<<<< HEAD
+      <file leaf-file-name="app.module.ts" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/angular-app/src/app/app.module.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="20" column="54" lean-forward="true" selection-start-line="20" selection-start-column="54" selection-end-line="20" selection-end-column="54" />
+            <state>
+              <caret lean-forward="true" />
               <folding>
-                <element signature="e#53#98#0#PHP" expanded="true" />
+                <element signature="e#0#58#0" expanded="true" />
+                <element signature="e#334#427#0" expanded="true" />
               </folding>
+=======
+      <file leaf-file-name="category-new-modal.component.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/angular-app/src/app/components/pages/category/category-new-modal/category-new-modal.component.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="48" lean-forward="true" selection-start-line="2" selection-start-column="48" selection-end-line="2" selection-end-column="48" />
+              <folding>
+                <element signature="e#0#59#0" expanded="true" />
+              </folding>
+=======
+      <file leaf-file-name="modal.component.ts" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/angular-app/src/app/components/bootstrap/modal/modal.component.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="26" column="26" selection-start-line="26" selection-start-column="26" selection-end-line="26" selection-end-column="26" />
+>>>>>>> parent of ad8a8e7... Usando novo modal no cadastro de categorias
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Comandos.txt" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Comandos.txt">
+      <file leaf-file-name="category-list.component.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/angular-app/src/app/components/pages/category/category-list/category-list.component.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="29" column="114" selection-start-line="29" selection-start-column="114" selection-end-line="29" selection-end-column="114" />
+<<<<<<< HEAD
+            <state relative-caret-position="482">
+              <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
+=======
+            <state relative-caret-position="34">
+              <caret line="32" column="20" lean-forward="true" selection-start-line="32" selection-start-column="20" selection-end-line="32" selection-end-column="20" />
+>>>>>>> parent of ad8a8e7... Usando novo modal no cadastro de categorias
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RouteServiceProvider.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Providers/RouteServiceProvider.php">
+      <file leaf-file-name="category-new-modal.component.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/angular-app/src/app/components/pages/category/category-new-modal/category-new-modal.component.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-190">
-              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+<<<<<<< HEAD
+            <state relative-caret-position="271">
+              <caret line="16" selection-start-line="16" selection-end-line="16" />
+>>>>>>> c1e6900706a07923a88a7961e2838fdabf045487
+=======
+            <state relative-caret-position="237">
+              <caret line="62" lean-forward="true" selection-start-line="62" selection-end-line="62" />
+>>>>>>> parent of ad8a8e7... Usando novo modal no cadastro de categorias
             </state>
           </provider>
         </entry>
@@ -52,15 +96,56 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>Category</find>
-      <find>Product</find>
-      <find>$input</find>
-      <find>$inputs</find>
+      <find>$product</find>
+      <find>categories</find>
+      <find>PessoaEmail</find>
+      <find>$grupoid</find>
+      <find>$movnatoperacao</find>
+      <find>$natoperacaos</find>
+      <find>$empresa</find>
+      <find>create_movs_table</find>
+      <find>$pessoagrupo</find>
+      <find>FormapgParcelaResource</find>
+      <find>pessoa_id</find>
+      <find>FormapgTipoTableSeeder</find>
+      <find>movs</find>
+      <find>$pessoa</find>
+      <find>$pessoaemail</find>
+      <find>$email</find>
+      <find>$produtogrupo</find>
+      <find>$formapgtipo</find>
+      <find>$cctipo</find>
+      <find>$cc</find>
+      <find>CcBancoBancoResource</find>
+      <find>$ccbanco</find>
+      <find>CcBancoCobrancaCobrancaResource</find>
     </findStrings>
     <replaceStrings>
-      <replace>Product</replace>
-      <replace>ProductInput</replace>
-      <replace>$output</replace>
+      <replace>$produto</replace>
+      <replace>produtogrupos</replace>
+      <replace>Empresa</replace>
+      <replace>$pessoaid</replace>
+      <replace>$movnatoperacao</replace>
+      <replace>$natoperacaos</replace>
+      <replace>$natoperacao</replace>
+      <replace>$mov</replace>
+      <replace>$formapgtipo</replace>
+      <replace>FormapgParcelasResource</replace>
+      <replace>formapg_id</replace>
+      <replace>$formapgparcela</replace>
+      <replace>$formapg</replace>
+      <replace>$pessoaendereco</replace>
+      <replace>PessoaEnderecoCollectionResource</replace>
+      <replace>PessoaEndereco</replace>
+      <replace>$endereco</replace>
+      <replace>$planoconta</replace>
+      <replace>$cctipo</replace>
+      <replace>$cc</replace>
+      <replace>$ccbanco</replace>
+      <replace>CcBancoResource</replace>
+      <replace>Ccbancocobranca</replace>
+      <replace>$ccbancocobranca</replace>
+      <replace>CcBancoCobrancaResource</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -69,74 +154,92 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/.env" />
-        <option value="$PROJECT_DIR$/app/Http/Requests/CategoryRequest.php" />
-        <option value="$PROJECT_DIR$/database/factories/CategoryFactory.php" />
-        <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/database/migrations/2018_06_02_220146_create_products_table.php" />
-        <option value="$PROJECT_DIR$/database/factories/ProductFactory.php" />
-        <option value="$PROJECT_DIR$/app/Http/Requests/ProductRequest.php" />
-        <option value="$PROJECT_DIR$/app/Models/Category.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2018_06_03_112722_create_category_product_table.php" />
-        <option value="$PROJECT_DIR$/database/seeds/ProductTableSeeder.php" />
-        <option value="$PROJECT_DIR$/app/Http/Requests/ProductCategoryRequest.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/Api/CategoryController.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/Api/ProductCategoryController.php" />
-        <option value="$PROJECT_DIR$/app/Http/Resources/CategoryResource.php" />
-        <option value="$PROJECT_DIR$/app/Http/Resources/ProductResource.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2018_06_05_222732_create_product_inputs_table.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2018_06_05_225519_create_product_inputs_table.php" />
-        <option value="$PROJECT_DIR$/app/Models/ProductInput.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2018_06_07_103304_create_product_inputs_table.php" />
-        <option value="$PROJECT_DIR$/database/seeds/ProductInputsTableSeeder.php" />
-        <option value="$PROJECT_DIR$/app/Http/Resources/ProductCategoryResource.php" />
-        <option value="$PROJECT_DIR$/app/Http/Resources/ProductInputResource.php" />
-        <option value="$PROJECT_DIR$/app/Http/Requests/ProductInputRequest.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/Api/ProductInputController.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2018_06_11_130256_create_product_outputs_table.php" />
-        <option value="$PROJECT_DIR$/app/Models/ProductOutput.php" />
-        <option value="$PROJECT_DIR$/database/factories/ProductOutputFactory.php" />
-        <option value="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" />
-        <option value="$PROJECT_DIR$/database/factories/ProductInputFacotry.php" />
-        <option value="$PROJECT_DIR$/database/seeds/ProductInputTableSeeder.php" />
-        <option value="$PROJECT_DIR$/app/Http/Resources/ProductOutputResource.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/Api/ProductOutputController.php" />
-        <option value="$PROJECT_DIR$/app/Http/Requests/ProductOutputRequest.php" />
-        <option value="$PROJECT_DIR$/app/Rules/HasStock.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2018_06_11_145949_create_product_photos_table.php" />
-        <option value="$PROJECT_DIR$/storage/logs/laravel.log" />
-        <option value="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" />
-        <option value="$PROJECT_DIR$/database/factories/ProductInputFactory.php" />
-        <option value="$PROJECT_DIR$/database/seeds/ProductOutputsTableSeeder.php" />
-        <option value="$PROJECT_DIR$/routes/api.php" />
-        <option value="$PROJECT_DIR$/app/Http/Resources/ProductPhotoResource.php" />
-        <option value="$PROJECT_DIR$/app/Http/Resources/ProductPhotoCollection.php" />
-        <option value="$PROJECT_DIR$/database/seeds/ProductPhotosTableSeeder.php" />
-        <option value="$PROJECT_DIR$/app/Http/Requests/ProductPhotoRequest.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2018_06_19_150937_add_soft_deletes_products_table.php" />
-        <option value="$PROJECT_DIR$/app/Models/Product.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/Api/ProductPhotoController.php" />
-        <option value="$PROJECT_DIR$/app/Models/ProductPhoto.php" />
-        <option value="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/Api/ProductController.php" />
-        <option value="$PROJECT_DIR$/Comandos.txt" />
+<<<<<<< HEAD
+=======
+        <option value="$PROJECT_DIR$/../erpSGE/app/Http/Resources/Cad/PlanocontaResource.php" />
+>>>>>>> c1e6900706a07923a88a7961e2838fdabf045487
+        <option value="$PROJECT_DIR$/../erpSGE/app/Http/Requests/Cad/PlanocontaRequest.php" />
+        <option value="$PROJECT_DIR$/../erpSGE/app/Http/Controllers/Cad/PlanocontaController.php" />
+        <option value="$PROJECT_DIR$/../erpSGE/database/factories/CaixabancoTipoFactory.php" />
+        <option value="$PROJECT_DIR$/../erpSGE/database/migrations/2018_07_02_133033_create_caixabanco_tipos_table.php" />
+        <option value="$PROJECT_DIR$/../erpSGE/database/seeds/Cad/CaixabancoTipoTableSeeder.php" />
+        <option value="$PROJECT_DIR$/../erpSGE/database/seeds/Cad/CaixabancoTableSeeder.php" />
+        <option value="$PROJECT_DIR$/../erpSGE/database/migrations/2018_07_02_133146_create_caixabancos_table.php" />
+        <option value="$PROJECT_DIR$/../erpSGE/database/migrations/2018_07_02_134628_create_cc_tipos_table.php" />
+        <option value="$PROJECT_DIR$/../erpSGE/app/Models/Cad/CcTipo.php" />
+        <option value="$PROJECT_DIR$/../erpSGE/app/Http/Controllers/Cad/CcTipoController.php" />
+        <option value="$PROJECT_DIR$/../erpSGE/app/Http/Resources/Cad/CcTipoResource.php" />
+        <option value="$PROJECT_DIR$/../erpSGE/app/Http/Requests/Cad/CcTipoRequest.php" />
+        <option value="$PROJECT_DIR$/../erpSGE/database/seeds/Cad/CcTipoTableSeeder.php" />
+        <option value="$PROJECT_DIR$/../erpSGE/app/Http/Controllers/Cad/CcController.php" />
+        <option value="$PROJECT_DIR$/../erpSGE/database/migrations/2018_07_02_134652_create_cc_bancos_table.php" />
+        <option value="$PROJECT_DIR$/../erpSGE/database/migrations/2018_07_02_134642_create_ccs_table.php" />
+        <option value="$PROJECT_DIR$/../erpSGE/app/Http/Requests/Cad/CcRequest.php" />
+        <option value="$PROJECT_DIR$/../erpSGE/app/Http/Resources/Cad/CcResource.php" />
+        <option value="$PROJECT_DIR$/../erpSGE/database/seeds/Cad/CcTableSeeder.php" />
+        <option value="$PROJECT_DIR$/../erpSGE/database/seeds/Cad/CcBancoTableSeeder.php" />
+        <option value="$PROJECT_DIR$/../erpSGE/app/Models/Cad/Cc.php" />
+        <option value="$PROJECT_DIR$/../erpSGE/app/Http/Controllers/Cad/CcBancoController.php" />
+        <option value="$PROJECT_DIR$/../erpSGE/app/Models/Cad/CcBanco.php" />
+        <option value="$PROJECT_DIR$/../erpSGE/app/Http/Resources/Cad/CcBancoResource.php" />
+        <option value="$PROJECT_DIR$/../erpSGE/database/migrations/2018_07_02_134730_create_cc_banco_cobrancas_table.php" />
+        <option value="$PROJECT_DIR$/../erpSGE/database/seeds/Cad/CcBancoCobrancaTableSeeder.php" />
+        <option value="$PROJECT_DIR$/../erpSGE/app/Http/Resources/Cad/CcBancoCobrancaResource.php" />
+        <option value="$PROJECT_DIR$/../erpSGE/app/Http/Requests/Cad/CcBancoRequest.php" />
+        <option value="$PROJECT_DIR$/../erpSGE/app/Models/Cad/CcBancoCobranca.php" />
+        <option value="$PROJECT_DIR$/../erpSGE/app/Http/Requests/Cad/CcBancoCobrancaRequest.php" />
+        <option value="$PROJECT_DIR$/../erpSGE/app/Http/Controllers/Cad/CcBancoCobrancaController.php" />
+        <option value="$PROJECT_DIR$/../erpSGE/database/migrations/2018_06_28_140513_create_formapgs_table.php" />
+        <option value="$PROJECT_DIR$/../erpSGE/database/migrations/2018_06_28_140012_create_formapg_tipos_table.php" />
+        <option value="$PROJECT_DIR$/../erpSGE/database/migrations/2018_07_02_140513_create_formapgs_table.php" />
+        <option value="$PROJECT_DIR$/../erpSGE/database/seeds/DatabaseSeeder.php" />
+        <option value="$PROJECT_DIR$/../erpSGE/routes/api.php" />
+        <option value="$PROJECT_DIR$/../erpSGE/app/Http/Resources/Mov/MovResource.php" />
+        <option value="$PROJECT_DIR$/../erpSGE/app/Http/Requests/Mov/MovRequest.php" />
+        <option value="$PROJECT_DIR$/../erpSGE/app/Http/Controllers/Mov/MovController.php" />
+        <option value="$PROJECT_DIR$/../erpSGE/app/Models/Mov/Mov.php" />
+        <option value="$PROJECT_DIR$/angular-app/src/app/components/bootstrap/alert-error/alert-error.component.html" />
+        <option value="$PROJECT_DIR$/angular-app/src/app/components/pages/login/login.component.html" />
+        <option value="$PROJECT_DIR$/angular-app/src/app/components/bootstrap/alert-error/alert-error.component.ts" />
+        <option value="$PROJECT_DIR$/angular-app/src/app/components/bootstrap/modal/modal.component.html" />
+<<<<<<< HEAD
+        <option value="$PROJECT_DIR$/angular-app/src/app/components/pages/category/category-new-modal/category-new-modal.component.html" />
+<<<<<<< HEAD
+        <option value="$PROJECT_DIR$/angular-app/src/app/components/bootstrap/modal/modal.component.ts" />
+        <option value="$PROJECT_DIR$/angular-app/src/app/components/pages/category/category-new-modal/category-new-modal.component.ts" />
+        <option value="$PROJECT_DIR$/angular-app/src/app/components/pages/category/category-list/category-list.component.html" />
+        <option value="$PROJECT_DIR$/angular-app/src/app/components/pages/category/category-list/category-list.component.ts" />
+        <option value="$PROJECT_DIR$/angular-app/src/app/app.module.ts" />
+        <option value="$PROJECT_DIR$/angular-app/src/app/components/pages/login/login.component.ts" />
+=======
+        <option value="$PROJECT_DIR$/angular-app/src/app/components/pages/category/category-list/category-list.component.html" />
+        <option value="$PROJECT_DIR$/angular-app/src/app/app.module.ts" />
+        <option value="$PROJECT_DIR$/angular-app/src/app/components/bootstrap/modal/modal.component.ts" />
+        <option value="$PROJECT_DIR$/angular-app/src/app/components/pages/category/category-list/category-list.component.ts" />
+        <option value="$PROJECT_DIR$/angular-app/src/app/components/pages/category/category-new-modal/category-new-modal.component.ts" />
+>>>>>>> c1e6900706a07923a88a7961e2838fdabf045487
+=======
+        <option value="$PROJECT_DIR$/angular-app/src/app/components/pages/category/category-list/category-list.component.html" />
+        <option value="$PROJECT_DIR$/angular-app/src/app/components/pages/category/category-list/category-list.component.ts" />
+        <option value="$PROJECT_DIR$/angular-app/src/app/components/bootstrap/modal/modal.component.ts" />
+>>>>>>> parent of ad8a8e7... Usando novo modal no cadastro de categorias
       </list>
     </option>
   </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER">
-    <package-json value="$PROJECT_DIR$/package.json" />
-  </component>
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="NodeModulesDirectoryManager">
+    <handled-path value="$PROJECT_DIR$/angular-app/node_modules" />
     <handled-path value="$PROJECT_DIR$/node_modules" />
     <handled-path value="$PROJECT_DIR$/../erpSGE/node_modules" />
   </component>
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths>
+      <path value="$PROJECT_DIR$/angular-app/package.json" />
       <path value="$PROJECT_DIR$/package.json" />
       <path value="$PROJECT_DIR$/../erpSGE/package.json" />
     </packageJsonPaths>
@@ -153,7 +256,6 @@
       <path value="$PROJECT_DIR$/vendor/psy/psysh" />
       <path value="$PROJECT_DIR$/vendor/phpunit/php-text-template" />
       <path value="$PROJECT_DIR$/vendor/phpunit/php-token-stream" />
-      <path value="$PROJECT_DIR$/vendor/phpunit/phpunit-mock-objects" />
       <path value="$PROJECT_DIR$/vendor/phpunit/php-code-coverage" />
       <path value="$PROJECT_DIR$/vendor/phpunit/phpunit" />
       <path value="$PROJECT_DIR$/vendor/symfony/console" />
@@ -225,12 +327,21 @@
       <path value="$PROJECT_DIR$/vendor/doctrine/collections" />
       <path value="$PROJECT_DIR$/vendor/doctrine/annotations" />
       <path value="$PROJECT_DIR$/vendor/doctrine/dbal" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-util" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php56" />
+      <path value="$PROJECT_DIR$/vendor/tymon/jwt-auth" />
+      <path value="$PROJECT_DIR$/vendor/namshi/jose" />
+      <path value="$PROJECT_DIR$/vendor/lcobucci/jwt" />
     </include_path>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="637" />
-    <option name="width" value="736" />
-    <option name="height" value="719" />
+    <option name="x" value="701" />
+    <option name="width" value="642" />
+<<<<<<< HEAD
+    <option name="height" value="464" />
+=======
+    <option name="height" value="505" />
+>>>>>>> c1e6900706a07923a88a7961e2838fdabf045487
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -238,6 +349,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -248,89 +360,118 @@
             <path>
               <item name="code_shopping" type="b2602c69:ProjectViewProjectNode" />
               <item name="code_shopping" type="462c0819:PsiDirectoryNode" />
+              <item name="angular-app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="code_shopping" type="b2602c69:ProjectViewProjectNode" />
+              <item name="code_shopping" type="462c0819:PsiDirectoryNode" />
+              <item name="angular-app" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="code_shopping" type="b2602c69:ProjectViewProjectNode" />
+              <item name="code_shopping" type="462c0819:PsiDirectoryNode" />
+              <item name="angular-app" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="code_shopping" type="b2602c69:ProjectViewProjectNode" />
               <item name="code_shopping" type="462c0819:PsiDirectoryNode" />
+              <item name="angular-app" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Http" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="code_shopping" type="b2602c69:ProjectViewProjectNode" />
               <item name="code_shopping" type="462c0819:PsiDirectoryNode" />
+              <item name="angular-app" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Http" type="462c0819:PsiDirectoryNode" />
-              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="bootstrap" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="code_shopping" type="b2602c69:ProjectViewProjectNode" />
               <item name="code_shopping" type="462c0819:PsiDirectoryNode" />
+              <item name="angular-app" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Http" type="462c0819:PsiDirectoryNode" />
-              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
-              <item name="Api" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="bootstrap" type="462c0819:PsiDirectoryNode" />
+              <item name="modal" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="code_shopping" type="b2602c69:ProjectViewProjectNode" />
               <item name="code_shopping" type="462c0819:PsiDirectoryNode" />
+              <item name="angular-app" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Models" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="code_shopping" type="b2602c69:ProjectViewProjectNode" />
               <item name="code_shopping" type="462c0819:PsiDirectoryNode" />
+              <item name="angular-app" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Providers" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+              <item name="category" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="code_shopping" type="b2602c69:ProjectViewProjectNode" />
               <item name="code_shopping" type="462c0819:PsiDirectoryNode" />
-              <item name="database" type="462c0819:PsiDirectoryNode" />
+              <item name="angular-app" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+              <item name="category" type="462c0819:PsiDirectoryNode" />
+              <item name="category-list" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="code_shopping" type="b2602c69:ProjectViewProjectNode" />
               <item name="code_shopping" type="462c0819:PsiDirectoryNode" />
-              <item name="database" type="462c0819:PsiDirectoryNode" />
-              <item name="migrations" type="462c0819:PsiDirectoryNode" />
+              <item name="angular-app" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+              <item name="category" type="462c0819:PsiDirectoryNode" />
+              <item name="category-new-modal" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="code_shopping" type="b2602c69:ProjectViewProjectNode" />
-              <item name="erpSGE" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="code_shopping" type="b2602c69:ProjectViewProjectNode" />
-              <item name="erpSGE" type="462c0819:PsiDirectoryNode" />
-              <item name="database" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="code_shopping" type="b2602c69:ProjectViewProjectNode" />
-              <item name="erpSGE" type="462c0819:PsiDirectoryNode" />
-              <item name="database" type="462c0819:PsiDirectoryNode" />
-              <item name="migrations" type="462c0819:PsiDirectoryNode" />
+              <item name="code_shopping" type="462c0819:PsiDirectoryNode" />
+              <item name="angular-app" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+              <item name="login" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../erpSGE" />
-    <property name="nodejs_package_manager_path" value="npm" />
-    <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
-    <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
+    <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
+    <property name="ts.external.directory.path" value="$PROJECT_DIR$/angular-app/node_modules/typescript/lib" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\#Des\laravel\code_shopping\app\Http\Controllers\Api" />
-      <recent name="D:\#Des\laravel\code_shopping\app\Models" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\#Des\laravel\code_shopping\app\Http\Requests" />
-      <recent name="D:\#Des\laravel\code_shopping\app\Http\Resources" />
+      <recent name="D:\Des\laravel\erpSGE\app\Http\Controllers\Cad" />
+      <recent name="D:\Des\laravel\erpSGE\app\Models\Mov" />
+      <recent name="D:\Des\laravel\erpSGE\app\Http\Controllers\Mov" />
+      <recent name="D:\Des\laravel\erpSGE\database\migrations" />
+      <recent name="D:\Des\laravel\erpSGE\database\migrations\mov" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -350,41 +491,52 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="2fce652a-17a1-4a5e-893a-795643fd0e1d" name="Default" comment="" />
-      <created>1527764702768</created>
+      <changelist id="a9db8628-734b-49d9-bbb8-372ea7d6dce9" name="Default" comment="" />
+      <created>1530173964015</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1527764702768</updated>
-      <workItem from="1527764710449" duration="88000" />
-      <workItem from="1527764836824" duration="132000" />
-      <workItem from="1527765140844" duration="667000" />
-      <workItem from="1527768827543" duration="551000" />
-      <workItem from="1527932798379" duration="327000" />
-      <workItem from="1527933152336" duration="9043000" />
-      <workItem from="1527974480975" duration="10745000" />
-      <workItem from="1528195540120" duration="2761000" />
-      <workItem from="1528229682593" duration="23155000" />
-      <workItem from="1528496498840" duration="3160000" />
-      <workItem from="1528722223413" duration="16678000" />
-      <workItem from="1528978757963" duration="34301000" />
+      <updated>1530173964015</updated>
+      <workItem from="1530174014337" duration="21000" />
+      <workItem from="1530174313777" duration="47868000" />
+<<<<<<< HEAD
+<<<<<<< HEAD
+      <workItem from="1530357309516" duration="50351000" />
+=======
+      <workItem from="1530357309516" duration="47299000" />
+>>>>>>> c1e6900706a07923a88a7961e2838fdabf045487
+=======
+      <workItem from="1530357309516" duration="45647000" />
+>>>>>>> parent of ad8a8e7... Usando novo modal no cadastro de categorias
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="101608000" />
+<<<<<<< HEAD
+<<<<<<< HEAD
+    <option name="totallyTimeSpent" value="98240000" />
+=======
+    <option name="totallyTimeSpent" value="95188000" />
+>>>>>>> c1e6900706a07923a88a7961e2838fdabf045487
+=======
+    <option name="totallyTimeSpent" value="93536000" />
+>>>>>>> parent of ad8a8e7... Usando novo modal no cadastro de categorias
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" weight="0.32913387" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.1984252" />
-      <window_info id="npm" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22547585" />
+      <window_info anchor="bottom" id="TypeScript" order="8" />
+<<<<<<< HEAD
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28916544" />
+=======
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26207906" />
+>>>>>>> c1e6900706a07923a88a7961e2838fdabf045487
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -394,345 +546,489 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection Results" order="9" weight="0.3295082" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3511811" />
     </layout>
+    <layout-to-restore>
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22181553" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="TypeScript" order="12" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3511811" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" weight="0.32913387" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Version Control" order="10" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+    <option name="exactExcludedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/angular-app/node_modules/karma/config.tpl.js" />
+      </list>
+    </option>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="aula capturando dados com with" />
-    <option name="LAST_COMMIT_MESSAGE" value="aula capturando dados com with" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <option name="time" value="2" />
-    </breakpoint-manager>
-  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/Http/Resources/ProductCategoryResource.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="60" selection-start-line="12" selection-start-column="52" selection-end-line="12" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Resources/ProductResource.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="34" selection-start-line="11" selection-start-column="8" selection-end-line="13" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Requests/ProductRequest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="431">
-          <caret line="26" column="8" selection-start-line="26" selection-start-column="8" selection-end-line="26" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Resources/ProductInputResource.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="46" lean-forward="true" selection-start-line="14" selection-start-column="46" selection-end-line="14" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Requests/ProductInputRequest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="27" column="54" lean-forward="true" selection-start-line="27" selection-start-column="54" selection-end-line="27" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2018_06_07_103304_create_product_inputs_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="20" lean-forward="true" selection-start-line="17" selection-end-line="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Models/ProductOutput.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="5" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Models/ProductInput.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="5" selection-start-line="8" selection-start-column="4" selection-end-line="12" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/factories/ProductOutputFactory.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/factories/ProductInputFacotry.php" />
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/ProductInputController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="25" selection-start-line="21" selection-end-line="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Requests/ProductOutputRequest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="77" selection-start-line="21" selection-start-column="69" selection-end-line="21" selection-end-column="77" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Providers/AppServiceProvider.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="30" column="91" selection-start-line="30" selection-start-column="91" selection-end-line="30" selection-end-column="91" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Rules/HasStock.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="516">
-          <caret line="45" column="60" lean-forward="true" selection-start-line="44" selection-start-column="8" selection-end-line="45" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/ProductOutputController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="23" column="46" lean-forward="true" selection-start-line="23" selection-start-column="46" selection-end-line="23" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2018_06_11_130256_create_product_outputs_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="19" column="76" lean-forward="true" selection-start-line="19" selection-start-column="11" selection-end-line="19" selection-end-column="76" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2018_06_11_145949_create_product_photos_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="19" column="12" selection-start-line="19" selection-start-column="12" selection-end-line="19" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/storage/logs/laravel.log">
+<<<<<<< HEAD
+=======
+    <entry file="file://$PROJECT_DIR$/../erpSGE/database/seeds/Cad/EmpresaTableSeeder.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/storage/app/public/products/teste" />
-    <entry file="file://$PROJECT_DIR$/database/seeds/DatabaseSeeder.php">
+    <entry file="file://$PROJECT_DIR$/../erpSGE/database/seeds/Cad/CcTipoTableSeeder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="38" selection-start-line="12" selection-start-column="38" selection-end-line="12" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+>>>>>>> c1e6900706a07923a88a7961e2838fdabf045487
+    <entry file="file://$PROJECT_DIR$/../erpSGE/app/Models/Cad/Empresa.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="5" selection-start-line="10" selection-start-column="4" selection-end-line="13" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../erpSGE/app/Http/Resources/Cad/CcTipoResource.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" lean-forward="true" selection-start-line="10" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../erpSGE/app/Http/Requests/Cad/CcTipoRequest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../erpSGE/database/migrations/2018_07_02_134642_create_ccs_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="19" column="76" lean-forward="true" selection-start-line="19" selection-start-column="76" selection-end-line="19" selection-end-column="76" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../erpSGE/app/Http/Controllers/Cad/CcTipoController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="516">
+          <caret line="43" lean-forward="true" selection-start-line="11" selection-start-column="4" selection-end-line="43" />
+          <folding>
+            <element signature="e#44#80#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../erpSGE/database/seeds/Cad/CcTableSeeder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="29" lean-forward="true" selection-start-line="2" selection-start-column="29" selection-end-line="2" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../erpSGE/database/seeds/Cad/CcBancoTableSeeder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="5" lean-forward="true" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../erpSGE/app/Models/Cad/CcTipo.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="33" lean-forward="true" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../erpSGE/app/Http/Controllers/Cad/CcController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="516">
+          <caret line="43" selection-start-line="11" selection-start-column="4" selection-end-line="43" />
+          <folding>
+            <element signature="e#44#80#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../erpSGE/app/Models/Cad/Cc.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="5" selection-start-line="10" selection-start-column="4" selection-end-line="13" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../erpSGE/app/Http/Controllers/Cad/CcBancoController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="516">
+          <caret line="44" lean-forward="true" selection-start-line="12" selection-start-column="4" selection-end-line="44" />
+          <folding>
+            <element signature="e#44#80#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../erpSGE/database/migrations/2018_07_02_134652_create_cc_bancos_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="20" lean-forward="true" selection-start-line="16" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../erpSGE/app/Models/Cad/CcBanco.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="5" lean-forward="true" selection-start-line="8" selection-start-column="4" selection-end-line="13" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../erpSGE/app/Http/Resources/Cad/CcBancoResource.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="10" selection-start-line="10" selection-start-column="8" selection-end-line="18" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../erpSGE/app/Http/Requests/Cad/CcBancoRequest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="42" selection-start-line="17" selection-start-column="42" selection-end-line="17" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../erpSGE/app/Http/Resources/Cad/CcBancoCobrancaResource.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="40" selection-start-line="13" selection-start-column="40" selection-end-line="13" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../erpSGE/app/Models/Cad/CcBancoCobranca.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="5" lean-forward="true" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../erpSGE/database/migrations/2018_07_02_134730_create_cc_banco_cobrancas_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="19" column="11" selection-start-line="19" selection-start-column="11" selection-end-line="19" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../erpSGE/app/Http/Resources/Cad/CcResource.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" lean-forward="true" selection-start-line="10" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../erpSGE/app/Http/Controllers/Cad/CcBancoCobrancaController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="5" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
+          <folding>
+            <element signature="e#44#80#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../erpSGE/app/Http/Requests/Cad/CcRequest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="10" lean-forward="true" selection-start-line="18" selection-start-column="10" selection-end-line="18" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../erpSGE/app/Http/Requests/Cad/CcBancoCobrancaRequest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="49" selection-start-line="17" selection-start-column="49" selection-end-line="17" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../erpSGE/database/seeds/Cad/CcBancoCobrancaTableSeeder.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
           <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/database/factories/ProductInputFactory.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="3" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/factories/ProductPhotoFactory.php">
+    <entry file="file://$PROJECT_DIR$/../erpSGE/database/migrations/2018_07_02_142830_create_mov_crs_table.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/database/seeds/ProductTableSeeder.php">
+    <entry file="file://$PROJECT_DIR$/../erpSGE/database/migrations/2018_07_02_141915_create_movs_table.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../erpSGE/database/migrations/2018_07_02_140513_create_formapgs_table.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="21" column="15" lean-forward="true" selection-start-line="21" selection-start-column="15" selection-end-line="21" selection-end-column="15" />
+        <state relative-caret-position="374">
+          <caret line="24" column="5" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/database/seeds/ProductInputTableSeeder.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="31" lean-forward="true" selection-start-line="13" selection-start-column="31" selection-end-line="13" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Resources/ProductOutputResource.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="10" lean-forward="true" selection-start-line="10" selection-start-column="2" selection-end-line="17" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/seeds/ProductOutputsTableSeeder.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="7" lean-forward="true" selection-start-line="6" selection-start-column="4" selection-end-line="10" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Resources/ProductPhotoResource.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/storage/app/faker/product_photos/1af8c1130646a153435e3307ee359977.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Resources/ProductPhotoCollection.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="464">
-          <caret line="37" column="10" selection-start-line="37" selection-start-column="10" selection-end-line="37" selection-end-column="10" />
-          <folding>
-            <element signature="e#47#79#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/storage/app/public/products/1/ANNosPQSgdJIAxuiugSXouiWSk395hB0T4E7Rjr9.jpeg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_ide_helper.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="14705" column="10" selection-start-line="14705" selection-start-column="10" selection-end-line="14705" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/seeds/ProductPhotosTableSeeder.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="448">
-          <caret line="79" column="5" selection-start-line="79" selection-start-column="5" selection-end-line="79" selection-end-column="5" />
-          <folding>
-            <element signature="e#32#69#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/storage/app/public/products/3/L585IKWqRV3HTo7HTNaKPppVqYPwIuNu766DHuR9.jpeg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/storage/app/public/products/3/fl37a8sBJJGC3pF3CsbAQwup0Z9XHnuX7BYYeCUj.jpeg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/storage/app/public/products/3/Cp6EMGvU8VmupKgfVvXPZVYsGBDCQIVkW5WTQ6fP.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/storage/app/public/products/3/gLcI5oj4bd8mlSElZMG4Xii6wu2pPY998Qd92bms.jpeg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/storage/app/public/products/3/KNktYq0fZ4yyzPGMvGTbnAmrxS4cS4CTJ3WQjwpt.jpeg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/storage/app/public/products/3/UWSJop110NPlzLMhBWT36Hd30893hfo13ZRkG2ZR.jpeg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/api.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="28" lean-forward="true" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/ProductCategoryController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/CategoryController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="533">
-          <caret line="46" column="8" selection-start-line="46" selection-start-column="8" selection-end-line="46" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Requests/ProductPhotoRequest.php">
+    <entry file="file://$PROJECT_DIR$/../erpSGE/database/migrations/2018_07_02_141325_create_formapg_parcelas_table.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
-          <caret line="15" column="35" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="35" />
+          <caret line="17" selection-start-line="13" selection-end-line="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Models/Product.php">
+    <entry file="file://$PROJECT_DIR$/../erpSGE/database/migrations/2018_06_28_140012_create_formapg_tipos_table.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="15" column="31" lean-forward="true" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
+        <state relative-caret-position="187">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2018_06_19_150937_add_soft_deletes_products_table.php">
+    <entry file="file://$PROJECT_DIR$/../erpSGE/database/seeds/DatabaseSeeder.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="28" column="38" selection-start-line="28" selection-start-column="38" selection-end-line="28" selection-end-column="38" />
+        <state relative-caret-position="505">
+          <caret line="32" column="44" selection-start-line="32" selection-start-column="44" selection-end-line="32" selection-end-column="44" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Models/ProductPhoto.php">
+    <entry file="file://$PROJECT_DIR$/../erpSGE/database/seeds/Mov/MovTableSeeder.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Models/ProductInput.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Models/ProductOutput.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../erpSGE/app/Models/Mov/Mov.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="295">
-          <caret line="53" column="48" selection-start-line="53" selection-start-column="48" selection-end-line="53" selection-end-column="48" />
+        <state relative-caret-position="380">
+          <caret line="26" column="5" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
           <folding>
-            <element signature="e#72#116#0#PHP" expanded="true" />
+            <element signature="e#34#61#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/ProductPhotoController.php">
+    <entry file="file://$PROJECT_DIR$/../erpSGE/app/Http/Resources/Mov/MovResource.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="499">
-          <caret line="52" column="5" lean-forward="true" selection-start-line="52" selection-start-column="5" selection-end-line="52" selection-end-column="5" />
+        <state relative-caret-position="204">
+          <caret line="14" column="50" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../erpSGE/app/Http/Requests/Mov/MovRequest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="16" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../erpSGE/app/Http/Controllers/Mov/MovController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="261">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../erpSGE/routes/api.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="448">
+          <caret line="52" column="25" selection-start-line="52" selection-start-column="25" selection-end-line="52" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angular-app/node_modules/@angular/core/src/event_emitter.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="235">
+          <caret line="58" column="21" selection-start-line="58" selection-start-column="21" selection-end-line="58" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angular-app/src/app/components/bootstrap/alert-error/alert-error.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="11" lean-forward="true" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angular-app/src/app/components/bootstrap/modal/modal.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="59" lean-forward="true" selection-start-line="5" selection-start-column="59" selection-end-line="5" selection-end-column="59" />
           <folding>
-            <element signature="e#53#104#0#PHP" expanded="true" />
+            <element signature="e#386#393#1" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php">
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/angular-app/src/app/components/bootstrap/alert-error/alert-error.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="11" selection-start-line="9" selection-start-column="2" selection-end-line="9" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angular-app/src/app/components/bootstrap/modal/modal.component.ts">
+=======
+    <entry file="file://$PROJECT_DIR$/angular-app/src/app/components/pages/login/login.component.ts">
+>>>>>>> c1e6900706a07923a88a7961e2838fdabf045487
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="11" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angular-app/src/app/components/pages/category/category-new-modal/category-new-modal.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="271">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angular-app/node_modules/@angular/router/src/router.d.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="202">
-          <caret line="834" column="27" selection-start-line="834" selection-start-column="27" selection-end-line="834" selection-end-column="27" />
+          <caret line="150" column="21" selection-start-line="150" selection-start-column="21" selection-end-line="150" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php">
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/angular-app/src/app/components/pages/login/login.component.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="20" column="6" selection-start-line="20" selection-start-column="6" selection-end-line="20" selection-end-column="6" />
+        <state relative-caret-position="17">
+          <caret line="1" column="24" selection-start-line="1" selection-start-column="24" selection-end-line="1" selection-end-column="24" />
+=======
+    <entry file="file://$PROJECT_DIR$/angular-app/src/app/components/pages/category/category-new-modal/category-new-modal.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="271">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Providers/RouteServiceProvider.php">
+    <entry file="file://$PROJECT_DIR$/angular-app/src/app/app.module.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-190">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Api/ProductController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="20" column="54" lean-forward="true" selection-start-line="20" selection-start-column="54" selection-end-line="20" selection-end-column="54" />
+        <state relative-caret-position="431">
+          <caret line="36" column="31" lean-forward="true" selection-start-line="36" selection-start-column="31" selection-end-line="36" selection-end-column="31" />
           <folding>
-            <element signature="e#53#98#0#PHP" expanded="true" />
+            <element signature="e#0#58#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Comandos.txt">
+    <entry file="file://$PROJECT_DIR$/angular-app/src/app/components/bootstrap/modal/modal.component.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="29" column="114" selection-start-line="29" selection-start-column="114" selection-end-line="29" selection-end-column="114" />
+        <state relative-caret-position="68">
+          <caret line="4" column="11" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="11" />
+>>>>>>> c1e6900706a07923a88a7961e2838fdabf045487
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angular-app/src/app/app.component.ts">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angular-app/src/app/components/pages/category/category-list/category-list.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="136">
+          <caret line="9" column="26" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#61#0" expanded="true" />
+          </folding>
+=======
+        <state relative-caret-position="142">
+          <caret line="15" column="38" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="38" />
+          <folding>
+            <element signature="e#0#61#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angular-app/src/app/components/pages/category/category-new-modal/category-new-modal.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="48" lean-forward="true" selection-start-line="2" selection-start-column="48" selection-end-line="2" selection-end-column="48" />
+          <folding>
+            <element signature="e#0#59#0" expanded="true" />
+          </folding>
+>>>>>>> c1e6900706a07923a88a7961e2838fdabf045487
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angular-app/src/app/components/pages/category/category-list/category-list.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="544">
+          <caret line="32" column="60" lean-forward="true" selection-start-line="32" selection-start-column="60" selection-end-line="32" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/angular-app/src/app/components/pages/login/login.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="550">
+          <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
+          <folding>
+            <element signature="e#0#50#0" expanded="true" />
+          </folding>
+=======
+    <entry file="file://$PROJECT_DIR$/angular-app/src/app/components/pages/category/category-list/category-list.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="32" column="20" lean-forward="true" selection-start-line="32" selection-start-column="20" selection-end-line="32" selection-end-column="20" />
+>>>>>>> parent of ad8a8e7... Usando novo modal no cadastro de categorias
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angular-app/src/app/components/pages/category/category-new-modal/category-new-modal.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="612">
+          <caret line="36" column="50" selection-start-line="36" selection-start-column="50" selection-end-line="36" selection-end-column="50" />
+          <folding>
+            <element signature="e#0#59#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angular-app/src/app/app.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret lean-forward="true" />
+          <folding>
+            <element signature="e#0#58#0" expanded="true" />
+            <element signature="e#334#427#0" expanded="true" />
+          </folding>
+=======
+        <state relative-caret-position="482">
+          <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
+>>>>>>> c1e6900706a07923a88a7961e2838fdabf045487
+=======
+        <state relative-caret-position="237">
+          <caret line="62" lean-forward="true" selection-start-line="62" selection-end-line="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angular-app/src/app/components/bootstrap/modal/modal.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="26" column="26" selection-start-line="26" selection-start-column="26" selection-end-line="26" selection-end-column="26" />
+>>>>>>> parent of ad8a8e7... Usando novo modal no cadastro de categorias
         </state>
       </provider>
     </entry>
