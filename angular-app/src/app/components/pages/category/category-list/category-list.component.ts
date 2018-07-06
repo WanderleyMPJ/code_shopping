@@ -36,8 +36,8 @@ export class CategoryListComponent implements OnInit {
         })
             .subscribe((category) => {
                 console.log(category);
+                this.modal.hide();
                 this.getCategories();
-                $('#exampleModal').modal('hide')
             });
     }
 
