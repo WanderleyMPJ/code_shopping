@@ -1,5 +1,9 @@
 import { Injectable } from '@angular/core';
 import {HttpClient} from "@angular/common/http";
+import {Observable} from "rxjs/internal/Observable";
+import {Category} from "../../Models";
+import {urlApi} from "../../app.params";
+
 
 //singleton
 
@@ -8,16 +12,17 @@ import {HttpClient} from "@angular/common/http";
 })
 export class CategoryHttpService {
 
+    private url : string = urlApi + 'categories';
 
   constructor(private http: HttpClient) {
 
   }
 
-  list(){
+  list(): Observable<{data: Array<Category>}>{
       const token = window.localStorage.getItem('token');
-      // this.http.get<{data: Array<any>}>('http://localhost:8000/api/categories', { *****exemplo
-     return this.http.get<{data: Array<{id: number, name: string, active: boolean, created_at: {date: string}}>}>
-      ('http://localhost:8000/api/categories', {
+      return this.http.get<{data: Array<Category>}>
+    //  ('http://localhost:8000/api/categories', {
+      (`${this.url}`, {
           headers:{
               'Authorization': `Bearer ${token}`
           }

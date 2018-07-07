@@ -4,6 +4,7 @@ import {CategoryNewModalComponent} from "../category-new-modal/category-new-moda
 import {CategoryEditModalComponent} from "../category-edit-modal/category-edit-modal.component";
 import {CategoryDeleteModalComponent} from "../category-delete-modal/category-delete-modal.component";
 import {CategoryHttpService} from "../../../../services/http/category-http.service";
+import {Category} from "../../../../Models";
 
 declare let $;
 
@@ -14,7 +15,7 @@ declare let $;
 })
 export class CategoryListComponent implements OnInit {
 
-  categories : Array<{id: number, name: string, active: boolean, created_at: {date: string}}> = [];
+  categories : Array<Category> = [];
 
   @ViewChild(CategoryNewModalComponent) categoryNewModal: CategoryNewModalComponent;
   @ViewChild(CategoryEditModalComponent) categoryEditModal: CategoryEditModalComponent;
