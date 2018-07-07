@@ -70,3 +70,6 @@ php artisan storage:link
             - add em angular.json em css
                         "node_modules/@fortawesome/fontawesome-free-webfonts/css/fa-solid.css",
                         "node_modules/@fortawesome/fontawesome-free-webfonts/css/fontawesome.css",
+
+      *** criar serviços
+        ng g service services/http/category-http
