@@ -10,7 +10,8 @@ import {HttpClient, HttpErrorResponse} from "@angular/common/http";
 export class CategoryEditModalComponent implements OnInit {
 
   category = {
-        name: ''
+      name: '',
+      active: true
   }
 
   _categoryId: number;
