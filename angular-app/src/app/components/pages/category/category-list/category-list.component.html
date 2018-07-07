@@ -23,9 +23,16 @@
         <i class='fas' [ngClass]="{'fa-check': category.active, 'fa-times': !category.active}"></i>
       </td>
       <td>{{category.created_at.date | date: 'dd/MM/yyyy'}}</td>
-      <td>Editar Excluir</td>
+      <td>
+        <a href="javascript:void(0)" (click)="showModalEdit(category.id)">
+            <i class="fas fa-edit"></i>
+        </a>
+      </td>
     </tr>
     </tbody>
   </table>
 </div>
-<category-new-modal></category-new-modal>
+<category-new-modal
+        (onSucess)="onInsertSucess($event)" (onError)="onInsertError($event)" ></category-new-modal>
+<category-edit-modal [categoryId]="categoryId"
+                     (onSucess)="onEditSucess($event)" (onError)="onEditError($event)"></category-edit-modal>

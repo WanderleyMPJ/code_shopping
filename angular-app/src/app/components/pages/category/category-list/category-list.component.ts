@@ -1,6 +1,7 @@
 import {Component, OnInit, ViewChild} from '@angular/core';
-import {HttpClient} from "@angular/common/http";
+import {HttpClient, HttpErrorResponse} from "@angular/common/http";
 import {CategoryNewModalComponent} from "../category-new-modal/category-new-modal.component";
+import {CategoryEditModalComponent} from "../category-edit-modal/category-edit-modal.component";
 
 declare let $;
 
@@ -14,6 +15,9 @@ export class CategoryListComponent implements OnInit {
   categories : Array<{id: number, name: string, active: boolean, created_at: {date: string}}> = [];
 
   @ViewChild(CategoryNewModalComponent) categoryNewModal: CategoryNewModalComponent;
+  @ViewChild(CategoryEditModalComponent) categoryEditModal: CategoryEditModalComponent;
+
+  categoryId: number;
 
   constructor(private http: HttpClient) {
 
@@ -38,4 +42,26 @@ export class CategoryListComponent implements OnInit {
     showModalinsert(){
         this.categoryNewModal.showModal();
     }
+
+    showModalEdit(categoryId: number){
+        this.categoryId = categoryId;
+        this.categoryEditModal.showModal();
+    }
+
+    onInsertError($event: HttpErrorResponse) {
+        console.log($event);
+    }
+
+    onInsertSucess($event: any) {
+        this.getCategories();
+    }
+
+    onEditError($event: HttpErrorResponse) {
+        console.log($event);
+    }
+
+    onEditSucess($event: any) {
+        this.getCategories();
+    }
+
 }
