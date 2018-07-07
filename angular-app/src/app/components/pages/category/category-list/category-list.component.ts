@@ -48,7 +48,6 @@ export class CategoryListComponent implements OnInit {
         this.categoryEditModal.showModal();
     }
 
-
     onInsertError($event: HttpErrorResponse) {
         console.log($event);
     }
@@ -56,4 +55,13 @@ export class CategoryListComponent implements OnInit {
     onInsertSucess($event: any) {
         this.getCategories();
     }
+
+    onEditError($event: HttpErrorResponse) {
+        console.log($event);
+    }
+
+    onEditSucess($event: any) {
+        this.getCategories();
+    }
+
 }
