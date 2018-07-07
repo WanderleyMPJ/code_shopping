@@ -26,7 +26,11 @@
       <td>
         <a href="javascript:void(0)" (click)="showModalEdit(category.id)">
             <i class="fas fa-edit"></i>
+        </a> |
+        <a href="javascript:void(0)" (click)="showModalDelete(category.id)">
+            <i class="fas fa-trash-alt"></i>
         </a>
+
       </td>
     </tr>
     </tbody>
@@ -36,3 +40,5 @@
         (onSucess)="onInsertSucess($event)" (onError)="onInsertError($event)" ></category-new-modal>
 <category-edit-modal [categoryId]="categoryId"
                      (onSucess)="onEditSucess($event)" (onError)="onEditError($event)"></category-edit-modal>
+<category-delete-modal [categoryId]="categoryId"
+                     (onSucess)="onDeleteSucess($event)" (onError)="onDeleteError($event)"></category-delete-modal>
