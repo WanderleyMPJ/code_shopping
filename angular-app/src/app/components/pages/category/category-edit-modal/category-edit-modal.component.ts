@@ -2,6 +2,7 @@ import {Component, EventEmitter, Input, OnInit, Output, ViewChild} from '@angula
 import {ModalComponent} from "../../../bootstrap/modal/modal.component";
 import {HttpClient, HttpErrorResponse} from "@angular/common/http";
 import {Category} from "../../../../Models";
+import {CategoryHttpService} from "../../../../services/http/category-http.service";
 
 @Component({
   selector: 'category-edit-modal',
@@ -22,7 +23,7 @@ export class CategoryEditModalComponent implements OnInit {
   @Output() onSucess: EventEmitter<any> = new EventEmitter<any>();
   @Output() onError: EventEmitter<HttpErrorResponse> = new EventEmitter<HttpErrorResponse>();
 
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient, public categoryHttp: CategoryHttpService) { }
 
   ngOnInit() {
   }
@@ -31,12 +32,7 @@ export class CategoryEditModalComponent implements OnInit {
   set categoryId(value){
     this._categoryId = value;
     if (this._categoryId){
-        const token = window.localStorage.getItem('token');
-        this.http.get<{data: any}>(`http://localhost:8000/api/categories/${value}`, {
-            headers: {
-                'Authorization': `Bearer ${token}`
-            }
-        })
+        this.categoryHttp.update(value)
             .subscribe((response) => this.category = response.data)
     }
   }

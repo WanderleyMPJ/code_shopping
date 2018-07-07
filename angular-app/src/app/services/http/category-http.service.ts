@@ -21,7 +21,6 @@ export class CategoryHttpService {
   list(): Observable<{data: Array<Category>}>{
       const token = window.localStorage.getItem('token');
       return this.http.get<{data: Array<Category>}>
-    //  ('http://localhost:8000/api/categories', {
       (`${this.url}`, {
           headers:{
               'Authorization': `Bearer ${token}`
@@ -33,12 +32,23 @@ export class CategoryHttpService {
 
   }
 
-  create(){
-
+  create(category: Category): Observable<{data: Array<Category>}>{
+      const token = window.localStorage.getItem('token');
+      return this.http.post<{data: Array<Category>}>
+        (`${this.url}`, category, {
+          headers:{
+              'Authorization': `Bearer ${token}`
+          }
+      })
   }
 
-  update(){
-
+  update(id: number){
+      const token = window.localStorage.getItem('token');
+      return this.http.get<{data: any}>(`${this.url}/${id}`, {
+          headers: {
+              'Authorization': `Bearer ${token}`
+          }
+      })
   }
 
   destroy(){
