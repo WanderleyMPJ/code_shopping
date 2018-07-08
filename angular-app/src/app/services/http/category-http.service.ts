@@ -13,7 +13,7 @@ import {map} from "rxjs/operators";
 })
 export class CategoryHttpService {
 
-    private url : string = urlApi + 'categories';
+  private url : string = urlApi + 'categories';
 
   constructor(private http: HttpClient) {
 
@@ -43,14 +43,17 @@ export class CategoryHttpService {
           )
   }
 
-  create(category: Category): Observable<{data: Array<Category>}>{
+  create(category: Category): Observable<Category>{
       const token = window.localStorage.getItem('token');
-      return this.http.post<{data: Array<Category>}>
-        (`${this.url}`, category, {
+      return this.http.post<{data: Category}>
+        (this.url, category, {
           headers:{
               'Authorization': `Bearer ${token}`
           }
       })
+          .pipe(
+              map(response => response.data)
+          )
   }
 
   update(id: number, _category: Category): Observable<{data: Category}>{
