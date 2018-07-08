@@ -26,7 +26,7 @@ export class CategoryNewModalComponent implements OnInit {
   ngOnInit() {
   }
 
-    submit(){
+   submit(){
         this.categoryHttp.create(this.category)
             .subscribe((category) => {
                 this.onSucess.emit(category);
@@ -34,7 +34,7 @@ export class CategoryNewModalComponent implements OnInit {
             }, error => this.onError.emit(error));
     }
 
-    showModal(){
+  showModal(){
         this.modal.show();
   }
 

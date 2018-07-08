@@ -5,6 +5,7 @@ import {CategoryEditModalComponent} from "../category-edit-modal/category-edit-m
 import {CategoryDeleteModalComponent} from "../category-delete-modal/category-delete-modal.component";
 import {CategoryHttpService} from "../../../../services/http/category-http.service";
 import {Category} from "../../../../Models";
+import {NotifyMessageService} from "../../../../services/notify-message.service";
 
 declare let $;
 
@@ -23,7 +24,8 @@ export class CategoryListComponent implements OnInit {
 
   categoryId: number;
 
-  constructor(private http: HttpClient, public categoryHttp: CategoryHttpService) {
+  constructor(private categoryHttp: CategoryHttpService,
+              private notifyMessage: NotifyMessageService) {
 
   }
 
@@ -55,6 +57,7 @@ export class CategoryListComponent implements OnInit {
     }
 
     onInsertSucess($event: any) {
+        this.notifyMessage.success('Categoria cadastrada com sucesso!');
         this.getCategories();
     }
 
@@ -63,15 +66,19 @@ export class CategoryListComponent implements OnInit {
     }
 
     onEditSucess($event: any) {
+        this.notifyMessage.success('Categoria alterada com sucesso!');
         this.getCategories();
     }
 
     onDeleteError($event: HttpErrorResponse) {
-        console.log($event);
+      if($event.status == 400){
+          this.notifyMessage.error('Não foi possível excluir a categoria! ' +
+              'verifique se a mesma não está relacionada com produtos');
+      }
+        
     }
 
     onDeleteSucess($event: any) {
         this.getCategories();
     }
-
 }

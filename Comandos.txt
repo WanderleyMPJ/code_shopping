@@ -73,3 +73,8 @@ php artisan storage:link
 
       *** criar serviços
         ng g service services/http/category-http
+
+      *** Notificação com PNotify
+       npm install pnotify --save
+       - add linha em angular.json em style
+         ** "node_modules/pnotify/dist/PNotifyBrightTheme.css",
