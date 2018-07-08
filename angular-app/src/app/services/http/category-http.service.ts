@@ -56,13 +56,17 @@ export class CategoryHttpService {
           )
   }
 
-  update(id: number, _category: Category): Observable<{data: Category}>{
+  update(id: number, category: Category): Observable<Category>{
       const token = window.localStorage.getItem('token');
-      return this.http.put<{data: Category}>(`${this.url}/${id}`, _category, {
-          headers: {
+      return this.http
+          .put<{ data: Category }>(`${this.url}/${id}`, category, {
+          headers:{
               'Authorization': `Bearer ${token}`
           }
       })
+          .pipe(
+              map(response => response.data)
+          )
   }
 
   destroy(){
