@@ -1,5 +1,5 @@
 import {Component, EventEmitter, Input, OnInit, Output, ViewChild} from '@angular/core';
-import {HttpClient, HttpErrorResponse} from "@angular/common/http";
+import {HttpErrorResponse} from "@angular/common/http";
 import {ModalComponent} from "../../../bootstrap/modal/modal.component";
 import {Category} from "../../../../Models";
 import {CategoryHttpService} from "../../../../services/http/category-http.service";
@@ -20,7 +20,7 @@ export class CategoryDeleteModalComponent implements OnInit {
   @Output() onSucess: EventEmitter<any> = new EventEmitter<any>();
   @Output() onError: EventEmitter<HttpErrorResponse> = new EventEmitter<HttpErrorResponse>();
 
-  constructor(private http: HttpClient, public categoryHttp: CategoryHttpService) { }
+  constructor(private categoryHttp: CategoryHttpService) { }
 
   ngOnInit() {
   }
@@ -35,13 +35,7 @@ export class CategoryDeleteModalComponent implements OnInit {
   }
 
   destroy(){
-    const token = window.localStorage.getItem('token');
-    this.http
-        .delete(`http://localhost:8000/api/categories/${this._categoryId}`, {
-            headers:{
-                'Authorization': `Bearer ${token}`
-            }
-        })
+    this.categoryHttp.destroy(this._categoryId)
             .subscribe((category) => {
                 this.onSucess.emit(category);
                 this.modal.hide();
@@ -56,5 +50,4 @@ export class CategoryDeleteModalComponent implements OnInit {
         // fazer algo quando o model foi fechado
         console.log($event);
     }
-
 }
