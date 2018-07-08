@@ -3,6 +3,7 @@ import {HttpClient} from "@angular/common/http";
 import {Observable} from "rxjs/internal/Observable";
 import {Category} from "../../Models";
 import {urlApi} from "../../app.params";
+import {map} from "rxjs/operators";
 
 
 //singleton
@@ -28,8 +29,18 @@ export class CategoryHttpService {
       })
   }
 
-  get(){
-
+  get(id: number): Observable<Category>{
+      const token = window.localStorage.getItem('token');
+      return this.http
+          .get<{ data: Category }>
+            (`${this.url}/${id}`, {
+          headers:{
+              'Authorization': `Bearer ${token}`
+          }
+      })
+          .pipe(
+              map(response => response.data)
+          )
   }
 
   create(category: Category): Observable<{data: Array<Category>}>{
@@ -42,9 +53,9 @@ export class CategoryHttpService {
       })
   }
 
-  update(id: number){
+  update(id: number, _category: Category): Observable<{data: Category}>{
       const token = window.localStorage.getItem('token');
-      return this.http.get<{data: any}>(`${this.url}/${id}`, {
+      return this.http.put<{data: Category}>(`${this.url}/${id}`, _category, {
           headers: {
               'Authorization': `Bearer ${token}`
           }
