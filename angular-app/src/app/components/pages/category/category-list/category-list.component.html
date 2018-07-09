@@ -16,7 +16,7 @@
     </tr>
     </thead>
     <tbody>
-    <tr *ngFor="let category of categories">
+    <tr *ngFor="let category of categories | paginate: {itemsPerPage: 5, currentPage: page}">
       <td>{{category.id}}</td>
       <td>{{category.name}}</td>
       <td>
@@ -35,6 +35,9 @@
     </tr>
     </tbody>
   </table>
+    <pagination-controls (pageChange)="page = $event"
+                         previousLabel="Anterior"
+                         nextLabel="Próximo"></pagination-controls>
 </div>
 <category-new-modal
         (onSucess)="categoryInsertServices.onInsertSucess($event)"

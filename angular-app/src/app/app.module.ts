@@ -13,6 +13,7 @@ import { ModalComponent } from './components/bootstrap/modal/modal.component';
 import { CategoryNewModalComponent } from './components/pages/category/category-new-modal/category-new-modal.component';
 import { CategoryEditModalComponent } from './components/pages/category/category-edit-modal/category-edit-modal.component';
 import { CategoryDeleteModalComponent } from './components/pages/category/category-delete-modal/category-delete-modal.component';
+import {NgxPaginationModule} from 'ngx-pagination';
 
 
 const routes: Routes = [
@@ -39,12 +40,14 @@ const routes: Routes = [
     CategoryNewModalComponent,
     CategoryEditModalComponent,
     CategoryDeleteModalComponent
+
   ],
   imports: [
     BrowserModule,
       FormsModule,
       HttpClientModule,
-      RouterModule.forRoot(routes, {enableTracing: true})
+      RouterModule.forRoot(routes, {enableTracing: true}),
+      NgxPaginationModule
   ],
   providers: [],
   bootstrap: [AppComponent]
