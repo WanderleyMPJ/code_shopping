@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import {HttpClient} from "@angular/common/http";
+import {HttpClient, HttpParams} from "@angular/common/http";
 import {Observable} from "rxjs/internal/Observable";
 import {Category} from "../../Models";
 import {urlApi} from "../../app.params";
@@ -19,14 +19,23 @@ export class CategoryHttpService {
 
   }
 
-  list(): Observable<{data: Array<Category>}>{
+  list(page: number): Observable<{data: Array<Category>, meta: any}>{
       const token = window.localStorage.getItem('token');
-      return this.http.get<{data: Array<Category>}>
-      (`${this.url}`, {
-          headers:{
-              'Authorization': `Bearer ${token}`
+
+      const params = new HttpParams({
+          fromObject:{
+              page: page + ""
           }
-      })
+      });
+
+      return this.http
+          .get<{data: Array<Category>, meta: any}>
+            (`${this.url}`, {
+                    params,
+                    headers:{
+                        'Authorization': `Bearer ${token}`
+                    }
+            })
   }
 
   get(id: number): Observable<Category>{

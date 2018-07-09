@@ -1,5 +1,4 @@
 import {Component, OnInit, ViewChild} from '@angular/core';
-import {HttpErrorResponse} from "@angular/common/http";
 import {CategoryNewModalComponent} from "../category-new-modal/category-new-modal.component";
 import {CategoryEditModalComponent} from "../category-edit-modal/category-edit-modal.component";
 import {CategoryDeleteModalComponent} from "../category-delete-modal/category-delete-modal.component";
@@ -22,7 +21,12 @@ declare let $;
 export class CategoryListComponent implements OnInit {
 
   categories : Array<Category> = [];
-  page = 1;
+
+  pagination = {
+      page : 1,
+      totalItems: 0,
+      itemsPerPage: 15
+  }
 
   @ViewChild(CategoryNewModalComponent) categoryNewModal: CategoryNewModalComponent;
   @ViewChild(CategoryEditModalComponent) categoryEditModal: CategoryEditModalComponent;
@@ -44,12 +48,20 @@ export class CategoryListComponent implements OnInit {
         this.getCategories();
     }
 
-    getCategories(){
-        this.categoryHttp.list()
-            .subscribe(response => this.categories = response.data);
+    getCategories() {
+        this.categoryHttp.list(this.pagination.page)
+            .subscribe(response => {
+                this.categories = response.data;
+                this.pagination.totalItems = response.meta.total;
+                this.pagination.itemsPerPage = response.meta.per_page;
+            })
+
     }
 
-
+    pageChanged(page){
+      this.pagination.page = page;
+      this.getCategories();
+    }
 
 
 }
