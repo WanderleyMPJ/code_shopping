@@ -78,3 +78,6 @@ php artisan storage:link
        npm install pnotify --save
        - add linha em angular.json em style
          ** "node_modules/pnotify/dist/PNotifyBrightTheme.css",
+
+      *** paginação
+        - npm install ngx-pagination@3.1.1 --save
