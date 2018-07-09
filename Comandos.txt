@@ -82,3 +82,7 @@ php artisan storage:link
       *** paginação
         - npm install ngx-pagination@3.1.1 --save
          -- importar no app.module
+
+      **** progresso de carregar
+        - npm install github:HubSpot/pace#v1.0.2 --save ///versao que funciona com angular 6
+          ** copiar o css no git e colocado em style.css
