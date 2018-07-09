@@ -70,3 +70,19 @@ php artisan storage:link
             - add em angular.json em css
                         "node_modules/@fortawesome/fontawesome-free-webfonts/css/fa-solid.css",
                         "node_modules/@fortawesome/fontawesome-free-webfonts/css/fontawesome.css",
+
+      *** criar serviços
+        ng g service services/http/category-http
+
+      *** Notificação com PNotify
+       npm install pnotify --save
+       - add linha em angular.json em style
+         ** "node_modules/pnotify/dist/PNotifyBrightTheme.css",
+
+      *** paginação
+        - npm install ngx-pagination@3.1.1 --save
+         -- importar no app.module
+
+      **** progresso de carregar
+        - npm install github:HubSpot/pace#v1.0.2 --save ///versao que funciona com angular 6
+          ** copiar o css no git e colocado em style.css

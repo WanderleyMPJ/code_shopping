@@ -1,20 +1,17 @@
 import {Component, EventEmitter, Input, OnInit, Output, ViewChild} from '@angular/core';
-import {ModalComponent} from "../../../bootstrap/modal/modal.component";
 import {HttpErrorResponse} from "@angular/common/http";
+import {ModalComponent} from "../../../bootstrap/modal/modal.component";
 import {Category} from "../../../../Models";
 import {CategoryHttpService} from "../../../../services/http/category-http.service";
 
 @Component({
-  selector: 'category-edit-modal',
-  templateUrl: './category-edit-modal.component.html',
-  styleUrls: ['./category-edit-modal.component.css']
+  selector: 'category-delete-modal',
+  templateUrl: './category-delete-modal.component.html',
+  styleUrls: ['./category-delete-modal.component.css']
 })
-export class CategoryEditModalComponent implements OnInit {
+export class CategoryDeleteModalComponent implements OnInit {
 
-  category: Category = {
-      name: '',
-      active: true
-  }
+  category: Category = null;
 
   _categoryId: number;
 
@@ -31,28 +28,26 @@ export class CategoryEditModalComponent implements OnInit {
   @Input()
   set categoryId(value){
     this._categoryId = value;
-    if (this._categoryId){
-        this.categoryHttp
-            .get(this._categoryId)
+    if (this._categoryId) {
+        this.categoryHttp.get(value)
             .subscribe(category => this.category = category)
     }
   }
 
-    submit(){
-        this.categoryHttp.update(this._categoryId, this.category)
+  destroy(){
+    this.categoryHttp.destroy(this._categoryId)
             .subscribe((category) => {
                 this.onSucess.emit(category);
                 this.modal.hide();
             }, error => this.onError.emit(error));
     }
 
-  showModal(){
+    showModal(){
         this.modal.show();
-  }
+    }
 
-  hideModal($event: Event){
+    hideModal($event: Event){
         // fazer algo quando o model foi fechado
         console.log($event);
-  }
-
+    }
 }
