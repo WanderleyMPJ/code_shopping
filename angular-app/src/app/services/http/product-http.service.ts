@@ -4,11 +4,12 @@ import {urlApi} from "../../app.params";
 import {HttpClient, HttpParams} from "@angular/common/http";
 import {map} from "rxjs/operators";
 import {Observable} from "rxjs/internal/Observable";
+import {HttpResource} from "./http-resource";
 
 @Injectable({
   providedIn: 'root'
 })
-export class ProductHttpService {
+export class ProductHttpService implements HttpResource<Product>{
 
     private url : string = urlApi + 'products';
 
@@ -49,10 +50,10 @@ export class ProductHttpService {
             )
     }
 
-    create(product: Product): Observable<Product>{
+    create(data: Product): Observable<Product>{
         const token = window.localStorage.getItem('token');
         return this.http.post<{data: Product}>
-        (this.url, product, {
+        (this.url, data, {
             headers:{
                 'Authorization': `Bearer ${token}`
             }
@@ -62,10 +63,10 @@ export class ProductHttpService {
             )
     }
 
-    update(id: number, product: Product): Observable<Product>{
+    update(id: number, data: Product): Observable<Product>{
         const token = window.localStorage.getItem('token');
         return this.http
-            .put<{ data: Product }>(`${this.url}/${id}`, product, {
+            .put<{ data: Product }>(`${this.url}/${id}`, data, {
                 headers:{
                     'Authorization': `Bearer ${token}`
                 }

@@ -11,15 +11,10 @@
       </div>
 
       <div class="form-group">
-        <label for="name">Descrição</label>
-        <input type="text" class="form-control" id="description-edit" name="description" required
-               [(ngModel)]="product.description">
-      </div>
-
-      <div class="form-group">
-        <label for="name">Slug</label>
-        <input type="text" class="form-control" id="slug-edit" name="slug" required
-               [(ngModel)]="product.slug">
+        <label for="name">Description</label>
+        <textarea class="form-control" id="description-edit" name="description" col="30" rows="3" required
+                  [(ngModel)]="product.description">
+                </textarea>
       </div>
 
       <div class="form-group">

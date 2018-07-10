@@ -10,13 +10,9 @@
             </div>
             <div class="form-group">
                 <label for="name">Description</label>
-                <input type="text" class="form-control" id="description-insert" name="description" required
+                <textarea class="form-control" id="description-insert" name="description" col="30" rows="3" required
                        [(ngModel)]="product.description">
-            </div>
-            <div class="form-group">
-                <label for="name">Slug</label>
-                <input type="text" class="form-control" id="slug-insert" name="slug" required
-                       [(ngModel)]="product.slug">
+                </textarea>
             </div>
             <div class="form-group">
                 <label for="name">Preço</label>
