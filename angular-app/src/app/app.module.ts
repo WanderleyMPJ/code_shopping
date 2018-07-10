@@ -22,6 +22,7 @@ import { ProductNewModalComponent } from './components/pages/product/product-new
 import { ProductEditModalComponent } from './components/pages/product/product-edit-modal/product-edit-modal.component';
 import { ProductDeleteModalComponent } from './components/pages/product/product-delete-modal/product-delete-modal.component';
 import { ProductListComponent } from './components/pages/product/product-list/product-list.component';
+import { NumberFormatBrPipe } from './pipes/number-format-br.pipe';
 
 
 const routes: Routes = [
@@ -62,7 +63,8 @@ const routes: Routes = [
     ProductNewModalComponent,
     ProductEditModalComponent,
     ProductDeleteModalComponent,
-    ProductListComponent
+    ProductListComponent,
+    NumberFormatBrPipe
 
   ],
   imports: [

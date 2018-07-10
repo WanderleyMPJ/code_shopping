@@ -9,9 +9,8 @@
     </tr>
     <tr>
       <th style="width: 5%">ID</th>
-      <th style="width: 65%">Nome</th>
-      <th style="width: 65%">Descrição</th>
-      <th style="width: 65%">Price</th>
+      <th style="width: 55%">Nome</th>
+      <th style="width: 10%">Price</th>
       <th style="width: 10%">Ativa?</th>
       <th style="width: 10%">Criado EM</th>
       <th style="width: 10%">Ações</th>
@@ -24,8 +23,7 @@
                 totalItems: pagination.totalItems}">
       <td>{{product.id}}</td>
       <td>{{product.name}}</td>
-      <td>{{product.description}}</td>
-      <td>{{product.price}}</td>
+      <td>{{product.price | numberFormatBr}}</td>
       <td>
         <i class='fas' [ngClass]="{'fa-check': product.active, 'fa-times': !product.active}"></i>
       </td>

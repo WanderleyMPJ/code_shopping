@@ -1,5 +1,3 @@
-import NumberFormat = Intl.NumberFormat;
-
 export interface Category{
     id?: number;
     name: string;
@@ -20,10 +18,10 @@ export interface User{
 export interface Product{
     id?: number;
     name: string;
-    slug?: string;
-    description?: string,
+    readonly slug?: string;
+    description: string,
     price?: Number,
-    stok?: Number,
+ //   stok?: Number,
     active: boolean;
     readonly created_at?: { date: string};
     readonly updated_at?: { date: string};

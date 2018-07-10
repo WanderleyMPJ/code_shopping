@@ -15,12 +15,12 @@ import {ProductEditModalComponent} from "../product-edit-modal/product-edit-moda
   styleUrls: ['./product-list.component.css']
 })
 export class ProductListComponent implements OnInit {
-    products : Array<Product> = [];
 
+    products : Array<Product> = [];
     pagination = {
         page : 1,
         totalItems: 0,
-        itemsPerPage: 15
+        itemsPerPage: 10
     }
 
     @ViewChild(ProductNewModalComponent) productNewModal: ProductNewModalComponent;
@@ -29,9 +29,7 @@ export class ProductListComponent implements OnInit {
 
     productId: number;
 
-    constructor(private productHttp: ProductHttpService
-                ,
-                private notifyMessage: NotifyMessageService,
+    constructor(private productHttp: ProductHttpService,
                 protected productInsertServices: ProductInsertServices,
                 protected productEditServices: ProductEditServices,
                 protected productDeleteServices: ProductDeleteServices){
