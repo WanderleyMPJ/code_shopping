@@ -23,6 +23,7 @@ import { ProductEditModalComponent } from './components/pages/product/product-ed
 import { ProductDeleteModalComponent } from './components/pages/product/product-delete-modal/product-delete-modal.component';
 import { ProductListComponent } from './components/pages/product/product-list/product-list.component';
 import { NumberFormatBrPipe } from './pipes/number-format-br.pipe';
+import { ProductCategoryListComponent } from './components/pages/product-category/product-category-list/product-category-list.component';
 
 
 const routes: Routes = [
@@ -38,12 +39,14 @@ const routes: Routes = [
             pathMatch: 'full'
     },
     {
-        path: 'users/list', component: UserListComponent
+        path: 'products/:product/categories/list', component: ProductCategoryListComponent
     },
     {
         path: 'products/list', component: ProductListComponent
     },
-
+    {
+        path: 'users/list', component: UserListComponent
+    },
 ]
 
 @NgModule({
@@ -64,7 +67,8 @@ const routes: Routes = [
     ProductEditModalComponent,
     ProductDeleteModalComponent,
     ProductListComponent,
-    NumberFormatBrPipe
+    NumberFormatBrPipe,
+    ProductCategoryListComponent
 
   ],
   imports: [
