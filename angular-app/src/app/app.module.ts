@@ -14,6 +14,14 @@ import { CategoryNewModalComponent } from './components/pages/category/category-
 import { CategoryEditModalComponent } from './components/pages/category/category-edit-modal/category-edit-modal.component';
 import { CategoryDeleteModalComponent } from './components/pages/category/category-delete-modal/category-delete-modal.component';
 import {NgxPaginationModule} from 'ngx-pagination';
+import { UserListComponent } from './components/pages/user/user-list/user-list.component';
+import { UserDeleteModalComponent } from './components/pages/user/user-delete-modal/user-delete-modal.component';
+import { UserEditModalComponent } from './components/pages/user/user-edit-modal/user-edit-modal.component';
+import { UserNewModalComponent } from './components/pages/user/user-new-modal/user-new-modal.component';
+import { ProductNewModalComponent } from './components/pages/product/product-new-modal/product-new-modal.component';
+import { ProductEditModalComponent } from './components/pages/product/product-edit-modal/product-edit-modal.component';
+import { ProductDeleteModalComponent } from './components/pages/product/product-delete-modal/product-delete-modal.component';
+import { ProductListComponent } from './components/pages/product/product-list/product-list.component';
 
 
 const routes: Routes = [
@@ -27,7 +35,14 @@ const routes: Routes = [
         path: '',
             redirectTo: '/login',
             pathMatch: 'full'
-    }
+    },
+    {
+        path: 'users/list', component: UserListComponent
+    },
+    {
+        path: 'products/list', component: ProductListComponent
+    },
+
 ]
 
 @NgModule({
@@ -39,7 +54,15 @@ const routes: Routes = [
     ModalComponent,
     CategoryNewModalComponent,
     CategoryEditModalComponent,
-    CategoryDeleteModalComponent
+    CategoryDeleteModalComponent,
+    UserListComponent,
+    UserDeleteModalComponent,
+    UserEditModalComponent,
+    UserNewModalComponent,
+    ProductNewModalComponent,
+    ProductEditModalComponent,
+    ProductDeleteModalComponent,
+    ProductListComponent
 
   ],
   imports: [

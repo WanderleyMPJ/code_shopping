@@ -25,7 +25,7 @@ export class CategoryEditServices{
     }
 
     onEditError($event: HttpErrorResponse) {
-        this.notifyMessage.success(`Erro editando Category... ${$event}`);
+        this.notifyMessage.error(`Erro editando Category... ${$event}`);
     }
 
     onEditSucess($event: any) {
