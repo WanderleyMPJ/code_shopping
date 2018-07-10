@@ -17,7 +17,7 @@
     </thead>
     <tbody>
     <tr *ngFor="let user of users | paginate: {
-                itemsPerPage: 5,
+                itemsPerPage: pagination.itemsPerPage,
                 currentPage: pagination.page,
                 totalItems: pagination.totalItems}">
       <td>{{user.id}}</td>
