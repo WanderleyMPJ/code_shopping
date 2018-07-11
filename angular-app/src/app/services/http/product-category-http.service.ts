@@ -28,4 +28,20 @@ export class ProductCategoryHttpService {
               map(response => response.data)
           )
       }
+
+
+  create(productid: number, categoriesid: number[]): Observable<ProductCategory>{
+      const token = window.localStorage.getItem('token');
+      return this.http
+          .post<{ data: ProductCategory}>
+          (`${this.url}${productid}/categories`, {categories: categoriesid},{
+              headers: {
+                  'Authorization': `Bearer ${token}`
+              }
+          })
+          .pipe(
+              map(response => response.data)
+          )
   }
+
+}
