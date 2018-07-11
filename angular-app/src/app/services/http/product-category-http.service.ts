@@ -11,7 +11,7 @@ import {map} from "rxjs/operators";
 
 export class ProductCategoryHttpService {
 
-    private url : string = urlApi + 'products/';
+  private url : string = urlApi + 'products/';
 
   constructor(private http:  HttpClient) { }
 
@@ -19,7 +19,7 @@ export class ProductCategoryHttpService {
       const token = window.localStorage.getItem('token');
       return this.http
           .get<{ data: ProductCategory}>
-          (`${this.url}${productid}/categories`, {
+          (this.getBaseUrl(productid), {
               headers: {
                   'Authorization': `Bearer ${token}`
               }
@@ -34,7 +34,7 @@ export class ProductCategoryHttpService {
       const token = window.localStorage.getItem('token');
       return this.http
           .post<{ data: ProductCategory}>
-          (`${this.url}${productid}/categories`, {categories: categoriesid},{
+          (this.getBaseUrl(productid), {categories: categoriesid},{
               headers: {
                   'Authorization': `Bearer ${token}`
               }
@@ -44,4 +44,11 @@ export class ProductCategoryHttpService {
           )
   }
 
+  private getBaseUrl(productid:number, categoryid:number = null): string{
+      let baseUrl = `${this.url}${productid}/categories`;
+      if(categoryid){
+          baseUrl += `/${categoryid}`;
+      }
+      return baseUrl;
+  }
 }
