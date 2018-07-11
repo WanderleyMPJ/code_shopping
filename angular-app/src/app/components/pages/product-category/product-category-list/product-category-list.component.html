@@ -4,6 +4,16 @@
     <thead>
       <tr>
         <td colspan="5">
+          <form class="form-inline">
+            <div class="col-auto">
+              <label for="categories[]">Categorias</label>
+              <select class="form-control" name="categories[]" id="categories[]" multiple (change)="change()"
+                  [(ngModel)]="categoriesid">
+                <option *ngFor="let category of categories" [ngValue]="category.id">{{category.name}}</option>
+              </select>
+            </div>
+            <button class="btn btn-primary" type="submit">Incluir Categorias</button>
+          </form>
         </td>
       </tr>
       <tr>
