@@ -15,6 +15,13 @@ export interface User{
     readonly updated_at?: { date: string};
 }
 
+export interface ProductCategory{
+    product: Product;
+    categories: Category[];
+}
+
+
+
 export interface Product{
     id?: number;
     name: string;
@@ -26,3 +33,4 @@ export interface Product{
     readonly created_at?: { date: string};
     readonly updated_at?: { date: string};
 }
+
