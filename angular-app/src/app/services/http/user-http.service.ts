@@ -4,6 +4,8 @@ import {urlApi} from "../../app.params";
 import {HttpClient, HttpParams} from "@angular/common/http";
 import {map} from "rxjs/operators";
 import {Observable} from "rxjs/internal/Observable";
+import {SearchParams, SearchParamsBuilder} from "./http-resource";
+import {s} from "@angular/core/src/render3";
 
 @Injectable({
   providedIn: 'root'
@@ -16,15 +18,12 @@ export class UserHttpService {
 
     }
 
-    list(page: number): Observable<{data: Array<User>, meta: any}>{
+    list(searchParams: SearchParams): Observable<{data: Array<User>, meta: any}>{
         const token = window.localStorage.getItem('token');
-
+        const sParams = new SearchParamsBuilder(searchParams).makeObject();
         const params = new HttpParams({
-            fromObject:{
-                page: page + ""
-            }
+            fromObject: (<any>sParams)
         });
-
         return this.http
             .get<{data: Array<User>, meta: any}>
             (`${this.url}`, {

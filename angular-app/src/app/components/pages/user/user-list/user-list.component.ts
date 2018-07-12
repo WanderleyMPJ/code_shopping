@@ -46,7 +46,7 @@ export class UserListComponent implements OnInit {
     }
 
     getUsers() {
-        this.userHttp.list(this.pagination.page)
+        this.userHttp.list({page: this.pagination.page})
             .subscribe(response => {
                 this.users = response.data;
                 this.pagination.totalItems = response.meta.total;
