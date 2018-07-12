@@ -4,6 +4,7 @@ import {Observable} from "rxjs/internal/Observable";
 import {Category} from "../../Models";
 import {urlApi} from "../../app.params";
 import {map} from "rxjs/operators";
+import {SearchParams} from "./http-resource";
 
 
 //singleton
@@ -19,13 +20,18 @@ export class CategoryHttpService {
 
   }
 
-  list(page: number): Observable<{data: Array<Category>, meta: any}>{
+  list(searchParams: SearchParams): Observable<{data: Array<Category>, meta: any}>{
       const token = window.localStorage.getItem('token');
+      const sParams : any = {
+          page: searchParams.page + "",
+      };
+      if(searchParams.all){
+          sParams.all = '1';
+          delete sParams.page;
+      };
 
       const params = new HttpParams({
-          fromObject:{
-              page: page + ""
-          }
+          fromObject: sParams
       });
 
       return this.http
@@ -35,7 +41,7 @@ export class CategoryHttpService {
                     headers:{
                         'Authorization': `Bearer ${token}`
                     }
-            })
+            });
   }
 
   get(id: number): Observable<Category>{

@@ -8,6 +8,7 @@ import {NotifyMessageService} from "../../../../services/notify-message.service"
 import {CategoryInsertServices} from "./category-insert.services";
 import {CategoryEditServices} from "./category-edit.services";
 import {CategoryDeleteServices} from "./category-delete.services";
+import {SearchParams} from "../../../../services/http/http-resource";
 
 
 declare let $;
@@ -49,7 +50,7 @@ export class CategoryListComponent implements OnInit {
     }
 
     getCategories() {
-        this.categoryHttp.list(this.pagination.page)
+        this.categoryHttp.list({page: this.pagination.page})
             .subscribe(response => {
                 this.categories = response.data;
                 this.pagination.totalItems = response.meta.total;

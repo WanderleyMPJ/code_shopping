@@ -8,6 +8,7 @@ import {ProductEditServices} from "./product-edit.services";
 import {ProductInsertServices} from "./product-insert.services";
 import {ProductNewModalComponent} from "../product-new-modal/product-new-modal.component";
 import {ProductEditModalComponent} from "../product-edit-modal/product-edit-modal.component";
+import {SearchParams} from "../../../../services/http/http-resource";
 
 @Component({
   selector: 'product-list',
@@ -43,7 +44,7 @@ export class ProductListComponent implements OnInit {
     }
 
     getProducts() {
-        this.productHttp.list(this.pagination.page)
+        this.productHttp.list({page: this.pagination.page})
             .subscribe(response => {
                 this.products = response.data;
                 this.pagination.totalItems = response.meta.total;

@@ -3,6 +3,7 @@ import {Category, Product, ProductCategory} from "../../../../Models";
 import {CategoryHttpService} from "../../../../services/http/category-http.service";
 import {ProductCategoryHttpService} from "../../../../services/http/product-category-http.service";
 import {HttpErrorResponse} from "@angular/common/http";
+import {SearchParams} from "../../../../services/http/http-resource";
 
 @Component({
   selector: 'product-category-new',
@@ -29,7 +30,7 @@ export class ProductCategoryNewComponent implements OnInit {
   }
 
   getCategories(){
-    this.categoryHttp.list(1)
+      this.categoryHttp.list({all: 1})
             .subscribe(response => {
                 this.categories = response.data;
             })
