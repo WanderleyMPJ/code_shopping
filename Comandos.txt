@@ -86,3 +86,6 @@ php artisan storage:link
       **** progresso de carregar
         - npm install github:HubSpot/pace#v1.0.2 --save ///versao que funciona com angular 6
           ** copiar o css no git e colocado em style.css
+
+      ***** criar pipe
+          ng g pipe pipes/number-format-br

@@ -17,7 +17,7 @@
     </thead>
     <tbody>
     <tr *ngFor="let category of categories | paginate: {
-                itemsPerPage: 5,
+                itemsPerPage: pagination.itemsPerPage,
                 currentPage: pagination.page,
                 totalItems: pagination.totalItems}">
       <td>{{category.id}}</td>
