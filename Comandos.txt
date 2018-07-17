@@ -42,6 +42,19 @@ php artisan storage:link
  ** alterar email padrao reset password
     - php artisan vendor:publish --tag=laravel-notifications
 
+** JWT
+    * composer require tymon/jwt-auth:dev-develop#481c67b0d95ad14c3f3690bb6ec2a285c2f1ab1b ---começa com 481
+    * php artisan jwt:secret
+    * config/auth alterar a autenticação api driver para 'jwt'
+    *php artisan vendor:publish --provider="Tymon\JWTAuth\Providers\LaravelServiceProvider"
+        ** gera arquivo jwt.php aonde tem as configurações
+        ** model user implementar uma interface
+            *** class User extends Authenticatable implements JWTSubject
+        ** add 'middleware' => 'auth:api' em api no grupo para proteger
+        ** criar o CrosMidlware
+        ** add o CrosMidlware em Kernel
+
+
 ** comandos postman
     -- enviar o token
         -- header -> Authorization => Bearer $token
@@ -55,7 +68,16 @@ php artisan storage:link
         -- alterar em kernel  protected $routeMiddleware e add a linha:
            --- 'jwt.autorefresh'
 
+
 ** ANGULAR
+    * instalar AdminLTe
+    - npm install --save admin-lte && npm install --save jquery
+            ng g c header --spec=false
+            ng g c footer --spec=false
+            ng g c settings --spec=false
+            ng g c menu --spec=false
+
+
     * INSTALAR BOOTSTRAP
         - npm install bootstrap --save
     * INSTALAR jquery e popper.js
