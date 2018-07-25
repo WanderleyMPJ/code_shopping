@@ -111,3 +111,15 @@ php artisan storage:link
 
       ***** criar pipe
           ng g pipe pipes/number-format-br
+
+
+          ****  Para reinstalar esta aplicação do curso seria necessário executar os seguintes comando:
+
+          git clone + repositório Git
+          composer install
+          gerar o arquivo .env
+          php artisan key:generate
+          php artisan jwt:secret
+          configurar o banco de dados
+          php artisan storage:link
+          php artisan migrate --seed
