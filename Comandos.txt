@@ -112,6 +112,10 @@ php artisan storage:link
       ***** criar pipe
           ng g pipe pipes/number-format-br
 
+      ****** biblioteca   para controlar o token no angular
+        npm install @auth0/angular-jwt@2.0.0 --save
+
+
 
           ****  Para reinstalar esta aplicação do curso seria necessário executar os seguintes comando:
 

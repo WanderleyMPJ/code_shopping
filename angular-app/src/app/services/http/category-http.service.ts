@@ -22,56 +22,36 @@ export class CategoryHttpService {
   }
 
   list(searchParams: SearchParams): Observable<{data: Array<Category>, meta: any}>{
-      const token = this.authService.getToken();
       const sParams = new SearchParamsBuilder(searchParams).makeObject();
       const params = new HttpParams({
           fromObject: (<any>sParams)
       });
       return this.http
           .get<{data: Array<Category>, meta: any}>
-            (`${this.url}`, {
-                    params,
-                    headers:{
-                        'Authorization': `Bearer ${token}`
-                    }
-            });
+            (`${this.url}`, {params});
   }
 
   get(id: number): Observable<Category>{
-      const token = this.authService.getToken();
       return this.http
           .get<{ data: Category }>
-            (`${this.url}/${id}`, {
-          headers:{
-              'Authorization': `Bearer ${token}`
-          }
-      })
+            (`${this.url}/${id}`)
           .pipe(
               map(response => response.data)
           )
   }
 
   create(category: Category): Observable<Category>{
-      const token = this.authService.getToken();
-      return this.http.post<{data: Category}>
-        (this.url, category, {
-          headers:{
-              'Authorization': `Bearer ${token}`
-          }
-      })
+      return this.http
+          .post<{data: Category}>
+        (this.url, category)
           .pipe(
               map(response => response.data)
           )
   }
 
   update(id: number, category: Category): Observable<Category>{
-      const token = this.authService.getToken();
       return this.http
-          .put<{ data: Category }>(`${this.url}/${id}`, category, {
-          headers:{
-              'Authorization': `Bearer ${token}`
-          }
-      })
+          .put<{ data: Category }>(`${this.url}/${id}`, category)
           .pipe(
               map(response => response.data)
           )
@@ -81,10 +61,6 @@ export class CategoryHttpService {
       const token = this.authService.getToken();
       return this.http
           .delete
-          (`${this.url}/${id}`, {
-              headers:{
-                  'Authorization': `Bearer ${token}`
-              }
-          })
+          (`${this.url}/${id}`)
   }
 }
