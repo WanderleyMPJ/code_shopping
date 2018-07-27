@@ -28,8 +28,6 @@ export class LoginComponent implements OnInit {
         //generics - Java
         this.authService.login(this.credentials)
             .subscribe((data) => {
-                const token = data.token;
-                window.localStorage.setItem('token', token);
                 this.router.navigate(['categories/list']);
             }, () => this.showMessageError = true);
         return false;

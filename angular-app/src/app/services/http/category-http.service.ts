@@ -5,6 +5,7 @@ import {Category} from "../../Models";
 import {urlApi} from "../../app.params";
 import {map} from "rxjs/operators";
 import {SearchParams, SearchParamsBuilder, HttpResource} from "./http-resource";
+import {AuthService} from "../auth.service";
 
 
 //singleton
@@ -16,12 +17,12 @@ export class CategoryHttpService {
 
   private url : string = urlApi + 'categories';
 
-  constructor(private http: HttpClient) {
+  constructor(private http: HttpClient, private authService: AuthService) {
 
   }
 
   list(searchParams: SearchParams): Observable<{data: Array<Category>, meta: any}>{
-      const token = window.localStorage.getItem('token');
+      const token = this.authService.getToken();
       const sParams = new SearchParamsBuilder(searchParams).makeObject();
       const params = new HttpParams({
           fromObject: (<any>sParams)
@@ -37,7 +38,7 @@ export class CategoryHttpService {
   }
 
   get(id: number): Observable<Category>{
-      const token = window.localStorage.getItem('token');
+      const token = this.authService.getToken();
       return this.http
           .get<{ data: Category }>
             (`${this.url}/${id}`, {
@@ -51,7 +52,7 @@ export class CategoryHttpService {
   }
 
   create(category: Category): Observable<Category>{
-      const token = window.localStorage.getItem('token');
+      const token = this.authService.getToken();
       return this.http.post<{data: Category}>
         (this.url, category, {
           headers:{
@@ -64,7 +65,7 @@ export class CategoryHttpService {
   }
 
   update(id: number, category: Category): Observable<Category>{
-      const token = window.localStorage.getItem('token');
+      const token = this.authService.getToken();
       return this.http
           .put<{ data: Category }>(`${this.url}/${id}`, category, {
           headers:{
@@ -77,7 +78,7 @@ export class CategoryHttpService {
   }
 
   destroy(id: number): Observable<any>{
-      const token = window.localStorage.getItem('token');
+      const token = this.authService.getToken();
       return this.http
           .delete
           (`${this.url}/${id}`, {
