@@ -27,6 +27,7 @@ import { ProductCategoryListComponent } from './components/pages/product-categor
 import { ProductCategoryNewComponent } from './components/pages/product-category/product-category-new/product-category-new.component';
 import { JwtModule, JWT_OPTIONS} from '@auth0/angular-jwt';
 import {AuthService} from "./services/auth.service";
+import { NavbarComponent } from './components/booststrap/navbar/navbar.component';
 
 
 const routes: Routes = [
@@ -83,7 +84,8 @@ const routes: Routes = [
     ProductListComponent,
     NumberFormatBrPipe,
     ProductCategoryListComponent,
-    ProductCategoryNewComponent
+    ProductCategoryNewComponent,
+    NavbarComponent
 
   ],
   imports: [
