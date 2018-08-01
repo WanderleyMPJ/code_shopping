@@ -127,3 +127,8 @@ php artisan storage:link
           configurar o banco de dados
           php artisan storage:link
           php artisan migrate --seed
+
+
+    ***** criar um guard
+     - serve para n permite q acesse paginas internas sem estar logado
+      -- ng g guard guards/auth
