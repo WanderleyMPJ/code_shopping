@@ -58,7 +58,6 @@ export class CategoryHttpService {
   }
 
   destroy(id: number): Observable<any>{
-      const token = this.authService.getToken();
       return this.http
           .delete
           (`${this.url}/${id}`)

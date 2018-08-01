@@ -87,7 +87,7 @@ const routes: Routes = [
 
   ],
   imports: [
-    BrowserModule,
+      BrowserModule,
       FormsModule,
       HttpClientModule,
       RouterModule.forRoot(routes, {enableTracing: true}),
