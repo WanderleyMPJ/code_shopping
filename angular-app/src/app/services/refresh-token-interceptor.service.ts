@@ -8,7 +8,9 @@ import {tap} from "rxjs/operators";
 })
 export class RefreshTokenInterceptorService implements HttpInterceptor{
 
-  constructor() { }
+  constructor() {
+
+  }
 
   intercept(req: HttpRequest<any>, next: HttpHandler): Observable<any>{
     return next

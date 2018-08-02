@@ -7,7 +7,7 @@ import { CategoryListComponent } from './components/pages/category/category-list
 import { AlertErrorComponent } from './components/bootstrap/alert-error/alert-error.component';
 
 import {FormsModule} from "@angular/forms";
-import {HttpClientModule} from "@angular/common/http";
+import {HTTP_INTERCEPTORS, HttpClientModule} from "@angular/common/http";
 import {RouterModule, Routes} from "@angular/router";
 import { ModalComponent } from './components/bootstrap/modal/modal.component';
 import { CategoryNewModalComponent } from './components/pages/category/category-new-modal/category-new-modal.component';
@@ -29,6 +29,7 @@ import { JwtModule, JWT_OPTIONS} from '@auth0/angular-jwt';
 import {AuthService} from "./services/auth.service";
 import { NavbarComponent } from './components/booststrap/navbar/navbar.component';
 import {AuthGuard} from "./guards/auth.guard";
+import {RefreshTokenInterceptorService} from "./services/refresh-token-interceptor.service";
 
 
 const routes: Routes = [
@@ -111,7 +112,13 @@ const routes: Routes = [
           }
       })
   ],
-  providers: [],
+  providers: [
+      {
+          provide: HTTP_INTERCEPTORS,
+          useClass: RefreshTokenInterceptorService,
+          multi: true
+      }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
