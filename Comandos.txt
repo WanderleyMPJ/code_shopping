@@ -67,6 +67,7 @@ php artisan storage:link
     - habilitar autorefresh
         -- alterar em kernel  protected $routeMiddleware e add a linha:
            --- 'jwt.autorefresh'
+           'jwt.refresh' => \Tymon\JWTAuth\Http\Middleware\RefreshToken\RefreshToken::class,
 
 
 ** ANGULAR
