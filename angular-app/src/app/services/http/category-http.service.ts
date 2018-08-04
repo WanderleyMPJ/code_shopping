@@ -2,10 +2,10 @@ import { Injectable } from '@angular/core';
 import {HttpClient, HttpParams} from "@angular/common/http";
 import {Observable} from "rxjs/internal/Observable";
 import {Category} from "../../Models";
-import {urlApi} from "../../app.params";
 import {map} from "rxjs/operators";
 import {SearchParams, SearchParamsBuilder, HttpResource} from "./http-resource";
 import {AuthService} from "../auth.service";
+import {environment} from "../../../environments/environment";
 
 
 //singleton
@@ -15,7 +15,7 @@ import {AuthService} from "../auth.service";
 })
 export class CategoryHttpService {
 
-  private url : string = urlApi + 'categories';
+    private url : string = `${environment.api.url}/categories`;
 
   constructor(private http: HttpClient, private authService: AuthService) {
 

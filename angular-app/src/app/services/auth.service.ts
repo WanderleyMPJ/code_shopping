@@ -4,7 +4,7 @@ import {HttpClient} from "@angular/common/http";
 import {tap} from "rxjs/operators";
 import {JwtHelperService} from "@auth0/angular-jwt";
 import {User} from "../Models";
-
+import {environment} from "../../environments/environment";
 
 const TOKEN_KEY = 'code_shopping_token';
 
@@ -22,7 +22,7 @@ export class AuthService {
 
   login(user: {email:string, password:string}):Observable<{token: string}>{
     return this.http
-        .post<{token: string}>('http://localhost:8000/api/login', user)
+        .post<{token: string}>(`${environment.api.url}/login`, user)
         .pipe(
             tap(response => {
               this.setToken(response.token);
@@ -52,7 +52,7 @@ export class AuthService {
 
   logout(): Observable<any>{
       return this.http
-          .post<{token: string}>('http://localhost:8000/api/logout', {})
+          .post<{token: string}>(`${environment.api.url}/logout`, {})
           .pipe(
               tap(() => {
                   this.setToken(null);

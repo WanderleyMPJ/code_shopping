@@ -1,17 +1,17 @@
 import { Injectable } from '@angular/core';
 import {Product} from "../../Models";
-import {urlApi} from "../../app.params";
 import {HttpClient, HttpParams} from "@angular/common/http";
 import {map} from "rxjs/operators";
 import {Observable} from "rxjs/internal/Observable";
 import {HttpResource, SearchParams, SearchParamsBuilder} from "./http-resource";
+import {environment} from "../../../environments/environment";
 
 @Injectable({
   providedIn: 'root'
 })
 export class ProductHttpService implements HttpResource<Product>{
 
-    private url : string = urlApi + 'products';
+    private url : string = `${environment.api.url}/products`;
 
     constructor(private http: HttpClient) {
 
