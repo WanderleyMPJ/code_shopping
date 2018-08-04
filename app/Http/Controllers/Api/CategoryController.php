@@ -18,9 +18,7 @@ class CategoryController extends Controller
         /** @var Builder $filterQuery */
         $filterQuery = Category::filtered($filter);
 
-        $categories = $filterQuery->get();
-
-     //   $categories = $request->has('all')? Category::all(): Category::paginate(5);
+        $categories = $request->has('all')? $filterQuery->get(): $filterQuery->paginate(5);
         return CategoryResource::collection($categories);
     }
 
