@@ -133,3 +133,9 @@ php artisan storage:link
     ***** criar um guard
      - serve para n permite q acesse paginas internas sem estar logado
       -- ng g guard guards/auth
+
+      *** rodar script java
+         -- node generate-env.js
+         * adicionar em package.json para poder executar automatico
+          -- "env": "node generate-env.js"
+          --- para instalar rodar npm run env

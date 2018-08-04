@@ -17,7 +17,7 @@ export class CategoryHttpService {
 
     private url : string = `${environment.api.url}/categories`;
 
-  constructor(private http: HttpClient, private authService: AuthService) {
+  constructor(private http: HttpClient) {
 
   }
 
