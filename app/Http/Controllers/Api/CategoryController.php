@@ -13,9 +13,14 @@ class CategoryController extends Controller
 
     public function index(Request $request)
     {
-        $categories = $request->has('all')
-            ? Category::all()
-            : Category::paginate(5);
+        /** @var CategoryFilter $filter */
+        #filter = app(CategoryFilter::class);
+        /** @var Builder $filterQuery */
+        $filterQuery = Category::filtered($filter);
+
+        $categories = $filterQuery->all();
+
+     //   $categories = $request->has('all')? Category::all(): Category::paginate(5);
         return CategoryResource::collection($categories);
     }
 

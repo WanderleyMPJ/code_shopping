@@ -139,3 +139,7 @@ php artisan storage:link
          * adicionar em package.json para poder executar automatico
           -- "env": "node generate-env.js"
           --- para instalar rodar npm run env
+
+**** FILTROS E ORDENAÇÃO
+   ** LARAVEL
+       -- composer require mnabialek/laravel-eloquent-filter
