@@ -8,7 +8,6 @@ import { AlertErrorComponent } from './components/bootstrap/alert-error/alert-er
 
 import {FormsModule} from "@angular/forms";
 import {HTTP_INTERCEPTORS, HttpClientModule} from "@angular/common/http";
-import {RouterModule, Routes} from "@angular/router";
 import { ModalComponent } from './components/bootstrap/modal/modal.component';
 import { CategoryNewModalComponent } from './components/pages/category/category-new-modal/category-new-modal.component';
 import { CategoryEditModalComponent } from './components/pages/category/category-edit-modal/category-edit-modal.component';
@@ -28,40 +27,10 @@ import { ProductCategoryNewComponent } from './components/pages/product-category
 import { JwtModule, JWT_OPTIONS} from '@auth0/angular-jwt';
 import {AuthService} from "./services/auth.service";
 import { NavbarComponent } from './components/booststrap/navbar/navbar.component';
-import {AuthGuard} from "./guards/auth.guard";
 import {RefreshTokenInterceptorService} from "./services/refresh-token-interceptor.service";
+import {AppRoutingModule} from "./app-routing.module";
 
 
-const routes: Routes = [
-    {
-        path: 'login', component: LoginComponent
-    },
-    {
-        path: 'categories/list',
-        component: CategoryListComponent,
-        canActivate: [AuthGuard]
-    },
-    {
-        path: '',
-            redirectTo: '/login',
-            pathMatch: 'full'
-    },
-    {
-        path: 'products/:product/categories/list',
-        component: ProductCategoryListComponent,
-        canActivate: [AuthGuard]
-    },
-    {
-        path: 'products/list',
-        component: ProductListComponent,
-        canActivate: [AuthGuard]
-    },
-    {
-        path: 'users/list',
-        component: UserListComponent,
-        canActivate: [AuthGuard]
-    },
-]
 
     function jwtFactory(authService: AuthService) {
         return {
@@ -102,7 +71,7 @@ const routes: Routes = [
       BrowserModule,
       FormsModule,
       HttpClientModule,
-      RouterModule.forRoot(routes, {enableTracing: true}),
+      AppRoutingModule,
       NgxPaginationModule,
       JwtModule.forRoot({
           jwtOptionsProvider : {
