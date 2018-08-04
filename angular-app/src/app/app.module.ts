@@ -7,8 +7,7 @@ import { CategoryListComponent } from './components/pages/category/category-list
 import { AlertErrorComponent } from './components/bootstrap/alert-error/alert-error.component';
 
 import {FormsModule} from "@angular/forms";
-import {HttpClientModule} from "@angular/common/http";
-import {RouterModule, Routes} from "@angular/router";
+import {HTTP_INTERCEPTORS, HttpClientModule} from "@angular/common/http";
 import { ModalComponent } from './components/bootstrap/modal/modal.component';
 import { CategoryNewModalComponent } from './components/pages/category/category-new-modal/category-new-modal.component';
 import { CategoryEditModalComponent } from './components/pages/category/category-edit-modal/category-edit-modal.component';
@@ -25,30 +24,24 @@ import { ProductListComponent } from './components/pages/product/product-list/pr
 import { NumberFormatBrPipe } from './pipes/number-format-br.pipe';
 import { ProductCategoryListComponent } from './components/pages/product-category/product-category-list/product-category-list.component';
 import { ProductCategoryNewComponent } from './components/pages/product-category/product-category-new/product-category-new.component';
+import { JwtModule, JWT_OPTIONS} from '@auth0/angular-jwt';
+import {AuthService} from "./services/auth.service";
+import { NavbarComponent } from './components/booststrap/navbar/navbar.component';
+import {RefreshTokenInterceptorService} from "./services/refresh-token-interceptor.service";
+import {AppRoutingModule} from "./app-routing.module";
 
 
-const routes: Routes = [
-    {
-        path: 'login', component: LoginComponent
-    },
-    {
-        path: 'categories/list', component: CategoryListComponent
-    },
-    {
-        path: '',
-            redirectTo: '/login',
-            pathMatch: 'full'
-    },
-    {
-        path: 'products/:product/categories/list', component: ProductCategoryListComponent
-    },
-    {
-        path: 'products/list', component: ProductListComponent
-    },
-    {
-        path: 'users/list', component: UserListComponent
-    },
-]
+
+    function jwtFactory(authService: AuthService) {
+        return {
+            whitelistedDomains: [
+                new RegExp('localhost:8000/*')
+            ],
+            tokenGetter: () => {
+                return authService.getToken();
+            }
+        }
+    }
 
 @NgModule({
   declarations: [
@@ -70,17 +63,31 @@ const routes: Routes = [
     ProductListComponent,
     NumberFormatBrPipe,
     ProductCategoryListComponent,
-    ProductCategoryNewComponent
+    ProductCategoryNewComponent,
+    NavbarComponent
 
   ],
   imports: [
-    BrowserModule,
+      BrowserModule,
       FormsModule,
       HttpClientModule,
-      RouterModule.forRoot(routes, {enableTracing: true}),
-      NgxPaginationModule
+      AppRoutingModule,
+      NgxPaginationModule,
+      JwtModule.forRoot({
+          jwtOptionsProvider : {
+            provide: JWT_OPTIONS,
+            useFactory: jwtFactory,
+            deps: [AuthService]
+          }
+      })
   ],
-  providers: [],
+  providers: [
+      {
+          provide: HTTP_INTERCEPTORS,
+          useClass: RefreshTokenInterceptorService,
+          multi: true
+      }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,9 +1,9 @@
 import { Injectable } from '@angular/core';
-import {Product, ProductCategory} from "../../Models";
+import {ProductCategory} from "../../Models";
 import {Observable} from "rxjs/internal/Observable";
 import {HttpClient} from "@angular/common/http";
-import {urlApi} from "../../app.params";
 import {map} from "rxjs/operators";
+import {environment} from "../../../environments/environment";
 
 @Injectable({
   providedIn: 'root'
@@ -11,19 +11,15 @@ import {map} from "rxjs/operators";
 
 export class ProductCategoryHttpService {
 
-  private url : string = urlApi + 'products/';
+  private url : string = `${environment.api.url}/products/`;
 
   constructor(private http:  HttpClient) { }
 
   list(productid: number): Observable<ProductCategory> {
-      const token = window.localStorage.getItem('token');
       return this.http
           .get<{ data: ProductCategory}>
-          (this.getBaseUrl(productid), {
-              headers: {
-                  'Authorization': `Bearer ${token}`
-              }
-          })
+          (this.getBaseUrl(productid)
+          )
           .pipe(
               map(response => response.data)
           )
@@ -31,14 +27,10 @@ export class ProductCategoryHttpService {
 
 
   create(productid: number, categoriesid: number[]): Observable<ProductCategory>{
-      const token = window.localStorage.getItem('token');
       return this.http
           .post<{ data: ProductCategory}>
-          (this.getBaseUrl(productid), {categories: categoriesid},{
-              headers: {
-                  'Authorization': `Bearer ${token}`
-              }
-          })
+          (this.getBaseUrl(productid), {categories: categoriesid}
+          )
           .pipe(
               map(response => response.data)
           )
