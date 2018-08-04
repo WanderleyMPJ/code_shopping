@@ -1,5 +1,7 @@
 <?php
 
+namespace CodeShopping\Http\Filters;
+
 use Mnabialek\LaravelEloquentFilter\Filters\SimpleQueryFilter;
 
 class CategoryFilter extends SimpleQueryFilter

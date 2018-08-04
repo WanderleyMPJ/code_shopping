@@ -14,7 +14,7 @@ namespace CodeShopping\Models{
  *
  * @method static \Illuminate\Database\Eloquent\Builder|\CodeShopping\Models\Category findSimilarSlugs($attribute, $config, $slug)
  */
-	class Category extends \Eloquent {}
+//	class Category extends \Eloquent {}
 }
 
 namespace CodeShopping\Models{
@@ -23,6 +23,6 @@ namespace CodeShopping\Models{
  *
  * @property-read \Illuminate\Notifications\DatabaseNotificationCollection|\Illuminate\Notifications\DatabaseNotification[] $notifications
  */
-	class User extends \Eloquent {}
+//	class User extends \Eloquent {}
 }
 

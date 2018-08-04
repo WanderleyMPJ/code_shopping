@@ -8,8 +8,6 @@ import {NotifyMessageService} from "../../../../services/notify-message.service"
 import {CategoryInsertServices} from "./category-insert.services";
 import {CategoryEditServices} from "./category-edit.services";
 import {CategoryDeleteServices} from "./category-delete.services";
-import {SearchParams} from "../../../../services/http/http-resource";
-
 
 declare let $;
 
@@ -27,7 +25,9 @@ export class CategoryListComponent implements OnInit {
       page : 1,
       totalItems: 0,
       itemsPerPage: 15
-  }
+  };
+
+  sortColumn = {column: '', sort: ''};
 
   @ViewChild(CategoryNewModalComponent) categoryNewModal: CategoryNewModalComponent;
   @ViewChild(CategoryEditModalComponent) categoryEditModal: CategoryEditModalComponent;

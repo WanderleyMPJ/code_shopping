@@ -29,6 +29,7 @@ import {AuthService} from "./services/auth.service";
 import { NavbarComponent } from './components/booststrap/navbar/navbar.component';
 import {RefreshTokenInterceptorService} from "./services/refresh-token-interceptor.service";
 import {AppRoutingModule} from "./app-routing.module";
+import { SortColumnComponent } from './components/common/sort-column/sort-column.component';
 
 
 
@@ -64,7 +65,8 @@ import {AppRoutingModule} from "./app-routing.module";
     NumberFormatBrPipe,
     ProductCategoryListComponent,
     ProductCategoryNewComponent,
-    NavbarComponent
+    NavbarComponent,
+    SortColumnComponent
 
   ],
   imports: [
