@@ -30,6 +30,7 @@ import { NavbarComponent } from './components/booststrap/navbar/navbar.component
 import {RefreshTokenInterceptorService} from "./services/refresh-token-interceptor.service";
 import {AppRoutingModule} from "./app-routing.module";
 import { SortColumnComponent } from './components/common/sort-column/sort-column.component';
+import { CategorySearchFormComponent } from './components/pages/category/category-search-form/category-search-form.component';
 
 
 
@@ -66,7 +67,8 @@ import { SortColumnComponent } from './components/common/sort-column/sort-column
     ProductCategoryListComponent,
     ProductCategoryNewComponent,
     NavbarComponent,
-    SortColumnComponent
+    SortColumnComponent,
+    CategorySearchFormComponent
 
   ],
   imports: [
