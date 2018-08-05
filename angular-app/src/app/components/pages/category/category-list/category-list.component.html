@@ -1,5 +1,6 @@
 <div class="row">
  <h1>Listagem de categorias</h1>
+  {{sortColumn | json}}
   <table class="table table-striped">
     <thead>
     <tr>
@@ -8,10 +9,10 @@
       </td>
     </tr>
     <tr>
-      <th style="width: 5%" [sortColumn]="sortColumn" sortColumn="id">ID</th>
-      <th style="width: 65%" [sortColumn]="sortColumn" sortColumn="nome">Nome</th>
+      <th style="width: 5%" [sortColumn]="sortColumn" columnName="id">ID</th>
+      <th style="width: 65%" [sortColumn]="sortColumn" columnName="name">Nome</th>
       <th style="width: 5%">Ativa?</th>
-      <th style="width: 10%"[sortColumn]="sortColumn" sortColumn="criated_at">Criado EM</th>
+      <th style="width: 10%"[sortColumn]="sortColumn" columnName="created_at">Criado EM</th>
       <th style="width: 10%">Ações</th>
     </tr>
     </thead>
