@@ -27,7 +27,7 @@ export class CategoryListComponent implements OnInit {
       itemsPerPage: 15
   };
 
-  sortColumn = {column: '', sort: ''};
+  sortColumn = {column: 'created_at', sort: 'desc'};
 
   @ViewChild(CategoryNewModalComponent) categoryNewModal: CategoryNewModalComponent;
   @ViewChild(CategoryEditModalComponent) categoryEditModal: CategoryEditModalComponent;
@@ -50,7 +50,10 @@ export class CategoryListComponent implements OnInit {
     }
 
     getCategories() {
-        this.categoryHttp.list({page: this.pagination.page})
+        this.categoryHttp.list({
+            page: this.pagination.page,
+            sort: this.sortColumn.column === ''? null: this.sortColumn
+        })
             .subscribe(response => {
                 this.categories = response.data;
                 this.pagination.totalItems = response.meta.total;
@@ -64,5 +67,8 @@ export class CategoryListComponent implements OnInit {
       this.getCategories();
     }
 
+    sort(sortColumn){
+        this.getCategories();
+    }
 
 }
