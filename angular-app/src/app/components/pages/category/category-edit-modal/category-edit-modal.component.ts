@@ -59,7 +59,9 @@ export class CategoryEditModalComponent implements OnInit {
 
   hideModal($event: Event){
         // fazer algo quando o model foi fechado
-        console.log($event);
+      this.category.name = '';
+      this.category.active = false;
+      console.log($event);
   }
 
 }
