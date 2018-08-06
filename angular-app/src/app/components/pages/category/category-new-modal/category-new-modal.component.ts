@@ -28,11 +28,15 @@ export class CategoryNewModalComponent implements OnInit {
   }
 
    submit(){
-        // this.categoryHttp.create(this.category)
-        //     .subscribe((category) => {
-        //         this.onSucess.emit(category);
-        //         this.modal.hide();
-        //     }, error => this.onError.emit(error));
+        this.categoryHttp.create(this.form.value)
+            .subscribe((category) => {
+                this.form.reset({
+                   name: '',
+                   active: true
+                });
+                this.onSucess.emit(category);
+                this.modal.hide();
+            }, error => this.onError.emit(error));
     }
 
   showModal(){

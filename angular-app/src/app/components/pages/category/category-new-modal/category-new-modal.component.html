@@ -2,14 +2,12 @@
   <modal (onHide)="hideModal($event)">
     <h5 modal-title>Nova Categoria</h5>
     <div modal-body>
-      Form {{form.valid}}<br>
-      Name {{form.get('name').status}}|{{form.get('name').value}}<br>
-      Active {{form.get('active').status}}|{{form.get('active').value}}<br>
+      Form {{form.valid}}{{form.value | json}}<br>
       <category-form [form]="form"></category-form>
     </div>
     <div modal-footer>
       <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-      <button type="submit" class="btn btn-primary">Incluir</button>
+      <button type="submit" class="btn btn-primary" [disabled]="!form.valid">Incluir</button>
     </div>
   </modal>
 </form>
