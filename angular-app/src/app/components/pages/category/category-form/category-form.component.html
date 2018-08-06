@@ -1,10 +1,11 @@
-<div class="form-group">
+<div class="form-group" [formGroup]="form">
   <label for="name">Nome</label>
-  <input type="text" class="form-control" id="name-insert" name="name" required
-         [(ngModel)]="category.name">
+  <input type="text" class="form-control" id="name" name="name" required
+         formControlName="name">
 </div>
-<div class="form-group form-check">
-  <input type="checkbox" class="form-check-input" id="active-insert" name="active" required
-         [(ngModel)]="category.active">
-  <label for="name">Ativo?</label>
+<div class="form-group form-check" [formGroup]="form">
+  <input type="checkbox" class="form-check-input" id="active" name="active" required
+         formControlName="active">
+  <label for="active">Ativo?</label>
 </div>
+

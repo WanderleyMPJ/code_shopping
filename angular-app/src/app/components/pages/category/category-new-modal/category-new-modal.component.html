@@ -1,15 +1,15 @@
 <form (submit)="submit()">
   <modal (onHide)="hideModal($event)">
     <h5 modal-title>Nova Categoria</h5>
-
     <div modal-body>
-      <category-form [category]="category"></category-form>
+      Form {{form.valid}}<br>
+      Name {{form.get('name').status}}|{{form.get('name').value}}<br>
+      Active {{form.get('active').status}}|{{form.get('active').value}}<br>
+      <category-form [form]="form"></category-form>
     </div>
-
     <div modal-footer>
       <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
       <button type="submit" class="btn btn-primary">Incluir</button>
     </div>
-
   </modal>
 </form>
