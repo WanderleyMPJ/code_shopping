@@ -32,6 +32,7 @@ import {AppRoutingModule} from "./app-routing.module";
 import { SortColumnComponent } from './components/common/sort-column/sort-column.component';
 import { CategorySearchFormComponent } from './components/pages/category/category-search-form/category-search-form.component';
 import { CategoryFormComponent } from './components/pages/category/category-form/category-form.component';
+import { FieldErrorComponent } from './components/bootstrap/field-error/field-error.component';
 
 
 
@@ -70,7 +71,8 @@ import { CategoryFormComponent } from './components/pages/category/category-form
     NavbarComponent,
     SortColumnComponent,
     CategorySearchFormComponent,
-    CategoryFormComponent
+    CategoryFormComponent,
+    FieldErrorComponent
 
   ],
   imports: [
