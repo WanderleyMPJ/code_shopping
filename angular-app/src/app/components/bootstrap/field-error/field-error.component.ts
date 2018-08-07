@@ -1,5 +1,6 @@
 import {Component, Input, OnInit} from '@angular/core';
 import {FormControl} from "@angular/forms";
+import {validationMessage} from "../../../common/validation-message";
 
 @Component({
   selector: 'field-error',
@@ -19,4 +20,19 @@ export class FieldErrorComponent implements OnInit {
   ngOnInit() {
   }
 
+  get errorKeys(){
+    return Object.keys(this.field.errors);
+  }
+
+  get errors(){
+    return this.field.errors;
+  }
+
+  showError(){
+    return this.field.invalid && (this.field.dirty || this.field.touched);
+  }
+
+  getMessage(error){
+    return validationMessage.getMessage(error, ['label']);
+  }
 }
