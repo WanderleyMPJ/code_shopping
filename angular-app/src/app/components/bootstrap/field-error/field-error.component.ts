@@ -14,6 +14,10 @@ export class FieldErrorComponent implements OnInit {
 
   @Input()
   field: FormControl;
+  @Input()
+  messages;
+  @Input()
+  label : string;
 
   constructor() { }
 
@@ -33,6 +37,14 @@ export class FieldErrorComponent implements OnInit {
   }
 
   getMessage(error){
-    return validationMessage.getMessage(error, ['label']);
+    let replacetokens = [this.label];
+    if(this.messages && this.messages.hasOwnProperty(error)){
+      if(Array.isArray(this.messages[error])){
+          replacetokens = replacetokens.concat(this.messages[error]);
+      }else{
+        replacetokens.push(this.messages[error])
+      }
+    }
+    return validationMessage.getMessage(error, replacetokens);
   }
 }
