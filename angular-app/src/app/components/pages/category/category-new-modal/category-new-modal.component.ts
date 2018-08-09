@@ -2,7 +2,7 @@ import {Component, EventEmitter, OnInit, Output, ViewChild} from '@angular/core'
 import {ModalComponent} from "../../../bootstrap/modal/modal.component";
 import {HttpErrorResponse} from "@angular/common/http";
 import {CategoryHttpService} from "../../../../services/http/category-http.service";
-import {FormBuilder, FormGroup} from "@angular/forms";
+import {FormBuilder, FormGroup, Validators} from "@angular/forms";
 
 @Component({
   selector: 'category-new-modal',
@@ -19,7 +19,7 @@ export class CategoryNewModalComponent implements OnInit {
     form: FormGroup;
     constructor(private categoryHttp: CategoryHttpService, private formBuilder: FormBuilder) {
         this.form = this.formBuilder.group({
-            name: '',
+            name: ['', [Validators.required, Validators.maxLength(255)]],
             active: true
         });
     }
