@@ -3,6 +3,8 @@ import {ModalComponent} from "../../../bootstrap/modal/modal.component";
 import {HttpErrorResponse} from "@angular/common/http";
 import {CategoryHttpService} from "../../../../services/http/category-http.service";
 import {FormBuilder, FormGroup, Validators} from "@angular/forms";
+import fieldsOptions from '../category-form/category-fields-options'
+import {max} from "rxjs/operators";
 
 @Component({
   selector: 'category-new-modal',
@@ -18,8 +20,9 @@ export class CategoryNewModalComponent implements OnInit {
 
     form: FormGroup;
     constructor(private categoryHttp: CategoryHttpService, private formBuilder: FormBuilder) {
+        const maxLenght = fieldsOptions.name.validationMessage.maxlengh;
         this.form = this.formBuilder.group({
-            name: ['', [Validators.required, Validators.maxLength(255)]],
+            name: ['', [Validators.required, Validators.maxLength(maxLenght)]],
             active: true
         });
     }
