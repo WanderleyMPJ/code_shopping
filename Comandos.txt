@@ -143,3 +143,9 @@ php artisan storage:link
 **** FILTROS E ORDENAÇÃO
    ** LARAVEL
        -- composer require mnabialek/laravel-eloquent-filter
+
+
+*** traduzir laravel
+    -- https://github.com/caouecs/Laravel-lang
+      --- copiar o arquivo da pasta pt br
+      --- mudar o campo locale dentro de app.php

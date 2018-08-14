@@ -34,6 +34,8 @@ import { CategorySearchFormComponent } from './components/pages/category/categor
 import { CategoryFormComponent } from './components/pages/category/category-form/category-form.component';
 import { FieldErrorComponent } from './components/bootstrap/field-error/field-error.component';
 import { IsInvalidDirective } from './directives/is-invalid.directive';
+import { ListErrorComponent } from './components/bootstrap/list-error/list-error.component';
+import { CardErrorComponent } from './components/bootstrap/card-error/card-error.component';
 
 
 
@@ -74,7 +76,9 @@ import { IsInvalidDirective } from './directives/is-invalid.directive';
     CategorySearchFormComponent,
     CategoryFormComponent,
     FieldErrorComponent,
-    IsInvalidDirective
+    IsInvalidDirective,
+    ListErrorComponent,
+    CardErrorComponent
 
   ],
   imports: [
