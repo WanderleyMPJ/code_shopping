@@ -23,8 +23,7 @@ export class CategoryNewModalComponent implements OnInit {
     constructor(private categoryHttp: CategoryHttpService, private formBuilder: FormBuilder) {
         const maxLenght = fieldsOptions.name.validationMessage.maxlengh;
         this.form = this.formBuilder.group({
-            // name: ['', [Validators.required, Validators.maxLength(maxLenght)]],
-            name: [''],
+            name: ['', [Validators.required, Validators.maxLength(maxLenght)]],
             active: true
         });
     }

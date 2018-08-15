@@ -26,7 +26,7 @@ import { ProductCategoryListComponent } from './components/pages/product-categor
 import { ProductCategoryNewComponent } from './components/pages/product-category/product-category-new/product-category-new.component';
 import { JwtModule, JWT_OPTIONS} from '@auth0/angular-jwt';
 import {AuthService} from "./services/auth.service";
-import { NavbarComponent } from './components/booststrap/navbar/navbar.component';
+import { NavbarComponent } from './components/bootstrap/navbar/navbar.component';
 import {RefreshTokenInterceptorService} from "./services/refresh-token-interceptor.service";
 import {AppRoutingModule} from "./app-routing.module";
 import { SortColumnComponent } from './components/common/sort-column/sort-column.component';
@@ -36,6 +36,10 @@ import { FieldErrorComponent } from './components/bootstrap/field-error/field-er
 import { IsInvalidDirective } from './directives/is-invalid.directive';
 import { ListErrorComponent } from './components/bootstrap/list-error/list-error.component';
 import { CardErrorComponent } from './components/bootstrap/card-error/card-error.component';
+import { ProductInputListComponent } from './components/pages/product-input/product-input-list/product-input-list.component';
+import { ProductInputSearchFormComponent } from './components/pages/product-input/product-input-search-form/product-input-search-form.component';
+import { ProductInputNewModalComponent } from './components/pages/product-input/product-input-new-modal/product-input-new-modal.component';
+import { ProductInputFormComponent } from './components/pages/product-input/product-input-form/product-input-form.component';
 
 
 
@@ -78,7 +82,11 @@ import { CardErrorComponent } from './components/bootstrap/card-error/card-error
     FieldErrorComponent,
     IsInvalidDirective,
     ListErrorComponent,
-    CardErrorComponent
+    CardErrorComponent,
+    ProductInputListComponent,
+    ProductInputSearchFormComponent,
+    ProductInputNewModalComponent,
+    ProductInputFormComponent
 
   ],
   imports: [
