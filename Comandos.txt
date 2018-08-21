@@ -161,3 +161,4 @@ php artisan storage:link
     -- https://github.com/ttskch/select2-bootstrap4-theme
          *** npm install select2-bootstrap4-theme@1.0.0 --save
            ***** "node_modules/select2-bootstrap4-theme/dist/select2-bootstrap4.min.css" style
+     *-** add em app.module Select2Module

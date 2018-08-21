@@ -1,6 +1,8 @@
-import {ChangeDetectorRef, Component, Input, OnInit} from '@angular/core';
+import {ChangeDetectorRef, Component, ElementRef, Input, OnInit, ViewChild} from '@angular/core';
 import {FormGroup} from "@angular/forms";
 import fieldsOptions from "./product-input-fields-options";
+import {ProductIdFieldService} from "./product-id-field.service";
+import {Select2Component} from "ng2-select2";
 
 @Component({
   selector: 'product-input-form',
@@ -11,12 +13,16 @@ export class ProductInputFormComponent implements OnInit {
 
     @Input()
     form: FormGroup;
+    @ViewChild(Select2Component, {read: ElementRef})
+    select2Element: ElementRef;
 
-    constructor(private ChangeRef: ChangeDetectorRef) {
+    constructor(private ChangeRef: ChangeDetectorRef,
+                public productIdField: ProductIdFieldService) {
 
     }
 
     ngOnInit() {
+        this.productIdField.make(this.select2Element);
     }
 
     ngOnChanges(){

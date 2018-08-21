@@ -40,6 +40,7 @@ import { ProductInputListComponent } from './components/pages/product-input/prod
 import { ProductInputSearchFormComponent } from './components/pages/product-input/product-input-search-form/product-input-search-form.component';
 import { ProductInputNewModalComponent } from './components/pages/product-input/product-input-new-modal/product-input-new-modal.component';
 import { ProductInputFormComponent } from './components/pages/product-input/product-input-form/product-input-form.component';
+import {Select2Module} from "ng2-select2";
 
 
 
@@ -96,6 +97,7 @@ import { ProductInputFormComponent } from './components/pages/product-input/prod
       HttpClientModule,
       AppRoutingModule,
       NgxPaginationModule,
+      Select2Module,
       JwtModule.forRoot({
           jwtOptionsProvider : {
             provide: JWT_OPTIONS,
