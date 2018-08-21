@@ -31,7 +31,7 @@ class ProductInputFilter extends SimpleQueryFilter
     {
         $query = $query
             ->select('product_inputs.*')
-            ->join('products', 'product_id', '=', 'product_inputs.product_id');
-        return parent::apply($query); 
+            ->join('products', 'products.id', '=', 'product_inputs.product_id');
+        return parent::apply($query);
     }
 }

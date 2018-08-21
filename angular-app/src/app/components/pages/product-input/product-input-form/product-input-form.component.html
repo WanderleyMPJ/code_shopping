@@ -1,3 +1,10 @@
-<p>
-  product-input-form works!
-</p>
+<div class="form-group" [formGroup]="form">
+  <label [for]="fieldsOptions.amount.id">{{fieldsOptions.amount.label}}</label>
+  <input type="text" class="form-control"
+         [id]="fieldsOptions.amount.id"
+         IsInvalid formControlName="amount">
+  <field-error [field]="form.get('amount')"
+               [label]="fieldsOptions.amount.label"
+               [messages]="fieldsOptions.amount.validationMessage" ></field-error>
+</div>
+
