@@ -149,3 +149,15 @@ php artisan storage:link
     -- https://github.com/caouecs/Laravel-lang
       --- copiar o arquivo da pasta pt br
       --- mudar o campo locale dentro de app.php
+
+
+
+*** select2
+    -- https://select2.org/
+    -- https://github.com/NejcZdovc/ng2-select2-demo
+     --- npm install select2@4.0.3 ng2-select2@1.0.0-beta.12 --save
+         *** "node_modules/select2/dist/css/select2.min.css" dentro de angular.json style
+         *** "node_modules/select2/dist/js/select2.min.js" dentro de script
+    -- https://github.com/ttskch/select2-bootstrap4-theme
+         *** npm install select2-bootstrap4-theme@1.0.0 --save
+           ***** "node_modules/select2-bootstrap4-theme/dist/select2-bootstrap4.min.css" style
