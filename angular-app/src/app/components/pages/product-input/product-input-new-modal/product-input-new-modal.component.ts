@@ -5,25 +5,26 @@ import {FormBuilder, FormGroup, Validators} from "@angular/forms";
 import {ProductInputHttpService} from "../../../../services/http/product-input-http.service";
 import fieldsOptions from "../product-input-form/product-input-fields-options";
 
+
 @Component({
   selector: 'product-input-new-modal',
   templateUrl: './product-input-new-modal.component.html',
   styleUrls: ['./product-input-new-modal.component.css']
 })
 export class ProductInputNewModalComponent implements OnInit {
-    @ViewChild(ModalComponent) modal: ModalComponent;
-
-    @Output() onSucess: EventEmitter<any> = new EventEmitter<any>();
-    @Output() onError: EventEmitter<HttpErrorResponse> = new EventEmitter<HttpErrorResponse>();
 
     form: FormGroup;
     errors = {};
-    constructor(private inputHttp: ProductInputHttpService, 
+    @ViewChild(ModalComponent) modal: ModalComponent;
+
+    @Output() onSuccess: EventEmitter<any> = new EventEmitter<any>();
+    @Output() onError: EventEmitter<HttpErrorResponse> = new EventEmitter<HttpErrorResponse>();
+
+    constructor(private inputHttp: ProductInputHttpService,
                 private formBuilder: FormBuilder) {
-        // const maxLenght = fieldsOptions.product.validationMessage.maxlengh;
         this.form = this.formBuilder.group({
-            product_id: ['', [Validators.required]],
-            amount: ['', [Validators.required]]
+            product_id: [null, [Validators.required]],
+            amount: ['', [Validators.required, Validators.min(fieldsOptions.amount.validationMessage.min)]],
         });
     }
 
@@ -37,7 +38,7 @@ export class ProductInputNewModalComponent implements OnInit {
                     name: '',
                     active: true
                 });
-                this.onSucess.emit(input);
+                this.onSuccess.emit(input);
                 this.modal.hide();
             }, responseError => {
                 if(responseError.status === 422){
