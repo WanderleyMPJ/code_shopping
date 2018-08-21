@@ -8,6 +8,10 @@
                [messages]="fieldsOptions.amount.validationMessage" ></field-error>
 </div>
 <div class="form-group">
-  <select2 [data]="productIdField.data" [options]="productIdField.options" ></select2>
+  <select2 [data]="productIdField.data" [options]="productIdField.options"
+      IsInvalidControl="form.get('product_id')"></select2>
+  <field-error [field]="form.get('product_id')"
+               [label]="fieldsOptions.product_id.label"
+               [messages]="fieldsOptions.product_id.validationMessage" ></field-error>
 </div>
 
