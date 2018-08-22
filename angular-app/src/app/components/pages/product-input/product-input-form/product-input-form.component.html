@@ -1,3 +1,4 @@
+{{form.valid | json}}
 <div class="form-group" [formGroup]="form">
   <label [for]="fieldsOptions.amount.id">{{fieldsOptions.amount.label}}</label>
   <input type="number" step="1" class="form-control"
@@ -9,7 +10,8 @@
 </div>
 <div class="form-group">
   <select2 [data]="productIdField.data" [options]="productIdField.options"
-      IsInvalidControl="form.get('product_id')"></select2>
+      IsInvalidControl="form.get('product_id')" class="form-control undo-form-control"
+      (valueChanged)="productIdField.updateformControl($event.value)"></select2>
   <field-error [field]="form.get('product_id')"
                [label]="fieldsOptions.product_id.label"
                [messages]="fieldsOptions.product_id.validationMessage" ></field-error>

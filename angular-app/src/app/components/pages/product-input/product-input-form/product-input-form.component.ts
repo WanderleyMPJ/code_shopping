@@ -22,7 +22,7 @@ export class ProductInputFormComponent implements OnInit {
     }
 
     ngOnInit() {
-        this.productIdField.make(this.select2Element);
+        this.productIdField.make(this.select2Element, this.form.get('product_id'));
     }
 
     ngOnChanges(){
