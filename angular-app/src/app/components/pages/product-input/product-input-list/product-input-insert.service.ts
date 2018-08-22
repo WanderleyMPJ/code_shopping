@@ -26,7 +26,7 @@ export class ProductInputInsertService {
         console.log($event);
     }
 
-    onInsertSucess($event: any) {
+    onInsertSuccess($event: any) {
         this.notifyMessage.success('Entrada cadastrada com sucesso!');
         this._inputListComponent.getInputs();
     }}

@@ -32,11 +32,12 @@ export class ProductInputNewModalComponent implements OnInit {
     }
 
     submit(){
-        this.inputHttp.create(this.form.value)
+        this.inputHttp
+            .create(this.form.value)
             .subscribe((input) => {
                 this.form.reset({
-                    name: '',
-                    active: true
+                    amount: '',
+                    product_id: null
                 });
                 this.onSuccess.emit(input);
                 this.modal.hide();
