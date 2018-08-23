@@ -24,7 +24,7 @@ export class ProductPhotoHttpService {
             )
     }
 
-    create(productId: number, files: FileList):Observable<(product: Product, photos: ProductPhoto[])> {
+    create(productId: number, files: FileList): Observable<{product: Product, photos: ProductPhoto[]}> {
         const formData = new FormData();
         const filesArray = Array.from(files);
         filesArray.forEach((file)=> {

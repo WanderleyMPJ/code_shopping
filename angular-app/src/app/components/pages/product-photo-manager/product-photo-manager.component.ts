@@ -4,6 +4,8 @@ import {ProductPhotoHttpService} from "../../../services/http/product-photo-http
 import {ActivatedRoute} from "@angular/router";
 import {NotifyMessageService} from "../../../services/notify-message.service";
 
+declare const $;
+
 @Component({
   selector: 'product-photo-manager',
   templateUrl: './product-photo-manager.component.html',
@@ -26,6 +28,7 @@ export class ProductPhotoManagerComponent implements OnInit {
       this.productId = params.product;
       this.getPhotos();
     });
+    this.configFancybox();
   }
 
   getPhotos(){
@@ -35,6 +38,16 @@ export class ProductPhotoManagerComponent implements OnInit {
           this.photos = data.photos;
           this.product = data.product;
         });
+  }
+
+  configFancybox(){
+    $.fancybox.defaults.btnTpl.edit = `
+    <a class="fancybox-button" data-fancybox-edit 
+        title="Substituir" href="javascript:void(0)" style="text-align: center">
+            <i class="fas fa-edit"></i>    
+    </a>
+    `
+      $.fancybox.defaults.buttons = ['download', 'edit'];
   }
 
   onInsertSuccess(data: {photos: ProductPhoto[]}){
