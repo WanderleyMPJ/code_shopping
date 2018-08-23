@@ -15,9 +15,9 @@ function toogleClassInvalid(control: NgControl, nativeElement: HTMLElement){
 }
 
 @Directive({
-  selector: '[IsInvalid]'
+  selector: '[isInvalid]'
 })
-export class IsInvalidDirective {
+export class isInvalidDirective {
 
   constructor(private element: ElementRef ,private control: NgControl) { }
 
@@ -27,7 +27,7 @@ export class IsInvalidDirective {
 }
 
 @Directive({
-    selector: '[IsInvalidControl]'
+    selector: '[isInvalidControl]'
 })
 export class IsInvalidControlDirective {
 

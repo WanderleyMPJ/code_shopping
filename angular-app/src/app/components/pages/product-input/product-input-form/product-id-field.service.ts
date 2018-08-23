@@ -56,7 +56,7 @@ export class ProductIdFieldService {
       };
         this.data = [];
         this.onClosingDropdown();
-        // this.resetSelect2OnSetNull();
+         this.resetSelect2OnSetNull();
     }
 
     private onClosingDropdown(){
