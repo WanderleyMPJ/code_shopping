@@ -1,10 +1,10 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d365ff026919efdc3c8fcdeca2871894",
+    "content-hash": "17f6618af4552d8d7487c50ffe17e085",
     "packages": [
         {
             "name": "cocur/slugify",
@@ -924,6 +924,53 @@
                 "storage"
             ],
             "time": "2018-05-07T08:44:23+00:00"
+        },
+        {
+            "name": "mnabialek/laravel-eloquent-filter",
+            "version": "v0.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mnabialek/laravel-eloquent-filter.git",
+                "reference": "074b27eb26117eae41d2a4283e8aa8e962413a57"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mnabialek/laravel-eloquent-filter/zipball/074b27eb26117eae41d2a4283e8aa8e962413a57",
+                "reference": "074b27eb26117eae41d2a4283e8aa8e962413a57",
+                "shasum": ""
+            },
+            "require": {
+                "laravel/framework": "5.*"
+            },
+            "require-dev": {
+                "mockery/mockery": "^0.9.5",
+                "phpunit/phpunit": "^5.4"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Mnabialek\\LaravelEloquentFilter\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "mnabialek",
+                    "email": "gitre@nabialek.org"
+                }
+            ],
+            "description": "Allows filtering Eloquent queries by input filters",
+            "keywords": [
+                "eloquent",
+                "filter",
+                "input",
+                "laravel",
+                "request"
+            ],
+            "time": "2016-06-15T14:41:00+00:00"
         },
         {
             "name": "monolog/monolog",

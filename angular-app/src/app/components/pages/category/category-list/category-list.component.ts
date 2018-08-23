@@ -8,8 +8,6 @@ import {NotifyMessageService} from "../../../../services/notify-message.service"
 import {CategoryInsertServices} from "./category-insert.services";
 import {CategoryEditServices} from "./category-edit.services";
 import {CategoryDeleteServices} from "./category-delete.services";
-import {SearchParams} from "../../../../services/http/http-resource";
-
 
 declare let $;
 
@@ -27,13 +25,17 @@ export class CategoryListComponent implements OnInit {
       page : 1,
       totalItems: 0,
       itemsPerPage: 15
-  }
+  };
+
+  sortColumn = {column: 'created_at', sort: 'desc'};
 
   @ViewChild(CategoryNewModalComponent) categoryNewModal: CategoryNewModalComponent;
   @ViewChild(CategoryEditModalComponent) categoryEditModal: CategoryEditModalComponent;
   @ViewChild(CategoryDeleteModalComponent) categoryDeleteModal: CategoryDeleteModalComponent;
 
   categoryId: number;
+
+  searchText: string;
 
   constructor(private categoryHttp: CategoryHttpService,
               private notifyMessage: NotifyMessageService,
@@ -50,7 +52,11 @@ export class CategoryListComponent implements OnInit {
     }
 
     getCategories() {
-        this.categoryHttp.list({page: this.pagination.page})
+        this.categoryHttp.list({
+            page: this.pagination.page,
+            sort: this.sortColumn.column === ''? null: this.sortColumn,
+            search : this.searchText
+        })
             .subscribe(response => {
                 this.categories = response.data;
                 this.pagination.totalItems = response.meta.total;
@@ -64,5 +70,13 @@ export class CategoryListComponent implements OnInit {
       this.getCategories();
     }
 
+    sort(sortColumn){
+        this.getCategories();
+    }
+
+   search(search){
+      this.searchText = search;
+      this.getCategories();
+   }
 
 }

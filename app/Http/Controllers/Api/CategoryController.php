@@ -2,10 +2,12 @@
 
 namespace CodeShopping\Http\Controllers\Api;
 
+
 use CodeShopping\Http\Controllers\Controller;
+use CodeShopping\Http\Filters\CategoryFilter;
 use CodeShopping\Http\Resources\CategoryResource;
-use CodeShopping\Models\Category;
 use CodeShopping\Http\Requests\CategoryRequest;
+use CodeShopping\Models\Category;
 use Illuminate\Http\Request;
 
 class CategoryController extends Controller
@@ -13,9 +15,14 @@ class CategoryController extends Controller
 
     public function index(Request $request)
     {
+
+        $filter = app(CategoryFilter::class);
+        /** @var Builder $filterQuery */
+        $filterQuery = Category::filtered($filter);
+
         $categories = $request->has('all')
-            ? Category::all()
-            : Category::paginate(5);
+            ? $filterQuery->get()
+            : $filterQuery->paginate(5);
         return CategoryResource::collection($categories);
     }
 
