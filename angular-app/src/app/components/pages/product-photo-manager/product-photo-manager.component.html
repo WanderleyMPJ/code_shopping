@@ -4,7 +4,7 @@
       <product-photo-upload (onSuccess)="onInsertSuccess($event)"></product-photo-upload>
   </div>
   <div class="col-md-12">
-    <a data-facybox="gallery" [href]="photo.photo_url" *ngFor="let photo of photos">
+    <a data-fancybox="gallery" [href]="photo.photo_url" *ngFor="let photo of photos">
       <img [src]="photo.photo_url"/>
     </a>
   </div>
