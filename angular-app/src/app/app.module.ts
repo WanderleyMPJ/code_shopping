@@ -43,6 +43,7 @@ import { ProductInputFormComponent } from './components/pages/product-input/prod
 import {Select2Module} from "ng2-select2";
 import { ProductPhotoManagerComponent } from './components/pages/product-photo-manager/product-photo-manager.component';
 import { ProductPhotoUploadComponent } from './components/pages/product-photo-upload/product-photo-upload.component';
+import { ProductPhotoEditModalComponent } from './components/pages/product-photo/product-photo-edit-modal/product-photo-edit-modal.component';
 
 
 
@@ -92,7 +93,8 @@ import { ProductPhotoUploadComponent } from './components/pages/product-photo-up
     ProductInputNewModalComponent,
     ProductInputFormComponent,
     ProductPhotoManagerComponent,
-    ProductPhotoUploadComponent
+    ProductPhotoUploadComponent,
+    ProductPhotoEditModalComponent
   ],
   imports: [
       BrowserModule,

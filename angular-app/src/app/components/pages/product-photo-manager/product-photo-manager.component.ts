@@ -1,8 +1,9 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit, ViewChild} from '@angular/core';
 import {Product, ProductPhoto} from "../../../Models";
 import {ProductPhotoHttpService} from "../../../services/http/product-photo-http.service";
 import {ActivatedRoute} from "@angular/router";
 import {NotifyMessageService} from "../../../services/notify-message.service";
+import {ProductPhotoEditModalComponent} from "../product-photo/product-photo-edit-modal/product-photo-edit-modal.component";
 
 declare const $;
 
@@ -17,6 +18,10 @@ export class ProductPhotoManagerComponent implements OnInit {
   photos: ProductPhoto[] = [];
   product : Product = null;
   productId : number;
+  photoIdtoEdit: number;
+
+  @ViewChild(ProductPhotoEditModalComponent)
+  editModal: ProductPhotoEditModalComponent;
 
   constructor(private productPhotoHttp: ProductPhotoHttpService,
               private route: ActivatedRoute,
@@ -48,6 +53,18 @@ export class ProductPhotoManagerComponent implements OnInit {
     </a>
     `
       $.fancybox.defaults.buttons = ['download', 'edit'];
+      $('body').on('click', '[data-fancybox-edit]', (e) => {
+        const photoId = this.getPhotoIdFromSlideShow();
+        this.photoIdtoEdit = photoId;
+        this.editModal.showModal();
+      });
+  }
+
+  getPhotoIdFromSlideShow(){
+    const src = $('.fancybox-slide--current .fancybox-image').attr('src');
+    const id = $('[data-fancybox="gallery"]').find(`[src="${src}"]`).attr('id');
+    return id.split('-')[1];
+
   }
 
   onInsertSuccess(data: {photos: ProductPhoto[]}){

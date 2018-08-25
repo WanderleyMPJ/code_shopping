@@ -5,7 +5,8 @@
   </div>
   <div class="col-md-12">
     <a data-fancybox="gallery" [href]="photo.photo_url" *ngFor="let photo of photos">
-      <img [src]="photo.photo_url"/>
+      <img [id]="'photo-' + photo.id" [src]="photo.photo_url"/>
     </a>
   </div>
 </div>
+<product-photo-edit-modal [photoId]="photoIdtoEdit"></product-photo-edit-modal>
