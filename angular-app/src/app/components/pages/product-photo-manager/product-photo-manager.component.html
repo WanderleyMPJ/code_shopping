@@ -9,4 +9,4 @@
     </a>
   </div>
 </div>
-<product-photo-edit-modal [photoId]="photoIdtoEdit"></product-photo-edit-modal>
+<product-photo-edit-modal (onSuccess)="onEditSuccess($event)" [photoId]="photoIdtoEdit"></product-photo-edit-modal>
