@@ -56,7 +56,7 @@ export class ProductIdFieldService {
       };
         this.data = [];
         this.onClosingDropdown();
-        // this.resetSelect2OnSetNull();
+         this.resetSelect2OnSetNull();
     }
 
     private onClosingDropdown(){
@@ -69,7 +69,7 @@ export class ProductIdFieldService {
 
     private resetSelect2OnSetNull(){
         this.formControl.valueChanges.subscribe((value) => {
-            if(value){
+            if(!value){
                 const selectField = $(this.select2Native).find('select');
                 selectField.val(null).trigger('change');
             }

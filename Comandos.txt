@@ -162,3 +162,13 @@ php artisan storage:link
          *** npm install select2-bootstrap4-theme@1.0.0 --save
            ***** "node_modules/select2-bootstrap4-theme/dist/select2-bootstrap4.min.css" style
      *-** add em app.module Select2Module
+
+*** galeria de fotos fancybox
+  -- http://fancyapps.com/fancybox/3/
+    ---  npm install @fancyapps/fancybox@3.3.5 --save
+     --- add em angular.json
+      * stye
+       ** "node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.css"
+
+      * script
+       "node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.js"
