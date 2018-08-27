@@ -44,6 +44,7 @@ import {Select2Module} from "ng2-select2";
 import { ProductPhotoManagerComponent } from './components/pages/product-photo-manager/product-photo-manager.component';
 import { ProductPhotoUploadComponent } from './components/pages/product-photo-upload/product-photo-upload.component';
 import { ProductPhotoEditModalComponent } from './components/pages/product-photo/product-photo-edit-modal/product-photo-edit-modal.component';
+import { ProductPhotoDeleteModalComponent } from './components/pages/product-photo/product-photo-delete-modal/product-photo-delete-modal.component';
 
 
 
@@ -94,7 +95,8 @@ import { ProductPhotoEditModalComponent } from './components/pages/product-photo
     ProductInputFormComponent,
     ProductPhotoManagerComponent,
     ProductPhotoUploadComponent,
-    ProductPhotoEditModalComponent
+    ProductPhotoEditModalComponent,
+    ProductPhotoDeleteModalComponent
   ],
   imports: [
       BrowserModule,

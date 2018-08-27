@@ -4,6 +4,7 @@ import {ProductPhotoHttpService} from "../../../services/http/product-photo-http
 import {ActivatedRoute} from "@angular/router";
 import {NotifyMessageService} from "../../../services/notify-message.service";
 import {ProductPhotoEditModalComponent} from "../product-photo/product-photo-edit-modal/product-photo-edit-modal.component";
+import {ProductPhotoDeleteModalComponent} from "../product-photo/product-photo-delete-modal/product-photo-delete-modal.component";
 
 declare const $;
 
@@ -19,11 +20,15 @@ export class ProductPhotoManagerComponent implements OnInit {
   product : Product = null;
   productId : number;
   photoIdtoEdit: number;
+  photoIdToDelete: number;
 
   @ViewChild(ProductPhotoEditModalComponent)
   editModal: ProductPhotoEditModalComponent;
 
-  constructor(private productPhotoHttp: ProductPhotoHttpService,
+  @ViewChild(ProductPhotoDeleteModalComponent)
+  deleteModal: ProductPhotoDeleteModalComponent;
+
+    constructor(private productPhotoHttp: ProductPhotoHttpService,
               private route: ActivatedRoute,
               private notifyMessage: NotifyMessageService) {
   }
@@ -51,12 +56,20 @@ export class ProductPhotoManagerComponent implements OnInit {
         title="Substituir" href="javascript:void(0)" style="text-align: center">
             <i class="fas fa-edit"></i>    
     </a>
+    $.fancybox.defaults.btnTpl.delete = \`
+    <a class="fancybox-button" data-fancybox-delete 
+        title="Excluir" href="javascript:void(0)" style="text-align: center">
+            <i class="fas fa-trash"></i>    
+    </a>
     `
-      $.fancybox.defaults.buttons = ['download', 'edit'];
+      $.fancybox.defaults.buttons = ['download', 'edit', 'delete'];
       $('body').on('click', '[data-fancybox-edit]', (e) => {
-        const photoId = this.getPhotoIdFromSlideShow();
-        this.photoIdtoEdit = photoId;
+        this.photoIdtoEdit = this.getPhotoIdFromSlideShow();
         this.editModal.showModal();
+      });
+      $('body').on('click', '[data-fancybox-delete]', (e) => {
+          this.photoIdToDelete = this.getPhotoIdFromSlideShow();
+          this.deleteModal.showModal();
       });
   }
 
@@ -80,6 +93,16 @@ export class ProductPhotoManagerComponent implements OnInit {
       });
       this.photos[index] = data;
       this.notifyMessage.success('Foto Substituida com sucesso');
+    }
+
+    onDeleteSuccess(){
+        $.fancybox.getInstance().close();
+        this.deleteModal.hideModal();
+        const index = this.photos.findIndex((photo: ProductPhoto) => {
+            return photo.id == this.photoIdtoEdit
+        });
+        this.photos.splice(index, 1 );
+        this.notifyMessage.success('Foto Excluida com sucesso');
     }
 
 }
