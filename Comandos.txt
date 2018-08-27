@@ -162,3 +162,12 @@ php artisan storage:link
          *** npm install select2-bootstrap4-theme@1.0.0 --save
            ***** "node_modules/select2-bootstrap4-theme/dist/select2-bootstrap4.min.css" style
      *-** add em app.module Select2Module
+
+
+*** IONIC E CORDOVA
+
+    -- FERRAMENTA DO IONIC
+        --- npm install -g ionic@~3.20.0  //menor q 3.21
+         ** ionic start
+          ++++ caso de erro no cordova, rodar npm install -g cordova
+
