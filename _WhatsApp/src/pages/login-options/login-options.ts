@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import {ActionSheetController, IonicPage, NavController, NavParams} from 'ionic-angular';
+import {LoginPhoneNumberPage} from "../login-phone-number/login-phone-number";
+import {ResetPhoneNumberPage} from "../reset-phone-number/reset-phone-number";
 
 /**
  * Generated class for the LoginOptionsPage page.
@@ -28,13 +30,22 @@ export class LoginOptionsPage {
         title: 'Já tem telefone cadastrado?',
         buttons: [
             {
-              text: 'Já tenho, quero logar'
+              text: 'Já tenho, quero entrar',
+                handler: () => {
+                  this.navCtrl.push(LoginPhoneNumberPage);
+                }
             },
             {
-              text: 'Já tenho, quero trocar de telefone'
+              text: 'Já tenho, quero trocar de telefone',
+                handler: () => {
+                    this.navCtrl.push(ResetPhoneNumberPage);
+                }
             },
             {
-                text: 'Não, quero criar uma conta'
+                text: 'Não, quero criar uma conta',
+                handler: () => {
+                    this.navCtrl.push(LoginPhoneNumberPage);
+                }
             },
             {
                 text: 'Cancelar',
