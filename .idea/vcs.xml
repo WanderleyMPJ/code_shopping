@@ -4,6 +4,7 @@
     <mapping directory="" vcs="Git" />
     <mapping directory="D:/angular-app" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/_whatsapp" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/whatsapp" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/../erpSGE" vcs="Git" />
   </component>
 </project>

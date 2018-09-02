@@ -1,4 +1,4 @@
-***** HTML
+﻿***** HTML
     <TD*5 + TAB
 
 
@@ -71,6 +71,9 @@ php artisan storage:link
 
 
 ** ANGULAR
+	* instalar node.js https://nodejs.org/en/
+
+
     * instalar AdminLTe
     - npm install --save admin-lte && npm install --save jquery
             ng g c header --spec=false
@@ -170,4 +173,5 @@ php artisan storage:link
         --- npm install -g ionic@~3.20.0  //menor q 3.21
          ** ionic start
           ++++ caso de erro no cordova, rodar npm install -g cordova
-
+   ---  ver como esta ficando ionic serve --lab
+    ---- http://localhost:8100/ionic-lab
