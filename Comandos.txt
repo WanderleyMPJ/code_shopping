@@ -175,3 +175,7 @@ php artisan storage:link
           ++++ caso de erro no cordova, rodar npm install -g cordova
    ---  ver como esta ficando ionic serve --lab
     ---- http://localhost:8100/ionic-lab
+
+*** FIREBASEUI
+  - npm install firebaseui@3.1.1 firebase@5.2.0 --save
+   -- IMPORTAR NA CLASSE DE LOGIN
