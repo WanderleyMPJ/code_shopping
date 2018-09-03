@@ -183,3 +183,6 @@ php artisan storage:link
    -- https://github.com/ded/script.js/
     - script para carregar um script
      --- npm install scriptjs@2.5.8 --save
+
+    * serviços
+     - ionic g provider firebase-auth
