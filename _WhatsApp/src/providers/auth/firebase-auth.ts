@@ -12,12 +12,24 @@ declare const firebraseui;
 export class FirebaseAuthProvider {
 
   constructor() {
-    console.log('Hello FirebaseAuthProvider Provider');
+      firebase.initializeApp(firebaseConfig);
   }
 
-   getFirebaseUI(): Promise<any> {
+  async makePhoneNumberForm(selectorElement: string){
+      const firebaseui = await this.getFirebaseUI();
+      const uiConfig = {
+          signInOptions: [
+              firebase.auth.PhoneAuthProvider.PROVIDER_ID
+          ]
+      };
+      const ui = new firebaseui.auth.AuthUI(firebase.auth());
+      ui.start( selectorElement,uiConfig);
+
+  }
+
+  private async getFirebaseUI(): Promise<any> {
       return new Promise((resolve, reject) =>{
-          if(firebaseui){
+          if(window.hasOwnProperty('firebaseui')){
               resolve(firebaseui);
           }
           scriptjs('https://www.gstatic.com/firebasejs/ui/3.4.0/firebase-ui-auth__pt.js', () => {
@@ -25,14 +37,5 @@ export class FirebaseAuthProvider {
           });
       });
   }
-
-    // firebase.initializeApp(firebaseConfig);
-    // const uiConfig = {
-    //     signInOptions: [
-    //         firebase.auth.PhoneAuthProvider.PROVIDER_ID
-    //     ]
-    // }
-    // const ui = new firebaseui.auth.AuthUI(firebase.auth());
-    // ui.start('#firebase-ui',uiConfig);
 
 }

@@ -21,20 +21,7 @@ export class LoginPhoneNumberPage {
   }
 
   ionViewDidLoad() {
-     const promise = this.firebaseAuth.getFirebaseUI();
-     promise.then( () => {
-       console.log('sudesso da promessa');
-     })
-    // scriptjs('https://www.gstatic.com/firebasejs/ui/3.4.0/firebase-ui-auth__pt.js', () => {
-    //     firebase.initializeApp(firebaseConfig);
-    //     const uiConfig = {
-    //         signInOptions: [
-    //             firebase.auth.PhoneAuthProvider.PROVIDER_ID
-    //         ]
-    //     }
-    //     const ui = new firebaseui.auth.AuthUI(firebase.auth());
-    //     ui.start('#firebase-ui',uiConfig);
-    // });
+     this.firebaseAuth.makePhoneNumberForm('#firebase-ui');
   }
 
 }
