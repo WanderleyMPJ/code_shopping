@@ -4,6 +4,7 @@ import * as firebase from 'firebase';
 import * as firebaseui from 'firebaseui';
 import firebaseConfig from '../../app/firebase-config';
 import scriptjs from 'scriptjs';
+import {FirebaseAuthProvider} from "../../providers/auth/firebase-auth";
 
 declare const firebraseui;
 (<any>window).firebase = firebase;
@@ -15,20 +16,25 @@ declare const firebraseui;
 })
 export class LoginPhoneNumberPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams,
+              private firebaseAuth : FirebaseAuthProvider) {
   }
 
   ionViewDidLoad() {
-    scriptjs('https://www.gstatic.com/firebasejs/ui/3.4.0/firebase-ui-auth__pt.js', () => {
-        firebase.initializeApp(firebaseConfig);
-        const uiConfig = {
-            signInOptions: [
-                firebase.auth.PhoneAuthProvider.PROVIDER_ID
-            ]
-        }
-        const ui = new firebaseui.auth.AuthUI(firebase.auth());
-        ui.start('#firebase-ui',uiConfig);
-    });
+     const promise = this.firebaseAuth.getFirebaseUI();
+     promise.then( () => {
+       console.log('sudesso da promessa');
+     })
+    // scriptjs('https://www.gstatic.com/firebasejs/ui/3.4.0/firebase-ui-auth__pt.js', () => {
+    //     firebase.initializeApp(firebaseConfig);
+    //     const uiConfig = {
+    //         signInOptions: [
+    //             firebase.auth.PhoneAuthProvider.PROVIDER_ID
+    //         ]
+    //     }
+    //     const ui = new firebaseui.auth.AuthUI(firebase.auth());
+    //     ui.start('#firebase-ui',uiConfig);
+    // });
   }
 
 }

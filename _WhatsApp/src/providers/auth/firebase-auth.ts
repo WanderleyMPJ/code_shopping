@@ -11,12 +11,15 @@ declare const firebraseui;
 @Injectable()
 export class FirebaseAuthProvider {
 
-  constructor(public http: HttpClient) {
+  constructor() {
     console.log('Hello FirebaseAuthProvider Provider');
   }
 
-  private getFirebaseUI(): Promise<any> {
+   getFirebaseUI(): Promise<any> {
       return new Promise((resolve, reject) =>{
+          if(firebaseui){
+              resolve(firebaseui);
+          }
           scriptjs('https://www.gstatic.com/firebasejs/ui/3.4.0/firebase-ui-auth__pt.js', () => {
             resolve(firebaseui)
           });
