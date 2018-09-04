@@ -69,6 +69,10 @@ php artisan storage:link
            --- 'jwt.autorefresh'
            'jwt.refresh' => \Tymon\JWTAuth\Http\Middleware\RefreshToken\RefreshToken::class,
 
+  ** firebase-php - para validar token
+    - https://github.com/kreait/firebase-php
+     -- composer require kreait/firebase-php:4.0
+
 
 ** ANGULAR
 	* instalar node.js https://nodejs.org/en/
