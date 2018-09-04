@@ -46,6 +46,19 @@ export class FirebaseAuthProvider {
           });
       });
   }
+  
+  async getToken(): Promise<string>{
+      try{
+          const user = await this.getUser();
+          if(!user){
+              throw new Error('User not found');
+          }
+          const token = await user.getIdTokenResult();
+          return token.token;
+      }catch (e) {
+          return Promise.reject(e);
+      }
+  }
 
   getUser(): Promise<firebase.User | null>{
       const currentUser = this.getCurrentUser();
@@ -55,13 +68,14 @@ export class FirebaseAuthProvider {
       return new Promise((resolve, reject) => {
           const unsubscribed = this.firebase
               .auth()
-              .onAuthStateChanged((user) => {
-                    resolve(user);
-                    unsubscribed();
+              .onAuthStateChanged(
+                  (user) => {
+                        resolve(user);
+                        unsubscribed();
                 },
                   (error) => {
-                        reject(error);
-                        unsubscribed();
+                            reject(error);
+                            unsubscribed();
                   } );
       });
 
