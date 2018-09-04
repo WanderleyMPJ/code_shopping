@@ -15,6 +15,10 @@ export class FirebaseAuthProvider {
       firebase.initializeApp(firebaseConfig);
   }
 
+  get firebase(){
+    return firebase;
+  }
+
   async makePhoneNumberForm(selectorElement: string){
       const firebaseui = await this.getFirebaseUI();
       const uiConfig = {
