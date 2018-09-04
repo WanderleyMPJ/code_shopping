@@ -47,4 +47,19 @@ export class FirebaseAuthProvider {
       });
   }
 
+  getUser(): Promise<firebase.User | null>{
+      return new Promise((resolve, reject) => {
+          const unsubscribed = this.firebase
+              .auth()
+              .onAuthStateChanged((user) => {
+                    resolve(user);
+                    unsubscribed();
+                },
+                  (error) => {
+                        reject(error);
+                        unsubscribed();
+                  } );
+      });
+
+  }
 }
