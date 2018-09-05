@@ -2,6 +2,7 @@
 
 namespace CodeShopping\Models;
 
+use CodeShopping\Model\UserProfile;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Foundation\Auth\User as Authenticatable;
@@ -50,4 +51,10 @@ class User extends Authenticatable implements JWTSubject
           'name' => $this->name
         ];
     }
+
+    public function profile(){
+       return $this->hasOne(UserProfile::class)->withDefault(); //devolve a instancia do perfil mesmo se estiver fazia
+    }
 }
+
+//deseign Pattern = Null Pattern
