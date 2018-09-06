@@ -3,7 +3,7 @@ import { Injectable } from '@angular/core';
 import {Observable} from "rxjs/Observable";
 import {FirebaseAuthProvider} from "./firebase-auth";
 import {fromPromise} from "rxjs/observable/fromPromise";
-import {map} from "rxjs/operators";
+import {flatMap} from "rxjs/operators";
 
 /*
   Generated class for the AuthProvider provider.
@@ -19,10 +19,9 @@ export class AuthProvider {
   }
 
   login(): Observable<{ token: string}> {
-    
       return fromPromise(this.firebaseAuth.getToken())
         .pipe(
-            map( token => {
+            flatMap( token => {
                 return this.http.post<{token: string}>('http://localhost:8000/api/login_vendor', {token});
             })
         );
