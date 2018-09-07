@@ -17,7 +17,7 @@ export class LoginPhoneNumberPage {
   }
 
   ionViewDidLoad(){
-      this.firebaseAuth.firebase.auth().onAuthStateChanged((user)=> {
+     const unsubscribed =  this.firebaseAuth.firebase.auth().onAuthStateChanged((user)=> {
          if(user){
            this.authService
                .login()
@@ -27,8 +27,8 @@ export class LoginPhoneNumberPage {
                     },
                    (responseError) => {
 
-                   }
-               )
+                   });
+           unsubscribed();
          }
       });
 
