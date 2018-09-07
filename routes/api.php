@@ -22,7 +22,7 @@ Route::group(['namespace' => 'Api', 'as' => 'api.' ], function (){
     Route::name('login_vendor')->post('login_vendor', 'AuthController@loginFirebase');
     Route::name('refresh')->post('refresh', 'AuthController@refresh');
 
-    Route::group(['middleware' => ['auth:api', 'jwt.refresh']], function(){
+    Route::group(['middleware' => ['auth:api', 'jwt.refresh', 'can:is_seller']], function(){
         Route::name('logout')->post('logout', 'AuthController@logout');
         Route::name('me')->get('me', 'AuthController@me');
         Route::patch('products/{product}/restore','ProductController@restore');
@@ -35,6 +35,7 @@ Route::group(['namespace' => 'Api', 'as' => 'api.' ], function (){
         Route::resource('outputs', 'ProductOutputController', ['only' => ['index', 'store', 'show']]);
         Route::resource('users', 'UserController', ['except' => ['create', 'edit']]);
     });
+
 });
 
 
