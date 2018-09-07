@@ -2,13 +2,14 @@
 
 namespace CodeShopping\Http\Controllers\Api;
 
+use CodeShopping\Firebase\Auth as FirebaseAuth;
 use CodeShopping\Http\Resources\UserResource;
 use CodeShopping\Models\UserProfile;
-use CodeShopping\Rules\FirebaseTokenVerification;
-use Illuminate\Foundation\Auth\AuthenticatesUsers;
 use Illuminate\Http\Request;
 use CodeShopping\Http\Controllers\Controller;
-use CodeShopping\Firebase\Auth as FirebaseAuth;
+use Illuminate\Foundation\Auth\AuthenticatesUsers;
+use CodeShopping\Rules\FirebaseTokenVerification;
+
 
 
 
@@ -28,8 +29,11 @@ class AuthController extends Controller
     }
 
 
+    /**
+     * @param Request $request
+     * @return array|\Illuminate\Http\JsonResponse
+     */
     public function loginFirebase(Request $request){
-
         $this->validate($request, [
             'token' => new FirebaseTokenVerification()
         ]);
