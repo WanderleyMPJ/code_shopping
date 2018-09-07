@@ -1,4 +1,5 @@
 <?php
+declare(strict_types=1);
 
 namespace CodeShopping\Models;
 
@@ -25,6 +26,19 @@ class User extends Authenticatable implements JWTSubject
     protected $hidden = [
         'password', 'remember_token',
     ];
+
+    public static function createCustomer(array $data): User
+    {
+        try{
+            UserProfile::uploadPhoto($data['photo']);
+            \DB::beginTransaction();
+            \DB::commit();
+        }catch (\Exception $e){
+            //excluir a foto
+            \DB::rollBack();
+            throw $e;
+        }
+    }
 
     public function fill(array $attributes)
     {
