@@ -13,6 +13,9 @@ class User extends Authenticatable implements JWTSubject
 {
     use Notifiable, SoftDeletes ;
 
+    const ROLE_SELLER = 1;
+    CONST ROLE_CUSTOMER = 2;
+
     protected $dates = ['deleted_at'];
 
     protected $fillable = [
