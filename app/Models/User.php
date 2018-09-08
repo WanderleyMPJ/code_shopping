@@ -52,6 +52,23 @@ class User extends Authenticatable implements JWTSubject
         return $user;
     }
 
+    public function updateWithProfile(array $data): User
+    {
+        try{
+            UserProfile::uploadPhoto($data['photo']);
+            \DB::beginTransaction();
+            $this->fill($data);
+            $this->save();
+            UserProfile::saveProfile($this, $data);
+            \DB::commit();
+        }catch (\Exception $e){
+            UserProfile::deleteFile($data['photo']);
+            \DB::rollBack();
+            throw $e;
+        }
+        return $this;
+    }
+
     public function fill(array $attributes)
     {
         !isset($attributes['password']) ?: $attributes['password'] = bcrypt($attributes['password']);
