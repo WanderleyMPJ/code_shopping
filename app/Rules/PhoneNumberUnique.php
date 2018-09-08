@@ -13,7 +13,7 @@ class PhoneNumberUnique implements Rule
      *
      * @return void
      */
-    public function __construct()
+    public function __construct($ignoreUserId = null)
     {
         //
     }
@@ -31,7 +31,7 @@ class PhoneNumberUnique implements Rule
         try{
             $phoneNumber = $firebaseAuth->phoneNumber($value);
             $profile = UserProfile::where('phone_number', $phoneNumber)->first();
-            return $profile == null;
+            return $profile == null || $this->ignoreUserId!=null && $this->ignoreUserId == $profile->user->id;
         }catch (\Exception $e){
             return false;
         }

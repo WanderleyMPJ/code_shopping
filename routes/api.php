@@ -28,7 +28,7 @@ Route::group(['namespace' => 'Api', 'as' => 'api.' ], function (){
 
     Route::group(['middleware' => ['auth:api', 'jwt.refresh']], function(){
 
-        Route::patch('profile', 'UserController@update');
+        Route::patch('profile', 'UserProfileController@update');
 
         Route::group(['middleware' => 'can:is_seller'], function(){
             Route::name('logout')->post('logout', 'AuthController@logout');

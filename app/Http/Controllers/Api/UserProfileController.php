@@ -1,23 +1,26 @@
 <?php
 
-namespace CodeShopping\Http\Controllers\api;
+namespace CodeShopping\Http\Controllers\Api;
 
 use CodeShopping\Firebase\Auth as FirebaseAuth;
+use CodeShopping\Http\Requests\UserProfileUpdateRequest;
 use CodeShopping\Http\Resources\UserResource;
-use Illuminate\Http\Request;
 use CodeShopping\Http\Controllers\Controller;
 
 
-class UserProfilleController extends Controller
+class UserProfileController extends Controller
 {
-    public function update(Request $request)
+    public function update(UserProfileUpdateRequest $request)
     {
         $data = $request->all();
+//        dd($data);
         if(!$request->has('token')){
             $token = $request->token;
             $data['phone_number'] = $this->getPhoneNumber($token);
         }
-        $data['photo'] = $data['photo'] ?? null;
+        if($request->has('remove_photo')){
+            $data['photo'] = null;
+        }
         $user = \Auth::guard('api')->user();
         $user->updateWithProfile($data);
         return new UserResource($user);
