@@ -3,8 +3,8 @@ import {HttpClient, HttpParams} from "@angular/common/http";
 import {Observable} from "rxjs/internal/Observable";
 import {Category} from "../../Models";
 import {map} from "rxjs/operators";
-import {SearchParams, SearchParamsBuilder, HttpResource} from "./http-resource";
-import {AuthService} from "../auth.service";
+import {SearchParams, SearchParamsBuilder} from "./http-resource";
+
 import {environment} from "../../../environments/environment";
 
 

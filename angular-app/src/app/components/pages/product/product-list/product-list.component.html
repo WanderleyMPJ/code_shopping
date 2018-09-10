@@ -29,21 +29,17 @@
       </td>
       <td>{{product.created_at.date | date: 'dd/MM/yyyy'}}</td>
       <td>
-
         <a href="javascript:void(0)" (click)="productEditServices.showModalEdit(product.id)">
           <i class="fas fa-edit"></i>
-        </a>
-
-        |
-
+        </a> |
         <a href="javascript:void(0)" (click)="productDeleteServices.showModalDelete(product.id)">
           <i class="fas fa-trash-alt"></i>
-        </a>
-
-        |
-
+        </a> |
         <a [routerLink]="['/products', product.id,'categories','list']">
           Categorias
+        </a> |
+        <a [routerLink]="['/products', product.id,'photos','manager']">
+          Fotos
         </a>
       </td>
     </tr>
