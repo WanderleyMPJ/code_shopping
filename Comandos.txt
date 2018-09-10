@@ -171,7 +171,10 @@ php artisan storage:link
      *-** add em app.module Select2Module
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
+=======
+>>>>>>> e456df8abbab16ce119dce5d3917bbce3e151730
 *** IONIC E CORDOVA
 
     -- FERRAMENTA DO IONIC
@@ -191,7 +194,11 @@ php artisan storage:link
 
     * serviços
      - ionic g provider firebase-auth
+<<<<<<< HEAD
 =======
+=======
+
+>>>>>>> e456df8abbab16ce119dce5d3917bbce3e151730
 *** galeria de fotos fancybox
   -- http://fancyapps.com/fancybox/3/
     ---  npm install @fancyapps/fancybox@3.3.5 --save
@@ -200,5 +207,6 @@ php artisan storage:link
        ** "node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.css"
 
       * script
+<<<<<<< HEAD
        "node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.js"
 >>>>>>> master
