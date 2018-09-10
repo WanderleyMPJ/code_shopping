@@ -81,7 +81,7 @@ class ProductPhoto extends Model
         }
     }
 
-    public static function uploadFiles($productId, array $files)
+    public static function uploadFiles(int $productId, array $files)
     {
         $dir = self::photosDir($productId);
         //* @var UploadedFile $file */

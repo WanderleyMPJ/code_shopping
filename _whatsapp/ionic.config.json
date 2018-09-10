@@ -1,0 +1,7 @@
+{
+  "name": "_WhatsApp",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}

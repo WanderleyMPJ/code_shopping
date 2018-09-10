@@ -1,4 +1,4 @@
-***** HTML
+﻿***** HTML
     <TD*5 + TAB
 
 
@@ -69,8 +69,15 @@ php artisan storage:link
            --- 'jwt.autorefresh'
            'jwt.refresh' => \Tymon\JWTAuth\Http\Middleware\RefreshToken\RefreshToken::class,
 
+  ** firebase-php - para validar token
+    - https://github.com/kreait/firebase-php
+     -- composer require kreait/firebase-php:4.0
+
 
 ** ANGULAR
+	* instalar node.js https://nodejs.org/en/
+
+
     * instalar AdminLTe
     - npm install --save admin-lte && npm install --save jquery
             ng g c header --spec=false
@@ -162,6 +169,26 @@ php artisan storage:link
          *** npm install select2-bootstrap4-theme@1.0.0 --save
            ***** "node_modules/select2-bootstrap4-theme/dist/select2-bootstrap4.min.css" style
      *-** add em app.module Select2Module
+
+*** IONIC E CORDOVA
+
+    -- FERRAMENTA DO IONIC
+        --- npm install -g ionic@~3.20.0  //menor q 3.21
+         ** ionic start
+          ++++ caso de erro no cordova, rodar npm install -g cordova
+   ---  ver como esta ficando ionic serve --lab
+    ---- http://localhost:8100/ionic-lab
+
+*** FIREBASEUI
+  - npm install firebaseui@3.1.1 firebase@5.2.0 --save
+   -- IMPORTAR NA CLASSE DE LOGIN
+
+   -- https://github.com/ded/script.js/
+    - script para carregar um script
+     --- npm install scriptjs@2.5.8 --save
+
+    * serviços
+     - ionic g provider firebase-auth
 
 *** galeria de fotos fancybox
   -- http://fancyapps.com/fancybox/3/

@@ -2,10 +2,14 @@
 
 namespace CodeShopping\Http\Controllers\Api;
 
+use CodeShopping\Firebase\Auth as FirebaseAuth;
 use CodeShopping\Http\Resources\UserResource;
-use Illuminate\Foundation\Auth\AuthenticatesUsers;
+use CodeShopping\Models\UserProfile;
 use Illuminate\Http\Request;
 use CodeShopping\Http\Controllers\Controller;
+use Illuminate\Foundation\Auth\AuthenticatesUsers;
+use CodeShopping\Rules\FirebaseTokenVerification;
+
 
 
 
@@ -20,11 +24,38 @@ class AuthController extends Controller
 
       $token = \JWTAuth::attempt($credencials);
 
+      return $this->responseToken($token);
+
+    }
+
+
+    /**
+     * @param Request $request
+     * @return array|\Illuminate\Http\JsonResponse
+     */
+    public function loginFirebase(Request $request){
+        $this->validate($request, [
+            'required',
+            'token' => new FirebaseTokenVerification()
+        ]);
+
+        /** @var FirebaseAuth $firebaseAuth */
+        $firebaseAuth = app(FirebaseAuth::class);
+        $user = $firebaseAuth->user($request->token);
+        $profile = UserProfile::where('phone_number', $user->phoneNumber)->first();
+        $token = null;
+        if($profile){
+            $token = \Auth::guard('api')->login($profile->user);
+        }
+        return $this->responseToken($token);
+    }
+
+    private function responseToken($token){
         return $token ?
             ['token' => $token] :
             response()->json([
                 'error' => \Lang::get('auth.failed')
-           ], 400);
+            ], 400);
     }
 
     public function logout()
