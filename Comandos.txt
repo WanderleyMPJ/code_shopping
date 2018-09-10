@@ -210,3 +210,6 @@ php artisan storage:link
 <<<<<<< HEAD
        "node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.js"
 >>>>>>> master
+=======
+       "node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.js"
+>>>>>>> e456df8abbab16ce119dce5d3917bbce3e151730
