@@ -26,6 +26,7 @@ Route::group(['namespace' => 'Api', 'as' => 'api.' ], function (){
 
     Route::resource('customers', 'CustomerController', ['only' => ['store']]);
 
+
     Route::group(['middleware' => ['auth:api', 'jwt.refresh']], function(){
 
         Route::patch('profile', 'UserProfileController@update');
