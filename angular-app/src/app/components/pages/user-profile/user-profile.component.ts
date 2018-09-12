@@ -28,7 +28,7 @@ export class UserProfileComponent implements OnInit {
       });
       this.form.patchValue(this.authService.me);
       this.form.get('phone_number').setValue(this.authService.me.profile.phone_number);
-      this.has_photo = this.authService.me.profile.has_photo;
+      this.setHasPhoto();
   }
 
   ngOnInit() {
@@ -40,13 +40,21 @@ export class UserProfileComponent implements OnInit {
       this.userProfileHttp
         .update(data)
         .subscribe(
-            (data) => this.notifyMessage.success('Perfil atualizado com sucesso'),
-            (responseError) => {
-              if (responseError.status === 422){
-                this.errors = responseError.error.errors
-              }
-            });
+            (data) => {
+                this.form.get('photo').setValue(false);
+                this.setHasPhoto();
+                this.notifyMessage.success('Perfil atualizado com sucesso');
+            },
+                    (responseError) => {
+                        if (responseError.status === 422){
+                            this.errors = responseError.error.errors
+                        }
+                    });
     return false;
+  }
+
+  setHasPhoto(){
+      this.has_photo = this.authService.me.profile.has_photo;
   }
 
   onChoosePhoto(files: FileList){
