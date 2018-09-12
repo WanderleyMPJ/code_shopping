@@ -21,11 +21,13 @@ export class PhoneNumberAuthModalComponent implements OnInit {
 
   ngOnInit() {
 
-    this.firebaseAuth.makePhoneNumberForm('#firebase-ui');
   }
 
   showModal(){
-    this.onAuthStateChanged();
+      this.firebaseAuth.makePhoneNumberForm('#firebase-ui');
+      this.firebaseAuth.logout().then( () => {
+          this.onAuthStateChanged();
+      });
     this.modal.show();
   }
 

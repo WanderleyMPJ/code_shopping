@@ -89,8 +89,10 @@ export class UserProfileComponent implements OnInit {
 
     onPhoneNumberVerification() {
         this.firebaseAuth.getUser().then(
-            user => this.form.get('phone_number').setValue(user.phoneNumber));
+            user => this.form.get('phone_number').setValue(user.phoneNumber)
+        );
         this.firebaseAuth.getToken().then(
-            token => this.form.get('token').setValue(token));
+            token => this.form.get('token').setValue(token)
+        );
     }
 }
