@@ -46,6 +46,7 @@ import { ProductPhotoUploadComponent } from './components/pages/product-photo-up
 import { ProductPhotoEditModalComponent } from './components/pages/product-photo/product-photo-edit-modal/product-photo-edit-modal.component';
 import { ProductPhotoDeleteModalComponent } from './components/pages/product-photo/product-photo-delete-modal/product-photo-delete-modal.component';
 import { UserProfileComponent } from './components/pages/user-profile/user-profile.component';
+import { PhoneNumberAuthModalComponent } from './components/common/phone-number-auth-modal/phone-number-auth-modal.component';
 
 
 
@@ -98,7 +99,8 @@ import { UserProfileComponent } from './components/pages/user-profile/user-profi
     ProductPhotoUploadComponent,
     ProductPhotoEditModalComponent,
     ProductPhotoDeleteModalComponent,
-    UserProfileComponent
+    UserProfileComponent,
+    PhoneNumberAuthModalComponent
   ],
   imports: [
       BrowserModule,

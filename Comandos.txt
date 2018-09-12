@@ -208,3 +208,8 @@ php artisan storage:link
        "node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.js"
        "node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.js"
 
+*** add firebaseui no angular
+    - copiar as dependencias do package.json
+    - copiar firebaseui e o serviço do ionic,
+    - add em angular.json o css:
+      --- "node_modules/firebaseui/dist/firebaseui.css"

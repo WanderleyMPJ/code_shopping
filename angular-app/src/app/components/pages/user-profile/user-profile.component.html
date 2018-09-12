@@ -21,7 +21,14 @@
       </div>
       <div class="form-group">
         <label>Telefone</label>
-        <input type="text" class="form-control" readonly formControlName="phone_number">
+        <div class="input-group">
+          <input type="text" class="form-control" readonly formControlName="phone_number">
+          <div class="input-group-append">
+            <button class="btn btn-info" type="button" (click)="openPhoneNumberAuthModel()">
+              Novo
+            </button>
+          </div>
+        </div>
       </div>
       <div class="form-group">
         <label for="photo">Foto do Perfil</label>
@@ -39,3 +46,4 @@
     </form>
   </div>
 </div>
+<phone-number-auth-modal></phone-number-auth-modal>
