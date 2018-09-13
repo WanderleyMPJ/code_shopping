@@ -15,6 +15,7 @@ import { FirebaseAuthProvider } from '../providers/auth/firebase-auth';
 import { AuthProvider } from '../providers/auth/auth';
 import {HttpClientModule} from "@angular/common/http";
 import {MainPage} from "../pages/main/main";
+import {CustomerCreatePage} from "../pages/customer-create/customer-create";
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import {MainPage} from "../pages/main/main";
     LoginOptionsPage,
     LoginPhoneNumberPage,
     ResetPhoneNumberPage,
+    CustomerCreatePage,
       MainPage
   ],
   imports: [
@@ -39,7 +41,8 @@ import {MainPage} from "../pages/main/main";
     LoginOptionsPage,
     LoginPhoneNumberPage,
     ResetPhoneNumberPage,
-      MainPage
+    CustomerCreatePage,
+    MainPage
   ],
   providers: [
     StatusBar,

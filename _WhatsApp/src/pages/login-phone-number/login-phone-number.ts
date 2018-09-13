@@ -26,7 +26,7 @@ export class LoginPhoneNumberPage {
                        this.redirectToMainPage();
                     },
                    (responseError) => {
-
+                       this.redirectToCustomerCreatePage();
                    });
            unsubscribed();
          }
