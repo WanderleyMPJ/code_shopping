@@ -12,7 +12,6 @@ class UserProfile extends Model
     const BASE_PATH = 'app/public';
     const DIR_USERS = 'users';
     const DIR_USER_PHOTO = self::DIR_USERS . '/photos';
-
     const USER_PHOTO_PATH = self::BASE_PATH. '/' . self::DIR_USER_PHOTO;
 
     protected $fillable = ['photo', 'phone_number'];

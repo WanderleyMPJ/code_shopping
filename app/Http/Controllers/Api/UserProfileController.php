@@ -12,8 +12,9 @@ class UserProfileController extends Controller
 {
     public function update(UserProfileUpdateRequest $request)
     {
+
         $data = $request->all();
-//        dd($data);
+
         if(!$request->has('token')){
             $token = $request->token;
             $data['phone_number'] = $this->getPhoneNumber($token);
