@@ -17,6 +17,7 @@ import {HttpClientModule} from "@angular/common/http";
 import {MainPage} from "../pages/main/main";
 import {CustomerCreatePage} from "../pages/customer-create/customer-create";
 import {ReactiveFormsModule} from "@angular/forms";
+import { CustomerHttpProvider } from '../providers/http/customer-http';
 
 @NgModule({
   declarations: [
@@ -51,7 +52,8 @@ import {ReactiveFormsModule} from "@angular/forms";
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     FirebaseAuthProvider,
-    AuthProvider
+    AuthProvider,
+    CustomerHttpProvider
   ]
 })
 export class AppModule {}
