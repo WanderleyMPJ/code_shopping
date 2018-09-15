@@ -21,6 +21,15 @@
       <ion-input type="file" [hidden]="true" #inputfilePhoto (change)="onChoosePhoto($event.target.files)" ></ion-input>
       <button ion-button color="green-dark" (click)="selectPhoto()">Escolher foto para o perfil</button>
     </ion-list>
-    <button type="submit" ion-button block color="green-dark" [disabled]="form.invalid">Criar o perfil</button>
+    <ion-card *ngIf="photoPreview">
+      <ion-item>
+          <ion-avatar item-start>
+              <img [src]="photoPreview">
+          </ion-avatar>
+          <h2>Foto do Perfil Selecionada</h2>
+          <ion-icon name="close" item-end (click)="photoPreview = null;this.form.get('photo').setValue(null);"></ion-icon>
+      </ion-item>
+    </ion-card>
+    <button type="button" ion-button block color="green-dark" [disabled]="form.invalid">Criar o perfil</button>
   </form>
 </ion-content>
