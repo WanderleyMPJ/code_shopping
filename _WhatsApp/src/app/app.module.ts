@@ -16,6 +16,7 @@ import { AuthProvider } from '../providers/auth/auth';
 import {HttpClientModule} from "@angular/common/http";
 import {MainPage} from "../pages/main/main";
 import {CustomerCreatePage} from "../pages/customer-create/customer-create";
+import {ReactiveFormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -26,12 +27,13 @@ import {CustomerCreatePage} from "../pages/customer-create/customer-create";
     LoginPhoneNumberPage,
     ResetPhoneNumberPage,
     CustomerCreatePage,
-      MainPage
+    MainPage
   ],
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp),
-      HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [

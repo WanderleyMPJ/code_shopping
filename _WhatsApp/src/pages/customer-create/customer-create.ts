@@ -1,12 +1,6 @@
 import {Component, ViewChild} from '@angular/core';
 import {IonicPage, NavController, NavParams, TextInput} from 'ionic-angular';
-
-/**
- * Generated class for the CustomerCreatePage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
+import {FormBuilder, FormGroup, Validators} from "@angular/forms";
 
 @IonicPage()
 @Component({
@@ -15,14 +9,25 @@ import {IonicPage, NavController, NavParams, TextInput} from 'ionic-angular';
 })
 export class CustomerCreatePage {
 
+  form: FormGroup;
+
   @ViewChild('inputfilePhoto')
   inputFilePhoto: TextInput;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams,
+              private formBuilder: FormBuilder) {
+      this.form = this.formBuilder.group({
+          name: ['', [Validators.required,Validators.maxLength(255)]],
+          email: ['', [Validators.required,Validators.email,Validators.maxLength(255)]]
+      })
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad CustomerCreatePage');
+  }
+
+  submit(){
+
   }
 
   selectPhoto(){
