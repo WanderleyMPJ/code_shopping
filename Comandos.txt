@@ -73,6 +73,9 @@ php artisan storage:link
     - https://github.com/kreait/firebase-php
      -- composer require kreait/firebase-php:4.0
 
+  *** enviar email laravel
+    - php artisan make:mail PhoneNumberChangeMail --markdown=mails.phone_number_change_mail
+
 
 ** ANGULAR
 	* instalar node.js https://nodejs.org/en/
