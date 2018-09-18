@@ -16,7 +16,7 @@ import {LoginPhoneNumberPage} from "../pages/login-phone-number/login-phone-numb
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
-  rootPage: any = CustomerCreatePage;
+  rootPage: any = LoginOptionsPage;
 
   pages: Array<{title: string, component: any}>;
 
