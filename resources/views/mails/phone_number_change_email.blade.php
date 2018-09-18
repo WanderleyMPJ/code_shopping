@@ -1,7 +1,7 @@
 @component('mail::message')
-# Mudança de Númer de telefone
+# Mudança de Número de telefone
 
-Uma mudança de número de telefone foi solicitada, cliqui no link abaixo para valida-la.
+Uma mudança do número de telefone foi solicitada, cliqui no link abaixo para valida-la.
 
 @component('mail::button', ['url' => $url])
 Validar Telefone

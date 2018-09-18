@@ -1,5 +1,6 @@
 <?php
 
+
 namespace CodeShopping\Http\Controllers\Api;
 
 use CodeShopping\Firebase\Auth as FirebaseAuth;

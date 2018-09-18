@@ -2,10 +2,11 @@
 
 namespace CodeShopping\Mail;
 
+use CodeShopping\Models\User;
 use Illuminate\Bus\Queueable;
 use Illuminate\Mail\Mailable;
 use Illuminate\Queue\SerializesModels;
-use Illuminate\Contracts\Queue\ShouldQueue;
+
 
 class PhoneNumberChangeMail extends Mailable
 {
@@ -24,8 +25,10 @@ class PhoneNumberChangeMail extends Mailable
     public function build()
     {
         $this->url = route('customers.web_phone_number_update', ['token' => $this->token]);
-        return $this->view('mails.phone_number_change_email');
-//        return $this->markdown('mails.phone_number_change_email');
+//        return $this->view('mails.phone_number_change_email');
+        return $this
+            ->subject('Alteração de número de telefone')
+            ->markdown('mails.phone_number_change_email');
     }
 }
 

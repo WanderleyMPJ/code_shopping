@@ -39,7 +39,8 @@ export class LoginPhoneNumberPage {
               (responseError) => {
                   this.firebaseAuth
                       .makePhoneNumberForm('#firebase-ui')
-                      .then(() => this.handleAuthuser());
+                      .then(() => this.handleAuthuser())
+                  ;
                   this.redirectToCustomerCreatePage();
                });
   }
