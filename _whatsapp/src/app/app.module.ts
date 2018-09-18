@@ -28,6 +28,7 @@ import { CustomerHttpProvider } from '../providers/http/customer-http';
     LoginPhoneNumberPage,
     ResetPhoneNumberPage,
     CustomerCreatePage,
+    ResetPhoneNumberPage,
     MainPage
   ],
   imports: [
@@ -45,6 +46,7 @@ import { CustomerHttpProvider } from '../providers/http/customer-http';
     LoginPhoneNumberPage,
     ResetPhoneNumberPage,
     CustomerCreatePage,
+    ResetPhoneNumberPage,
     MainPage
   ],
   providers: [
