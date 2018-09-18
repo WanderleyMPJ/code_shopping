@@ -4,8 +4,9 @@ declare(strict_types=1);
 namespace CodeShopping\Models;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Http\UploadedFile;
-use phpDocumentor\Reflection\Types\Self_;
+
 
 class UserProfile extends Model
 {
@@ -21,6 +22,19 @@ class UserProfile extends Model
         $profile->phone_number_token_to_change = $token;
         $profile->save();
         return $token;
+    }
+
+    /**
+     * @param $token
+     * @return UserProfile
+     */
+    public static function updatePhoneNumber($token): UserProfile{
+        $profile = UserProfile::where('phone_number_token_to_change', $token)->firstOrFail();
+        $phoneNumber = base64_decode($token);
+        $profile->phone_number = $phoneNumber;
+        $profile->phone_number_token_to_change = null;
+        $profile->save();
+        return $profile;
     }
 
     public static function saveProfile(User $user, array $data): UserProfile

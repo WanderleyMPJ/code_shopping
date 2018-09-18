@@ -25,8 +25,9 @@ Route::group(['namespace' => 'Api', 'as' => 'api.' ], function (){
     Route::name('refresh')->post('refresh', 'AuthController@refresh');
 
     Route::post('customers/phone_numbers', 'CustomerController@requestPhoneNumberUpdate');
-    Route::resource('customers', 'CustomerController', ['only' => ['store']]);
+    Route::patch('customers/phone_numbers/{token}', 'CustomerController@updatePhoneNumber');
 
+    Route::resource('customers', 'CustomerController', ['only' => ['store']]);
 
     Route::group(['middleware' => ['auth:api', 'jwt.refresh']], function(){
 
