@@ -40,4 +40,17 @@ export class CustomerHttpProvider {
     return formData;
   }
 
+  requestUpdatePhoneNumber(email: string): Observable<any>{
+      return fromPromise(this.firebaseAuth.getToken())
+          .pipe(
+              flatMap( token => {
+                  console.log(email, token);
+                  return this.http
+                      .post<{token: string}>('http://localhost:8000/api/customers/phone_numbers', {
+                      email, token
+                      });
+              })
+          );
+  }
+
 }
