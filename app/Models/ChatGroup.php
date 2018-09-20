@@ -39,18 +39,20 @@ class ChatGroup extends Model
         try{
             if(isset($data['photo'])){
                 self::uploadPhoto($data['photo']);
+                $this->deletePhoto();
                 $data['photo'] = $data['photo']->hashName();
             }
-
             \DB::beginTransaction();
-            $chatGroup = self::create($data);
+            $this->fill($data)->save();
             \DB::commit();
         }catch (\Exception $e){
-            self::deleteFile($data['photo']);
+            if(isset($data['photo'])){
+                self::deleteFile($data['photo']);
+            }
             \DB::rollBack();
             throw $e;
         }
-        return $chatGroup;
+        return $this;
     }
 
     private static function uploadPhoto(UploadedFile $photo)
@@ -68,9 +70,9 @@ class ChatGroup extends Model
         }
     }
 
-    private function deletePhoto(UserProfile $profile){
+    private function deletePhoto(){
         $dir = self::photoDir();
-        \Storage::disk('public')->delete("{dir}/{$this->photo}");
+        \Storage::disk('public')->delete("{$dir}/{$this->photo}");
     }
 
     private static function photosPath(){

@@ -3,84 +3,40 @@
 namespace CodeShopping\Http\Controllers\Api;
 
 use CodeShopping\Http\Controllers\Controller;
+use CodeShopping\Http\Requests\ChatGroupCreateRequest;
+use CodeShopping\Http\Requests\ChatGroupUpdateRequest;
+use CodeShopping\Http\Resources\ChatGroupResource;
 use CodeShopping\Models\ChatGroup;
-use Illuminate\Http\Request;
 
 class ChatGroupController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
+
     public function index()
     {
-        //
+        $chat_groups = ChatGroup::paginate();
+        return ChatGroupResource::collection($chat_groups);
     }
 
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function create()
+    public function store(ChatGroupCreateRequest $request)
     {
-        //
+        $chatGroup = ChatGroup::createWithPhoto($request->all());
+        return new ChatGroupResource($chatGroup);
     }
 
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
-    public function store(Request $request)
-    {
-        //
-    }
-
-    /**
-     * Display the specified resource.
-     *
-     * @param  \CodeShopping\Models\ChatGroup  $chatGroup
-     * @return \Illuminate\Http\Response
-     */
     public function show(ChatGroup $chatGroup)
     {
-        //
+        return new ChatGroupResource($chatGroup);
     }
 
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  \CodeShopping\Models\ChatGroup  $chatGroup
-     * @return \Illuminate\Http\Response
-     */
-    public function edit(ChatGroup $chatGroup)
+    public function update(ChatGroupUpdateRequest $request, ChatGroup $chat_group)
     {
-        //
+        $chat_group->updateWithPhoto($request->all());
+        return new ChatGroupResource($chat_group);
     }
 
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \CodeShopping\Models\ChatGroup  $chatGroup
-     * @return \Illuminate\Http\Response
-     */
-    public function update(Request $request, ChatGroup $chatGroup)
+    public function destroy(ChatGroup $chat_group)
     {
-        //
-    }
-
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  \CodeShopping\Models\ChatGroup  $chatGroup
-     * @return \Illuminate\Http\Response
-     */
-    public function destroy(ChatGroup $chatGroup)
-    {
-        //
+        $chat_group->delete();
+        return response()->json([], 204);
     }
 }
