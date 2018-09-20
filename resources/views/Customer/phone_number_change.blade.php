@@ -1,4 +1,4 @@
-@extends('layouts.app)
+@extends('layouts.app')
 
 @section('content')
 <p id="result">Atualizando telefone...</p>

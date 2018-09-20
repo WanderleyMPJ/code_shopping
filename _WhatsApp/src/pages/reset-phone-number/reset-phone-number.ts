@@ -39,7 +39,6 @@ export class ResetPhoneNumberPage {
   }
 
   handleUpdate(){
-      console.log('handleUpdate');
       this.firebaseAuth
           .makePhoneNumberForm('#firebase-ui')
           .then( () => {

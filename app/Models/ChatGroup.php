@@ -22,9 +22,28 @@ class ChatGroup extends Model
     {
         try{
             self::uploadPhoto($data['photo']);
-            $dat['photo'] = $data['photo']->hashName();
+            $data['photo'] = $data['photo']->hashName();
             \DB::beginTransaction();
              $chatGroup = self::create($data);
+            \DB::commit();
+        }catch (\Exception $e){
+            self::deleteFile($data['photo']);
+            \DB::rollBack();
+            throw $e;
+        }
+        return $chatGroup;
+    }
+
+    public function updateWithPhoto(array $data): ChatGroup
+    {
+        try{
+            if(isset($data['photo'])){
+                self::uploadPhoto($data['photo']);
+                $data['photo'] = $data['photo']->hashName();
+            }
+
+            \DB::beginTransaction();
+            $chatGroup = self::create($data);
             \DB::commit();
         }catch (\Exception $e){
             self::deleteFile($data['photo']);
