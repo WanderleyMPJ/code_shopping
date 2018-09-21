@@ -1,0 +1,12 @@
+<form (submit)="submit()">
+  <modal (onHide)="hideModal($event)">
+    <h5 modal-title>Editar Grupo de Chat - {{form.get('name').value}}</h5>
+    <div modal-body>
+      <chat-group-form [form]="form"></chat-group-form>
+    </div>
+    <div modal-footer>
+      <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+      <button type="submit" class="btn btn-primary">Editar</button>
+    </div>
+  </modal>
+</form>

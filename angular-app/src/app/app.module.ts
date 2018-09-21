@@ -47,6 +47,11 @@ import { ProductPhotoEditModalComponent } from './components/pages/product-photo
 import { ProductPhotoDeleteModalComponent } from './components/pages/product-photo/product-photo-delete-modal/product-photo-delete-modal.component';
 import { UserProfileComponent } from './components/pages/user-profile/user-profile.component';
 import { PhoneNumberAuthModalComponent } from './components/common/phone-number-auth-modal/phone-number-auth-modal.component';
+import { ChatGroupDeleteModalComponent } from './components/pages/ChatGroup/chat-group-delete-modal/chat-group-delete-modal.component';
+import { ChatGroupEditModalComponent } from './components/pages/ChatGroup/chat-group-edit-modal/chat-group-edit-modal.component';
+import { ChatGroupNewModalComponent } from './components/pages/ChatGroup/chat-group-new-modal/chat-group-new-modal.component';
+import { ChatGroupListComponent } from './components/pages/ChatGroup/chat-group-list/chat-group-list.component';
+import { ChatGroupFormComponent } from './components/pages/ChatGroup/chat-group-form/chat-group-form.component';
 
 
 
@@ -100,7 +105,12 @@ import { PhoneNumberAuthModalComponent } from './components/common/phone-number-
     ProductPhotoEditModalComponent,
     ProductPhotoDeleteModalComponent,
     UserProfileComponent,
-    PhoneNumberAuthModalComponent
+    PhoneNumberAuthModalComponent,
+    ChatGroupDeleteModalComponent,
+    ChatGroupEditModalComponent,
+    ChatGroupNewModalComponent,
+    ChatGroupListComponent,
+    ChatGroupFormComponent
   ],
   imports: [
       BrowserModule,

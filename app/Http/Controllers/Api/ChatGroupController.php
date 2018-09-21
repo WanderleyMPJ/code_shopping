@@ -3,18 +3,27 @@
 namespace CodeShopping\Http\Controllers\Api;
 
 use CodeShopping\Http\Controllers\Controller;
+use CodeShopping\Http\Filters\ChatGroupFilter;
 use CodeShopping\Http\Requests\ChatGroupCreateRequest;
 use CodeShopping\Http\Requests\ChatGroupUpdateRequest;
 use CodeShopping\Http\Resources\ChatGroupResource;
 use CodeShopping\Models\ChatGroup;
+use Illuminate\Http\Request;
 
 class ChatGroupController extends Controller
 {
 
-    public function index()
+    public function index(Request $request)
     {
-        $chat_groups = ChatGroup::paginate();
+        $filter = app(ChatGroupFilter::class);
+        /** @var Builder $filterQuery */
+        $filterQuery = ChatGroup::filtered($filter);
+
+        $chat_groups = $request->has('all')
+            ? $filterQuery->get()
+            : $filterQuery->paginate(5);
         return ChatGroupResource::collection($chat_groups);
+
     }
 
     public function store(ChatGroupCreateRequest $request)

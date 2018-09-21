@@ -6,13 +6,14 @@ namespace CodeShopping\Models;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Http\UploadedFile;
+use Mnabialek\LaravelEloquentFilter\Traits\Filterable;
 
 class ChatGroup extends Model
 {
-    use SoftDeletes;
+    use SoftDeletes, Filterable;
 
     const BASE_PATH = 'app/public';
-    const DIR_CHAT_GROUPS = 'users';
+    const DIR_CHAT_GROUPS = 'ChatGroup';
     const CHAT_GROUP_PHOTO_PATH = self::BASE_PATH. '/' . self::DIR_CHAT_GROUPS;
 
     protected $fillable = ['name', 'photo'];
