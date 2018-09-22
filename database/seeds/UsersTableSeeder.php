@@ -47,7 +47,7 @@ class UsersTableSeeder extends Seeder
             ])->each(function ($user, $key){
                 $user->profile->phone_number = "+165055510{$key}";
                 $user->profile->firebase_uid = "user--{$key}";
-                $user->save();
+                $user->profile->save();
             });
     }
 
