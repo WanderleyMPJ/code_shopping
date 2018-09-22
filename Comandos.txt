@@ -187,6 +187,10 @@ php artisan storage:link
    ---  ver como esta ficando ionic serve --lab
     ---- http://localhost:8100/ionic-lab
 
+    *** tabs no ionic
+        * https://github.com/zyra/ionic2-super-tabs
+          ** npm i ionic2-super-tabs@4.3.0 --save
+
 *** FIREBASEUI
   - npm install firebaseui@3.1.1 firebase@5.2.0 --save
    -- IMPORTAR NA CLASSE DE LOGIN
