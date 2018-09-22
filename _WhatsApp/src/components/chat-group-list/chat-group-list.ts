@@ -34,7 +34,7 @@ export class ChatGroupListComponent {
               if (index!==-1) {
                 this.groups[index] = group;
               }
-          });
+      });
   }
 
 }
