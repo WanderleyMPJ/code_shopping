@@ -14,7 +14,7 @@ class ChatGroup extends Model
     use SoftDeletes, Filterable, FirebaseSync;
 
     const BASE_PATH = 'app/public';
-    const DIR_CHAT_GROUPS = 'ChatGroup';
+    const DIR_CHAT_GROUPS = 'chat_groups';
     const CHAT_GROUP_PHOTO_PATH = self::BASE_PATH. '/' . self::DIR_CHAT_GROUPS;
 
     protected $fillable = ['name', 'photo'];
@@ -87,13 +87,30 @@ class ChatGroup extends Model
         return $dir;
     }
 
-    public function getPhotoUrlAttribute(){
-        $path = self::photoDir();
-        return asset("storage/{$path}/{$this->photo}");
-    }
-
     public function users(){
         return $this->belongsToMany(User::class);
+    }
+
+    protected function syncFbRemove()
+    {
+        $this->syncFbSet();
+    }
+
+    protected function syncFbSet()
+    {
+        $data = $this->ToArray();
+        $data['photo_url'] = $this->photo_url_base;
+        unset($data['photo']);
+        $this->getModelReference()->set($data);
+    }
+
+    public function getPhotoUrlAttribute(){
+        return asset("storage/{$this->photo_url_base}");
+    }
+
+    public function getPhotoUrlBaseAttribute(){
+        $path = self::photoDir();
+        return "{$path}/{$this->photo}";
     }
 
 }
