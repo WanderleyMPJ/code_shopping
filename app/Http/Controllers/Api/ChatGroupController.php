@@ -17,7 +17,8 @@ class ChatGroupController extends Controller
     {
         $filter = app(ChatGroupFilter::class);
         /** @var Builder $filterQuery */
-        $filterQuery = ChatGroup::filtered($filter);
+        $filterQuery = ChatGroup::withCount('users')
+            ->filtered($filter);
 
         $chat_groups = $request->has('all')
             ? $filterQuery->get()
