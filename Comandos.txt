@@ -220,3 +220,4 @@ php artisan storage:link
     - copiar firebaseui e o serviço do ionic,
     - add em angular.json o css:
       --- "node_modules/firebaseui/dist/firebaseui.css"
+
