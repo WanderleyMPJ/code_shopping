@@ -3,6 +3,7 @@ declare(strict_types=1);
 
 namespace CodeShopping\Models;
 
+use CodeShopping\Firebase\FirebaseSync;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Http\UploadedFile;
@@ -10,7 +11,7 @@ use Mnabialek\LaravelEloquentFilter\Traits\Filterable;
 
 class ChatGroup extends Model
 {
-    use SoftDeletes, Filterable;
+    use SoftDeletes, Filterable, FirebaseSync;
 
     const BASE_PATH = 'app/public';
     const DIR_CHAT_GROUPS = 'ChatGroup';
