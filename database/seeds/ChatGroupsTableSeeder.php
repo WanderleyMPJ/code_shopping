@@ -1,35 +1,39 @@
 <?php
 
 use CodeShopping\Models\ChatGroup;
+use CodeShopping\Models\User;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Collection;
 
 class ChatGroupsTableSeeder extends Seeder
 {
-    /**
-     * @var Collection
-     */
     private $allFakerPhotos;
     private $fakerPhotosPath = 'app/faker/chat_groups';
 
-    /**
-     * Run the database seeds.
-     *
-     * @return void
-     */
 
     public function run()
     {
         $this->allFakerPhotos = $this->getFakerPhotos();
         $this->deleteAllPhotosInChatGroupsPath();
         $self = $this;
+        $customerDefault = User::whereEmail('customer@user.com')->first();
+        /** @var \Illuminate\Database\Eloquent\Collection $otherCustomers */
+        $otherCustomers = User
+            ::whereRole(User::ROLE_CUSTOMER)
+            ->whereNotIn('id', [$customerDefault->id])->get();
         factory(ChatGroup::class, 10)
             ->make()
-            ->each(function ($group) use($self){
-                ChatGroup::createWithPhoto([
+            ->each(function ($group) use($self, $otherCustomers){
+                $group = ChatGroup::createWithPhoto([
                 'name' => $group->name,
                 'photo' => $self->getUploadedFile()
                 ]);
+
+                $customerId = $otherCustomers
+                    ->random(10)
+                    ->pluck('id')->toArray();
+                $group->users()->attach($customerId);
+
         });
     }
 

@@ -32,10 +32,4 @@ export class ChatGroupFormComponent implements OnInit {
     this.form.get('photo').setValue(files[0]);
   }
 
-    onChoosePhoto(files: FileList){
-        if (!files.length){
-            return;
-        }
-        this.form.get('photo').setValue(files[0]);
-    }
 }
