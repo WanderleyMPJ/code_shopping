@@ -19,6 +19,12 @@ class ChatGroupUserController extends Controller
     {
         $chat_group->users()->attach($request->users);
         $users = User::whereIn('id', $request->users)->get();
-        return response()->json(new ChatGroup($chat_group, $users), 201);
+        return response()->json(new ChatGroupUserResource($chat_group, $users), 201);
+    }
+
+    public function destroy(ChatGroup $chat_group, User $user)
+    {
+        $chat_group->users()->detach($user->id);
+        return response()->json([], 204);
     }
 }
