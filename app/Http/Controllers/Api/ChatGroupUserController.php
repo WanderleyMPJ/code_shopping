@@ -25,6 +25,7 @@ class ChatGroupUserController extends Controller
     public function destroy(ChatGroup $chat_group, User $user)
     {
         $chat_group->users()->detach($user->id);
+
         return response()->json([], 204);
     }
 }
