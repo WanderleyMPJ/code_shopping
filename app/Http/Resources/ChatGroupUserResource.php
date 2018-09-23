@@ -4,6 +4,7 @@ namespace CodeShopping\Http\Resources;
 
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Resources\Json\JsonResource;
+use Illuminate\Pagination\AbstractPaginator;
 
 class ChatGroupUserResource extends JsonResource
 {
@@ -23,7 +24,7 @@ class ChatGroupUserResource extends JsonResource
      */
     public function toArray($request)
     {
-        self::withoutWrapping();
+//        self::withoutWrapping();
         return $this->makeArray($request);
     }
 
@@ -55,4 +56,13 @@ class ChatGroupUserResource extends JsonResource
         }
         return $array;
     }
+
+    protected function getUsersResponse($request){
+        $users = $this->users ? $this->users : $this->resource->users()->paginate(2);
+
+        return $users instanceof AbstractPaginator ?
+            UserResource::collection($users)->toResponse($request) :
+            UserResource::collection($users);
+    }
+
 }
