@@ -10,6 +10,7 @@ import {ProductInputListComponent} from "./components/pages/product-input/produc
 import {ProductPhotoManagerComponent} from "./components/pages/product-photo-manager/product-photo-manager.component";
 import {UserProfileComponent} from "./components/pages/user-profile/user-profile.component";
 import {ChatGroupListComponent} from "./components/pages/ChatGroup/chat-group-list/chat-group-list.component";
+import {ChatGroupUserListComponent} from "./components/pages/chat-group-user/chat-group-user-list/chat-group-user-list.component";
 
 const routes: Routes = [
     {
@@ -48,6 +49,11 @@ const routes: Routes = [
     {
         path: 'profile',
         component: UserProfileComponent,
+        canActivate: [AuthGuard]
+    },
+    {
+        path: 'chat-groups/:chat_group/users/list',
+        component: ChatGroupUserListComponent,
         canActivate: [AuthGuard]
     },
     {
