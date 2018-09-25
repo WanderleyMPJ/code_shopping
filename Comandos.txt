@@ -76,6 +76,10 @@ php artisan storage:link
   *** enviar email laravel
     - php artisan make:mail PhoneNumberChangeMail --markdown=mails.phone_number_change_mail
 
+  *** laravel-pivot -- atualizar tabelas pivot no firebase
+    -- https://github.com/fico7489/laravel-pivot
+     --- composer require fico7489/laravel-pivot:2.2.*
+
 
 ** ANGULAR
 	* instalar node.js https://nodejs.org/en/

@@ -4,6 +4,7 @@ declare(strict_types=1);
 namespace CodeShopping\Models;
 
 use CodeShopping\Firebase\FirebaseSync;
+use Fico7489\Laravel\Pivot\Traits\PivotEventTrait;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Http\UploadedFile;
@@ -11,7 +12,7 @@ use Mnabialek\LaravelEloquentFilter\Traits\Filterable;
 
 class ChatGroup extends Model
 {
-    use SoftDeletes, Filterable, FirebaseSync;
+    use SoftDeletes, Filterable, FirebaseSync, PivotEventTrait;
 
     const BASE_PATH = 'app/public';
     const DIR_CHAT_GROUPS = 'chat_groups';

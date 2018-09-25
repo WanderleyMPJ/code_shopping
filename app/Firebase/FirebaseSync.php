@@ -17,17 +17,23 @@ trait FirebaseSync
 
     public static function bootFirebaseSync()
     {
-        static::created(function ($model){
+        static::created(function ($model) {
             $model->syncFbCreate();
         });
 
-        static::updated(function ($model){
+        static::updated(function ($model) {
             $model->syncFbUpdate();
         });
 
-        static::deleted(function ($model){
+        static::deleted(function ($model) {
             $model->syncFbRemove();
         });
+
+        if (method_exists(__CLASS__, 'pivotAttached')) {
+            static::pivotAttached(function ($model, $relationName, $pivotIds, $pivtIdsAttribute) {
+                   
+            });
+        };
     }
 
     protected function syncFbCreate(){
