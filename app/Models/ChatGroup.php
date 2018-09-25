@@ -114,4 +114,16 @@ class ChatGroup extends Model
         return "{$path}/{$this->photo}";
     }
 
+    protected function syncPivotAttached($model, $relationName, $pivotIds, $pivtIdsAttribute)
+    {
+        $users = User::whereIn('id', $pivotIds)->get();
+
+        $data = [];
+        foreach ($users as $user){
+            $data["chat_groups/{$model->id}/users/{$user->profile->firebase_uid}"]= true;
+        }
+
+        $this->getFirebaseDatabase()->getReference()->update($data);
+    }
+
 }

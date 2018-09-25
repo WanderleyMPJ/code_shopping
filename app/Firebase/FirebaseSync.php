@@ -31,7 +31,7 @@ trait FirebaseSync
 
         if (method_exists(__CLASS__, 'pivotAttached')) {
             static::pivotAttached(function ($model, $relationName, $pivotIds, $pivtIdsAttribute) {
-                   
+                $model->syncPivotAttached($model, $relationName, $pivotIds, $pivtIdsAttribute);
             });
         };
     }
@@ -50,6 +50,10 @@ trait FirebaseSync
 
     protected function syncFbRemove(){
         $this->getModelReference()->remove();
+    }
+
+    protected function syncPivotAttached($model, $relationName, $pivotIds, $pivtIdsAttribute){
+        throw new \Exception('Not implemented');
     }
 
     protected function getModelReference(): Firebase\Database\Reference
