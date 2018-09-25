@@ -5,7 +5,7 @@
     <tr>
       <td colspan="5">
         <chat-group-user-new [chatGroupId]="chatGroupId"
-                             (onSucess)="onInsertSucess($event)"
+                             (onSucess)="onInsertSuccess($event)"
                              (onError)="onInsertError($event)"></chat-group-user-new>
       </td>
     </tr>
@@ -27,7 +27,7 @@
       <td>{{user.email}}</td>
       <td>{{user.profile.phone_number}}</td>
       <td>
-        <a href="javascript:void(0)">
+        <a href="javascript:void(0)" (click)="openModalDelete(user.id)">
           <i class="fas fa-trash-alt"></i>
         </a>
       </td>
@@ -39,3 +39,6 @@
                         previousLabel="Anterior"
                         nextLabel="Próximo"></pagination-controls>
 </div>
+
+<chat-group-user-delete-model [chatGroupId]="chatGroupId" [userId]="userIdToDelete"
+                     (onSuccess)="getUsers()" ></chat-group-user-delete-model>

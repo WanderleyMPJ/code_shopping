@@ -54,6 +54,7 @@ import { ChatGroupListComponent } from './components/pages/ChatGroup/chat-group-
 import { ChatGroupFormComponent } from './components/pages/ChatGroup/chat-group-form/chat-group-form.component';
 import {ChatGroupUserListComponent} from "./components/pages/chat-group-user/chat-group-user-list/chat-group-user-list.component";
 import {ChatGroupUserNewComponent} from "./components/pages/chat-group-user/chat-group-user-new/chat-group-user-new.component";
+import { ChatGroupUserDeleteModelComponent } from './components/pages/chat-group-user/chat-group-user-delete-model/chat-group-user-delete-model.component';
 
 
 
@@ -114,7 +115,8 @@ import {ChatGroupUserNewComponent} from "./components/pages/chat-group-user/chat
     ChatGroupListComponent,
     ChatGroupFormComponent,
     ChatGroupUserListComponent,
-    ChatGroupUserNewComponent
+    ChatGroupUserNewComponent,
+    ChatGroupUserDeleteModelComponent
   ],
   imports: [
       BrowserModule,
