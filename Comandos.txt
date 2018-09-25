@@ -73,6 +73,13 @@ php artisan storage:link
     - https://github.com/kreait/firebase-php
      -- composer require kreait/firebase-php:4.0
 
+  *** enviar email laravel
+    - php artisan make:mail PhoneNumberChangeMail --markdown=mails.phone_number_change_mail
+
+  *** laravel-pivot -- atualizar tabelas pivot no firebase
+    -- https://github.com/fico7489/laravel-pivot
+     --- composer require fico7489/laravel-pivot:2.2.*
+
 
 ** ANGULAR
 	* instalar node.js https://nodejs.org/en/
@@ -170,6 +177,11 @@ php artisan storage:link
            ***** "node_modules/select2-bootstrap4-theme/dist/select2-bootstrap4.min.css" style
      *-** add em app.module Select2Module
 
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+=======
+>>>>>>> e456df8abbab16ce119dce5d3917bbce3e151730
 *** IONIC E CORDOVA
 
     -- FERRAMENTA DO IONIC
@@ -178,6 +190,10 @@ php artisan storage:link
           ++++ caso de erro no cordova, rodar npm install -g cordova
    ---  ver como esta ficando ionic serve --lab
     ---- http://localhost:8100/ionic-lab
+
+    *** tabs no ionic
+        * https://github.com/zyra/ionic2-super-tabs
+          ** npm i ionic2-super-tabs@4.3.0 --save
 
 *** FIREBASEUI
   - npm install firebaseui@3.1.1 firebase@5.2.0 --save
@@ -190,6 +206,7 @@ php artisan storage:link
     * serviços
      - ionic g provider firebase-auth
 
+
 *** galeria de fotos fancybox
   -- http://fancyapps.com/fancybox/3/
     ---  npm install @fancyapps/fancybox@3.3.5 --save
@@ -198,4 +215,13 @@ php artisan storage:link
        ** "node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.css"
 
       * script
+
        "node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.js"
+       "node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.js"
+
+*** add firebaseui no angular
+    - copiar as dependencias do package.json
+    - copiar firebaseui e o serviço do ionic,
+    - add em angular.json o css:
+      --- "node_modules/firebaseui/dist/firebaseui.css"
+

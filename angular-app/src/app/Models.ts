@@ -11,8 +11,15 @@ export interface User{
     name: string;
     email: string;
     password?: string;
+    profile?: UserProfile;
     readonly created_at?: { date: string};
     readonly updated_at?: { date: string};
+}
+
+export interface UserProfile{
+    photo_url : string;
+    phone_number : string;
+    has_photo: boolean;
 }
 
 export interface ProductCategory{
@@ -48,3 +55,12 @@ export interface Product{
     readonly updated_at?: { date: string};
 }
 
+export interface ChatGroup {
+    id?: number;
+    name: string;
+    photo?: File;
+    photo_url: string;
+    count_users?: number;
+    readonly created_at?: { date: string};
+    readonly updated_at?: { date: string};
+}

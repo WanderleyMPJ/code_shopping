@@ -12,8 +12,9 @@ class UserProfileController extends Controller
 {
     public function update(UserProfileUpdateRequest $request)
     {
+
         $data = $request->all();
-//        dd($data);
+
         if(!$request->has('token')){
             $token = $request->token;
             $data['phone_number'] = $this->getPhoneNumber($token);
@@ -23,7 +24,11 @@ class UserProfileController extends Controller
         }
         $user = \Auth::guard('api')->user();
         $user->updateWithProfile($data);
-        return new UserResource($user);
+        $resource = new UserResource($user);
+        return [
+            'user' => $resource->toArray($request),
+            'token' => \Auth::guard('api')->login($user)
+        ];
     }
 
     private function getPhoneNumber($token)

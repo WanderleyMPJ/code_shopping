@@ -3,16 +3,18 @@ declare(strict_types=1);
 
 namespace CodeShopping\Models;
 
+use CodeShopping\Firebase\FirebaseSync;
 use CodeShopping\Models\UserProfile;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Foundation\Auth\User as Authenticatable;
+use Mnabialek\LaravelEloquentFilter\Traits\Filterable;
 use Tymon\JWTAuth\Contracts\JWTSubject;
 
 
 class User extends Authenticatable implements JWTSubject
 {
-    use Notifiable, SoftDeletes ;
+    use Notifiable, SoftDeletes, FirebaseSync, Filterable ;
 
     const ROLE_SELLER = 1;
     CONST ROLE_CUSTOMER = 2;
@@ -91,6 +93,7 @@ class User extends Authenticatable implements JWTSubject
           'email' => $this->email,
           'name' => $this->name,
           'profile' => [
+              'has_photo' => $this->profile->photo?true:false,
                 'photo_url' => $this->profile->photo_url,
                 'phone_number' => $this->profile->phone_number
           ]
@@ -101,6 +104,35 @@ class User extends Authenticatable implements JWTSubject
     public function profile(){
        return $this->hasOne(UserProfile::class)->withDefault(); //devolve a instancia do perfil mesmo se estiver fazia
     }
-}
 
-//deseign Pattern = Null Pattern
+    protected function syncFbCreate()
+    {
+        $this->syncFbSetCustom();
+    }
+
+    protected function syncFbUpdate()
+    {
+        $this->syncFbSetCustom();
+    }
+
+    protected function syncFbRemove()
+    {
+        $this->syncFbSetCustom();
+    }
+
+    public function syncFbSetCustom()
+    {
+        $this->profile->refresh();
+        if ($this->profile->firebase_uid){
+            $database = $this->getFirebaseDatabase();
+            $path = 'users/' . $this->profile->firebase_uid;
+            $reference = $database->getReference($path);
+            $reference->set([
+                'name' => $this->name,
+                'photo_url' => $this->profile->photo_url_base,
+                'deleted_at' => $this->deleted_at
+            ]);
+        }
+    }
+
+}

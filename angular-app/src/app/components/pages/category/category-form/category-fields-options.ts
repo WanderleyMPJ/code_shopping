@@ -1,6 +1,6 @@
-import {fieldsOptions} from "../../../../common/fields-options";
+import {FieldsOptions} from "../../../../common/fields-options";
 
-const fieldsOptions: fieldsOptions = {
+const fieldsOptions: FieldsOptions = {
         name: {
         id: 'name',
             label: 'Nome',

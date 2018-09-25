@@ -23,7 +23,7 @@ class UserProfileUpdateRequest extends FormRequest
         $userId = \Auth::guard('api')->user()->id;
         return [
             'name' => 'max:255',
-            'email' => 'email|unique:users, email, {$userId}',
+            'email' => "email|unique:users,email,{$userId}",
             'password'=> 'min:4|max:16',
             'photo' => 'image|max:'.(3 * 1024),
             'token' => [

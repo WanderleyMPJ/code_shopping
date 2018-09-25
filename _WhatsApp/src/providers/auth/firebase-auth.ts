@@ -11,6 +11,8 @@ declare const firebraseui;
 @Injectable()
 export class FirebaseAuthProvider {
 
+  private ui;
+
   constructor() {
       firebase.initializeApp(firebaseConfig);
   }
@@ -19,22 +21,35 @@ export class FirebaseAuthProvider {
     return firebase;
   }
 
-  async makePhoneNumberForm(selectorElement: string){
-      const firebaseui = await this.getFirebaseUI();
-      const uiConfig = {
-          signInOptions: [
-              firebase.auth.PhoneAuthProvider.PROVIDER_ID
-          ],
-          callbacks: {
-              signInSuccessWithAuthResult: (authResult, redirectUrl) => {
-                  return false;
+  async makePhoneNumberForm(selectorElement: string): Promise<any>{
+      await this.getFirebaseUI();
+      return new Promise((resolve => {
+          const uiConfig = {
+              signInOptions: [
+                  firebase.auth.PhoneAuthProvider.PROVIDER_ID
+              ],
+              callbacks: {
+                  signInSuccessWithAuthResult: (authResult, redirectUrl) => {
+                      resolve(true);
+                      return false;
+                  }
               }
-          }
-      };
-      const ui = new firebaseui.auth.AuthUI(firebase.auth());
-      ui.start( selectorElement,uiConfig);
-
+          };
+          this.makeFormFirebaseUi(selectorElement, uiConfig);
+      }))
   }
+
+    private makeFormFirebaseUi(selectorElement, uiConfig){
+        if(!this.ui){
+            this.ui = new firebaseui.auth.AuthUI(firebase.auth());
+            this.ui.start( selectorElement,uiConfig);
+        }else{
+            this.ui.delete().then(() => {
+                this.ui = new firebaseui.auth.AuthUI(firebase.auth());
+                this.ui.start( selectorElement,uiConfig);
+            });
+        }
+    }
 
   private async getFirebaseUI(): Promise<any> {
       return new Promise((resolve, reject) =>{

@@ -3,19 +3,42 @@ declare(strict_types=1);
 
 namespace CodeShopping\Models;
 
+use CodeShopping\Firebase\FirebaseSync;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Http\UploadedFile;
-use phpDocumentor\Reflection\Types\Self_;
+
 
 class UserProfile extends Model
 {
-    const BASE_PATH = 'app/public';
-    const DIR_USERS = 'users';
-    const DIR_USER_PHOTO = self::DIR_USERS . '/photos';
+    use FirebaseSync;
 
+    const BASE_PATH = 'app/public';
+    const DIR_CHAT_GROUPS = 'users';
+    const DIR_USER_PHOTO = self::DIR_CHAT_GROUPS . '/photos';
     const USER_PHOTO_PATH = self::BASE_PATH. '/' . self::DIR_USER_PHOTO;
 
     protected $fillable = ['photo', 'phone_number'];
+
+    public static function createTokenToChangePhoneNumber(UserProfile $profile, $phoneNumber){
+        $token = base64_encode($phoneNumber);
+        $profile->phone_number_token_to_change = $token;
+        $profile->save();
+        return $token;
+    }
+
+    /**
+     * @param $token
+     * @return UserProfile
+     */
+    public static function updatePhoneNumber($token): UserProfile{
+        $profile = UserProfile::where('phone_number_token_to_change', $token)->firstOrFail();
+        $phoneNumber = base64_decode($token);
+        $profile->phone_number = $phoneNumber;
+        $profile->phone_number_token_to_change = null;
+        $profile->save();
+        return $profile;
+    }
 
     public static function saveProfile(User $user, array $data): UserProfile
     {
@@ -74,14 +97,27 @@ class UserProfile extends Model
     }
 
     public function getPhotoUrlAttribute(){
+        return $this->photo ?
+            asset("storage/{$this->photo_url_base}")
+          :
+            $this->photo_url_base;
+    }
+
+    public function getPhotoUrlBaseAttribute(){
         $path = self::photoDir();
         return $this->photo ?
-            asset("storage/{$path}/{$this->photo}"):
+            "{$path}/{$this->photo}"
+         :
             'https://www.gravatar.com/avatar/nouser.jpg';
     }
 
    public function user(){
        return $this->belongsTo(User::class);
+   }
+
+   protected function syncFbSet()
+   {
+       $this->user->syncFbSetCustom();
    }
 
 }
