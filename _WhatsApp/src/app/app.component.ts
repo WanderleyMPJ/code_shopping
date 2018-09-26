@@ -17,7 +17,7 @@ import {MainPage} from "../pages/main/main";
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
-  rootPage: any = LoginOptionsPage;
+  rootPage: any = MainPage;
 
   pages: Array<{title: string, component: any}>;
 
