@@ -6,9 +6,9 @@
     var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function () {
         if (this.readyState === 4 && this.status === 204){
-            document.getElementByid('result').innerText = 'Telefone Atualizado com Sucesso.'
+            document.getElementById('result').innerText = 'Telefone Atualizado com Sucesso.'
         }else{
-            document.getElementByid('result').innerText = 'Não foi Possivel Atualizar o Telefone'
+            document.getElementById('result').innerText = 'Não foi Possivel Atualizar o Telefone'
         }
     };
     xhttp.open('PATCH', '/api/customers/phone_numbers/{{$token}}', true);

@@ -17,7 +17,9 @@ export class CategorySearchFormComponent implements OnInit {
   ngOnInit() {
   }
 
-  submit(){
+  submit(){ //o método submit é executado sempre que o usuário submeter o formulário
+    //isso dispará o evento onSearch
+      //o o chat-group-list está executando o evento
     this.onSearch.emit(this.search);
     return false;
   }

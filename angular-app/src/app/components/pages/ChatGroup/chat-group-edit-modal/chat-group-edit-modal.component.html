@@ -3,6 +3,7 @@
     <h5 modal-title>Editar Grupo de Chat - {{form.get('name').value}}</h5>
     <div modal-body>
       <chat-group-form [form]="form"></chat-group-form>
+      <img [src]="chatGroup?.photo_url">
     </div>
     <div modal-footer>
       <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>

@@ -75,7 +75,8 @@ export class ChatGroupListComponent implements OnInit {
         this.getChatGroups();
     }
 
-    search(search){
+    search(search){ //este método search é chamado
+        //e logo em seguida o getChatGroups mais abaixo
         this.searchText = search;
         this.getChatGroups();
     }

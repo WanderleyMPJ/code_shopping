@@ -18,7 +18,8 @@ export class ChatGroupInsertServices{
     set ChatGroupListComonente(value: ChatGroupListComponent){
         this._chatGroupListComponent = value;
     }
-    showModalinsert(){
+
+    showModalInsert(){
         this._chatGroupListComponent.ChatGroupNewModal.showModal();
     }
 

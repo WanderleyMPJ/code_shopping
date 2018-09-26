@@ -1,15 +1,15 @@
-v<div class="row">
+<div class="row">
   <h1>Listagem de grupos</h1>
   <table class="table table-striped">
     <thead>
       <tr>
         <td>
-          <button class="btn btn-primary" (click)="ChatGroupInsertServices.showModalinsert()">
+          <button class="btn btn-primary" (click)="ChatGroupInsertServices.showModalInsert()">
             Novo Grupo
           </button>
         </td>
           <td colspan="4">
-              <!--<category-search-form (onSearch)="search($event)"></category-search-form>-->
+              <category-search-form (onSearch)="search($event)"></category-search-form>
           </td>
       </tr>
       <tr>
@@ -44,7 +44,16 @@ v<div class="row">
       </tr>
       </tbody>
   </table>
+    <pagination-controls (pageChange)="pageChanged($event)"
+                         previousLabel="Anterior"
+                         nextLabel="Próximo"></pagination-controls>
 </div>
-<pagination-controls (pageChange)="pageChanged($event)"
-                     previousLabel="Anterior"
-                     nextLabel="Próximo"></pagination-controls>
+<chat-group-new-modal
+        (onSucess)="ChatGroupInsertServices.onInsertSucess($event)"
+        (onError)="ChatGroupInsertServices.onInsertError($event)" ></chat-group-new-modal>
+<!-- Está faltando declarar o componente de editar aqui, por isso acontece o erro,
+porque o componente não é carregado pra cá, porque não existe aqui
+ -->
+<chat-group-edit-modal [chatGroupId]="ChatGroupId"
+                     (onSucess)="ChatGroupEditServices.onEditSucess($event)"
+                     (onError)="ChatGroupEditServices.onEditError($event)"></chat-group-edit-modal>

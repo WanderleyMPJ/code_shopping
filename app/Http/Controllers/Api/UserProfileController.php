@@ -15,7 +15,7 @@ class UserProfileController extends Controller
 
         $data = $request->all();
 
-        if(!$request->has('token')){
+        if($request->has('token')){ //o problema estava aqui, a lógica do IF estava invertida
             $token = $request->token;
             $data['phone_number'] = $this->getPhoneNumber($token);
         }

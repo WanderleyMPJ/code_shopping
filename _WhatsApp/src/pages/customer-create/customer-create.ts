@@ -2,6 +2,7 @@ import {Component, ViewChild} from '@angular/core';
 import {IonicPage, NavController, NavParams, TextInput} from 'ionic-angular';
 import {FormBuilder, FormGroup, Validators} from "@angular/forms";
 import {CustomerHttpProvider} from "../../providers/http/customer-http";
+import {HttpErrorResponse} from "@angular/common/http";
 
 @IonicPage()
 @Component({
@@ -35,6 +36,12 @@ export class CustomerCreatePage {
         .create(this.form.value)
         .subscribe(() => {
           console.log('Cliente foi criado');
+        }, (responseError: HttpErrorResponse) => {
+            //responseError.error seria o corpo da resposta HTTP
+            //logo acessamos qualquer informação do corpo neste caminho
+            //aí você pode usar estruturas do Ionic como:
+            //Toast, Alert para mostrar uma mensagem de erro pro usuário
+            console.log(responseError.error.errors)
         })
   }
 

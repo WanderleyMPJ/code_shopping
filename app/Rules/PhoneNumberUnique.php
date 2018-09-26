@@ -30,6 +30,6 @@ class PhoneNumberUnique implements Rule
 
     public function message()
     {
-        return 'Phone Number has used';
+        return 'Phone Number has used'; //a mensagem é esta
     }
 }
