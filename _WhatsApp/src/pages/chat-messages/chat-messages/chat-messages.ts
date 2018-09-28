@@ -28,7 +28,11 @@ export class ChatMessagesPage {
 
       database.ref('chat_groups/1/messages').on('child_added', (data) =>{
               const message = data.val();
-              this.messages.push(message);
+              database.ref(`users/${message.user_id}`).on('value', (data) => {
+                    message.user = data.val();
+                    console.log(message);
+                    this.messages.push(message);
+              });
           });
   }
 
