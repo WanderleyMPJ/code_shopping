@@ -1,4 +1,5 @@
 import {Component, Input} from '@angular/core';
+import {ChatMessage} from "../../../app/model";
 
 @Component({
   selector: 'chat-content-detail',
@@ -7,7 +8,7 @@ import {Component, Input} from '@angular/core';
 export class ChatContentDetailComponent {
 
     @Input()
-    message;
+    message : ChatMessage;
 
     constructor() {
     }
