@@ -5,7 +5,7 @@ chat-content-detail {
 
   %chat-content{
     position: relative;
-    border-radius: 4em;
+    border-radius: .4em;
     overflow: visible;
     contain: none;
 
@@ -25,7 +25,7 @@ chat-content-detail {
     background-color: $chat-content-right;
   }
 
-  %chat-content-after{
+  %chat-content:after{
     content: '';
     position: absolute;
     top: 30px;
@@ -37,7 +37,7 @@ chat-content-detail {
   }
 
   .chat-content-left:after{
-    @extend %chat-content-after;
+    @extend %chat-content:after;
     left: 0;
     border-right-color: $chat-content-left;
     border-left: 0;
@@ -45,12 +45,11 @@ chat-content-detail {
   }
 
   .chat-content-right:after{
-    @extend %chat-content-after;
+    @extend %chat-content:after;
     right: 0;
     border-left-color: $chat-content-right;
     border-right: 0;
     margin-right: -20px;
-    z-index: 99999;
   }
 
   .chat-content-datetime{
