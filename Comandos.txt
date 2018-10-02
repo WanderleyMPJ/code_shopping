@@ -229,3 +229,6 @@ php artisan storage:link
 *** npm install moment@2.22.2 --save
 *** npm install ngx-moment@3.1.0 --save
  ***
+
+ ** instalar no ionic
+  npm install @auth0/angular-jwt@1.2.0 --save

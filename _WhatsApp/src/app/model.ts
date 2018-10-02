@@ -13,3 +13,20 @@ export interface ChatMessage{
     user?: Promise<{name: string; photo_url: string}>;
     created_at: number;
 }
+
+export interface User{
+    id?: number;
+    name: string;
+    email: string;
+    password?: string;
+    profile?: UserProfile;
+    readonly created_at?: { date: string};
+    readonly updated_at?: { date: string};
+}
+
+export interface UserProfile{
+    photo_url : string;
+    phone_number : string;
+    has_photo: boolean;
+    firebase_uid: string;
+}

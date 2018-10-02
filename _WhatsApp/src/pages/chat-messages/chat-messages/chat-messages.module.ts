@@ -7,6 +7,7 @@ import {ChatContentLeftComponent} from "../chat-content-left/chat-content-left";
 import {ChatContentRightComponent} from "../chat-content-right/chat-content-right";
 import {ChatFooterComponent} from "../chat-footer/chat-footer";
 import {MomentModule} from "ngx-moment";
+import {PipesModule} from "../../../pipes/pipes.module";
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import {MomentModule} from "ngx-moment";
   ],
   imports: [
     IonicPageModule.forChild(ChatMessagesPage),
-    MomentModule
+    MomentModule,
+    PipesModule
   ],
 })
 export class ChatMessagesPageModule {}
