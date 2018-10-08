@@ -10,6 +10,7 @@ namespace CodeShopping\Firebase;
 
 
 use CodeShopping\Models\ChatGroup;
+use Illuminate\Http\UploadedFile;
 
 class ChatMessageFb
 {
@@ -17,6 +18,9 @@ class ChatMessageFb
 
     private $chatGroup;
 
+    /**
+     * @param array $data
+     */
     public function create(array $data)
     {
         $this->chatGroup = $data['chat_group'];
@@ -24,6 +28,11 @@ class ChatMessageFb
         switch ($type){
             case 'audio':
             case 'image':
+                $this->upload($data['content']);
+                /** @var uploadedFile $uploadedFile */
+                $uploadedFile = $data['content'];
+                $fileUrl = $this->groupFilesDir() . '/' . $uploadedFile->hashName();
+                $data['content'] = $fileUrl;
         }
 
         $reference = $this->getMessagesReference();
@@ -35,9 +44,17 @@ class ChatMessageFb
         ]);
     }
 
+    private function upload(UploadedFile $file){
+        $file->store($this->groupFilesDir(),['disk' => 'public']);
+    }
+
+    private function groupFilesDir(){
+        return ChatGroup::DIR_CHAT_GROUPS . '/' . $this->chatGroup->id . '/messages_files';
+    }
+
     public function deleteMessages(ChatGroup $chatGroup){
         $this->chatGroup = $chatGroup;
-        $this->getMessagesReference()->remove();
+        $this->getMessagesReference()-remove();
     }
 
     private function getMessagesReference(){
